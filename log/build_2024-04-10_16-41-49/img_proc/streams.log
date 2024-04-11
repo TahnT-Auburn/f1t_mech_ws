@@ -1,0 +1,24 @@
+[0.111s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
+[0.354s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.671s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[15.533s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kcv::Mat ImageProcessor::waypointGen(cv::Mat&)[m[K’:
+[15.535s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:223:54:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krectangle(cv::Mat&, cv::RotatedRect&, cv::Scalar)[m[K’
+[15.536s]   223 |     cv::rectangle(img_clone, box, cv::Scalar(0,0,255)[01;31m[K)[m[K;
+[15.538s]       |                                                      [01;31m[K^[m[K
+[15.540s] In file included from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:74[m[K,
+[15.541s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:3[m[K,
+[15.543s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[15.545s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4432:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::rectangle(cv::InputOutputArray, cv::Point, cv::Point, const Scalar&, int, int, int)[m[K’
+[15.546s]  4432 | CV_EXPORTS_W void [01;36m[Krectangle[m[K(InputOutputArray img, Point pt1, Point pt2,
+[15.548s]       |                   [01;36m[K^~~~~~~~~[m[K
+[15.552s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4432:19:[m[K [01;36m[Knote: [m[K  candidate expects 7 arguments, 3 provided
+[15.553s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4441:19:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kvoid cv::rectangle(cv::InputOutputArray, cv::Rect, const Scalar&, int, int, int)[m[K’
+[15.555s]  4441 | CV_EXPORTS_W void [01;36m[Krectangle[m[K(InputOutputArray img, Rect rec,
+[15.556s]       |                   [01;36m[K^~~~~~~~~[m[K
+[15.558s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4441:56:[m[K [01;36m[Knote: [m[K  no known conversion for argument 2 from ‘[01m[Kcv::RotatedRect[m[K’ to ‘[01m[Kcv::Rect[m[K’ {aka ‘[01m[Kcv::Rect_<int>[m[K’}
+[15.559s]  4441 | CV_EXPORTS_W void rectangle(InputOutputArray img, [01;36m[KRect rec[m[K,
+[15.561s]       |                                                   [01;36m[K~~~~~^~~[m[K
+[27.026s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+[27.027s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+[27.028s] make: *** [Makefile:141: all] Error 2
+[27.040s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6

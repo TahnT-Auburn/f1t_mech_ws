@@ -1,0 +1,12 @@
+[0.546s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
+[1.764s] [35m[1mScanning dependencies of target img_proc_node[0m
+[2.238s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[21.432s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kcv::Mat ImageProcessor::waypointGen(cv::Mat&)[m[K’:
+[21.434s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:215:12:[m[K [01;31m[Kerror: [m[K‘[01m[Kraw_img_clone[m[K’ was not declared in this scope; did you mean ‘[01m[Kimg_clone[m[K’?
+[21.435s]   215 |     return [01;31m[Kraw_img_clone[m[K;
+[21.436s]       |            [01;31m[K^~~~~~~~~~~~~[m[K
+[21.438s]       |            [32m[Kimg_clone[m[K
+[34.025s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+[34.027s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+[34.028s] make: *** [Makefile:141: all] Error 2
+[34.042s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6

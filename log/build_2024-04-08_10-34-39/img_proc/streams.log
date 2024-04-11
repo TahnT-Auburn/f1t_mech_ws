@@ -1,0 +1,10 @@
+[0.096s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
+[0.393s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.757s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[15.984s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:92:15:[m[K [01;31m[Kerror: [m[Kexpected constructor, destructor, or type conversion before ‘[01m[K([m[K’ token
+[15.985s]    92 |     cv::dilate[01;31m[K([m[Kimg,img,dial_elem);
+[15.986s]       |               [01;31m[K^[m[K
+[27.480s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+[27.481s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+[27.482s] make: *** [Makefile:141: all] Error 2
+[27.496s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6

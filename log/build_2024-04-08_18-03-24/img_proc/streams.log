@@ -1,0 +1,37 @@
+[0.104s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
+[0.386s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.715s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[9.587s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:59:25:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+[9.587s]    59 |             cv::imwrite([01;35m[K'/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src'[m[K,raw_img);
+[9.589s]       |                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[37.191s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::processImage(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[37.192s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:56:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaitkey[m[K’ is not a member of ‘[01m[Kcv[m[K’; did you mean ‘[01m[KwaitKey[m[K’?
+[37.193s]    56 |         char key = cv::[01;31m[Kwaitkey[m[K(1);
+[37.193s]       |                        [01;31m[K^~~~~~~[m[K
+[37.194s]       |                        [32m[KwaitKey[m[K
+[37.194s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:59:25:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst String&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’} from expression of type ‘[01m[Kint[m[K’
+[37.195s]    59 |             cv::imwrite([01;31m[K'/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src'[m[K,raw_img);
+[37.195s]       |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[37.196s] In file included from [01m[K/usr/include/opencv4/opencv2/highgui.hpp:48[m[K,
+[37.196s]                  from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:68[m[K,
+[37.196s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:3[m[K,
+[37.197s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[37.197s] [01m[K/usr/include/opencv4/opencv2/imgcodecs.hpp:267:42:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kbool cv::imwrite(const String&, cv::InputArray, const std::vector<int>&)[m[K’
+[37.198s]   267 | CV_EXPORTS_W bool imwrite( [01;36m[Kconst String& filename[m[K, InputArray img,
+[37.198s]       |                            [01;36m[K~~~~~~~~~~~~~~^~~~~~~~[m[K
+[37.220s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::binaryThresholding(cv::Mat&)[m[K’:
+[37.220s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:85:26:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv_min[m[K’ was not declared in this scope; did you mean ‘[01m[Khsv_img[m[K’?
+[37.221s]    85 |     cv::inRange(hsv_img, [01;31m[Khsv_min[m[K, hsv_max, img);
+[37.221s]       |                          [01;31m[K^~~~~~~[m[K
+[37.222s]       |                          [32m[Khsv_img[m[K
+[37.245s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:85:35:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv_max[m[K’ was not declared in this scope
+[37.245s]    85 |     cv::inRange(hsv_img, hsv_min, [01;31m[Khsv_max[m[K, img);
+[37.246s]       |                                   [01;31m[K^~~~~~~[m[K
+[37.281s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::histogram(cv::Mat&)[m[K’:
+[37.281s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:138:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+[37.282s]   138 | void ImageProcessor::histogram([01;35m[Kcv::Mat& img[m[K)
+[37.283s]       |                                [01;35m[K~~~~~~~~~^~~[m[K
+[55.503s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+[55.505s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+[55.507s] make: *** [Makefile:141: all] Error 2
+[55.519s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6

@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target img_proc_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::parseParameters()[m[K’:
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:14:38:[m[K [01;31m[Kerror: [m[K‘[01m[Kerode_size_[m[K’ was not declared in this scope
+   14 |     this->get_parameter("erode_size",[01;31m[Kerode_size_[m[K);
+      |                                      [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:17:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kdilate_size_[m[K’ was not declared in this scope
+   17 |     this->get_parameter("dilate_size",[01;31m[Kdilate_size_[m[K);
+      |                                       [01;31m[K^~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

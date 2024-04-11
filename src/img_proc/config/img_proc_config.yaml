@@ -1,0 +1,16 @@
+/**:
+    ros__parameters:
+
+        # Mask Parameters
+        width_tolerance: 150
+        height_scale: 0.25
+
+        # Errosion / Dilation
+        # erode_size: [3.0, 3.0]
+        # dilate_size: [3.0, 3.0]
+
+        # Hough Transform Parameters
+        rho: 1
+        threshold: 45
+        min_line_length: 25
+        max_line_gap: 15

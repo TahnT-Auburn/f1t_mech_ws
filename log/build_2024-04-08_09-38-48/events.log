@@ -1,0 +1,479 @@
+[0.000000] (-) TimerEvent: {}
+[0.001172] (img_proc) JobQueued: {'identifier': 'img_proc', 'dependencies': OrderedDict()}
+[0.003319] (img_proc) JobStarted: {'identifier': 'img_proc'}
+[0.091602] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'cmake'}
+[0.096669] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'build'}
+[0.101342] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc', '--', '-j6', '-l6'], 'cwd': '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'f1t'), ('SSH_AGENT_PID', '3410'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/f1t'), ('OLDPWD', '/home/f1t/mech_devel'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('MANAGERPID', '2646'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/f1t/mech_devel/f1t_mech_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'f1t'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421020009281'), ('JOURNAL_STREAM', '7:73960'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'f1t'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/f1t/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/f1t:@/tmp/.ICE-unix/3481,unix/f1t:/tmp/.ICE-unix/3481'), ('INVOCATION_ID', '8733c114d492472591c953c21ca44fdf'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/1fe7bfd3_2835_4f5f_afc3_9f192f59d9bf'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('GNOME_TERMINAL_SERVICE', ':1.175'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1t/mech_devel/f1t_mech_ws/install/img_proc:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/f1t/mech_devel/f1t_mech_ws/install/img_proc:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p3668-0000')]), 'shell': False}
+[0.110319] (-) TimerEvent: {}
+[0.299252] (-) TimerEvent: {}
+[0.401719] (-) TimerEvent: {}
+[0.445146] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc_node\x1b[0m\n'}
+[0.504012] (-) TimerEvent: {}
+[0.614094] (-) TimerEvent: {}
+[0.715201] (-) TimerEvent: {}
+[0.750420] (img_proc) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o\x1b[0m\n'}
+[0.815475] (-) TimerEvent: {}
+[0.916664] (-) TimerEvent: {}
+[1.017878] (-) TimerEvent: {}
+[1.119051] (-) TimerEvent: {}
+[1.220262] (-) TimerEvent: {}
+[1.321567] (-) TimerEvent: {}
+[1.422668] (-) TimerEvent: {}
+[1.523829] (-) TimerEvent: {}
+[1.625133] (-) TimerEvent: {}
+[1.726407] (-) TimerEvent: {}
+[1.827524] (-) TimerEvent: {}
+[1.928666] (-) TimerEvent: {}
+[2.031005] (-) TimerEvent: {}
+[2.132234] (-) TimerEvent: {}
+[2.233430] (-) TimerEvent: {}
+[2.334614] (-) TimerEvent: {}
+[2.435797] (-) TimerEvent: {}
+[2.537164] (-) TimerEvent: {}
+[2.638515] (-) TimerEvent: {}
+[2.739623] (-) TimerEvent: {}
+[2.840852] (-) TimerEvent: {}
+[2.942297] (-) TimerEvent: {}
+[3.043481] (-) TimerEvent: {}
+[3.144610] (-) TimerEvent: {}
+[3.245925] (-) TimerEvent: {}
+[3.347273] (-) TimerEvent: {}
+[3.448314] (-) TimerEvent: {}
+[3.549444] (-) TimerEvent: {}
+[3.650604] (-) TimerEvent: {}
+[3.751711] (-) TimerEvent: {}
+[3.853026] (-) TimerEvent: {}
+[3.954254] (-) TimerEvent: {}
+[4.055421] (-) TimerEvent: {}
+[4.156654] (-) TimerEvent: {}
+[4.258056] (-) TimerEvent: {}
+[4.359297] (-) TimerEvent: {}
+[4.460582] (-) TimerEvent: {}
+[4.648602] (-) TimerEvent: {}
+[4.749826] (-) TimerEvent: {}
+[4.851242] (-) TimerEvent: {}
+[4.952470] (-) TimerEvent: {}
+[5.053755] (-) TimerEvent: {}
+[5.154946] (-) TimerEvent: {}
+[5.256146] (-) TimerEvent: {}
+[5.357338] (-) TimerEvent: {}
+[5.458568] (-) TimerEvent: {}
+[5.559855] (-) TimerEvent: {}
+[5.661248] (-) TimerEvent: {}
+[5.762363] (-) TimerEvent: {}
+[5.863590] (-) TimerEvent: {}
+[5.964806] (-) TimerEvent: {}
+[6.066167] (-) TimerEvent: {}
+[6.167370] (-) TimerEvent: {}
+[6.268727] (-) TimerEvent: {}
+[6.370107] (-) TimerEvent: {}
+[6.471260] (-) TimerEvent: {}
+[6.572378] (-) TimerEvent: {}
+[6.673711] (-) TimerEvent: {}
+[6.774949] (-) TimerEvent: {}
+[6.876111] (-) TimerEvent: {}
+[6.977487] (-) TimerEvent: {}
+[7.078860] (-) TimerEvent: {}
+[7.180040] (-) TimerEvent: {}
+[7.281257] (-) TimerEvent: {}
+[7.382444] (-) TimerEvent: {}
+[7.483743] (-) TimerEvent: {}
+[7.585112] (-) TimerEvent: {}
+[7.686374] (-) TimerEvent: {}
+[7.787496] (-) TimerEvent: {}
+[7.888707] (-) TimerEvent: {}
+[7.990213] (-) TimerEvent: {}
+[8.091385] (-) TimerEvent: {}
+[8.192571] (-) TimerEvent: {}
+[8.294443] (-) TimerEvent: {}
+[8.395684] (-) TimerEvent: {}
+[8.496917] (-) TimerEvent: {}
+[8.599419] (-) TimerEvent: {}
+[8.701310] (-) TimerEvent: {}
+[8.802532] (-) TimerEvent: {}
+[8.903664] (-) TimerEvent: {}
+[9.004885] (-) TimerEvent: {}
+[9.106179] (-) TimerEvent: {}
+[9.207529] (-) TimerEvent: {}
+[9.308734] (-) TimerEvent: {}
+[9.409972] (-) TimerEvent: {}
+[9.511101] (-) TimerEvent: {}
+[9.654891] (-) TimerEvent: {}
+[9.756156] (-) TimerEvent: {}
+[9.857490] (-) TimerEvent: {}
+[9.959357] (-) TimerEvent: {}
+[10.060477] (-) TimerEvent: {}
+[10.161740] (-) TimerEvent: {}
+[10.263038] (-) TimerEvent: {}
+[10.364418] (-) TimerEvent: {}
+[10.469279] (-) TimerEvent: {}
+[10.570372] (-) TimerEvent: {}
+[10.671651] (-) TimerEvent: {}
+[10.772759] (-) TimerEvent: {}
+[10.873988] (-) TimerEvent: {}
+[10.975085] (-) TimerEvent: {}
+[11.076393] (-) TimerEvent: {}
+[11.177593] (-) TimerEvent: {}
+[11.278705] (-) TimerEvent: {}
+[11.379740] (-) TimerEvent: {}
+[11.480925] (-) TimerEvent: {}
+[11.582118] (-) TimerEvent: {}
+[11.683351] (-) TimerEvent: {}
+[11.784498] (-) TimerEvent: {}
+[11.885656] (-) TimerEvent: {}
+[11.986691] (-) TimerEvent: {}
+[12.087848] (-) TimerEvent: {}
+[12.189074] (-) TimerEvent: {}
+[12.290695] (-) TimerEvent: {}
+[12.391762] (-) TimerEvent: {}
+[12.493124] (-) TimerEvent: {}
+[12.594186] (-) TimerEvent: {}
+[12.695320] (-) TimerEvent: {}
+[12.796551] (-) TimerEvent: {}
+[12.897817] (-) TimerEvent: {}
+[12.999018] (-) TimerEvent: {}
+[13.100226] (-) TimerEvent: {}
+[13.201544] (-) TimerEvent: {}
+[13.302760] (-) TimerEvent: {}
+[13.403929] (-) TimerEvent: {}
+[13.505115] (-) TimerEvent: {}
+[13.606312] (-) TimerEvent: {}
+[13.707978] (-) TimerEvent: {}
+[13.809188] (-) TimerEvent: {}
+[13.910337] (-) TimerEvent: {}
+[14.011491] (-) TimerEvent: {}
+[14.112687] (-) TimerEvent: {}
+[14.213909] (-) TimerEvent: {}
+[14.315802] (-) TimerEvent: {}
+[14.416863] (-) TimerEvent: {}
+[14.518063] (-) TimerEvent: {}
+[14.619259] (-) TimerEvent: {}
+[14.761504] (-) TimerEvent: {}
+[14.863456] (-) TimerEvent: {}
+[14.964721] (-) TimerEvent: {}
+[15.066209] (-) TimerEvent: {}
+[15.167571] (-) TimerEvent: {}
+[15.268912] (-) TimerEvent: {}
+[15.371200] (-) TimerEvent: {}
+[15.472421] (-) TimerEvent: {}
+[15.573551] (-) TimerEvent: {}
+[15.674814] (-) TimerEvent: {}
+[15.776686] (-) TimerEvent: {}
+[15.877934] (-) TimerEvent: {}
+[15.979185] (-) TimerEvent: {}
+[16.081282] (-) TimerEvent: {}
+[16.182352] (-) TimerEvent: {}
+[16.283595] (-) TimerEvent: {}
+[16.384631] (-) TimerEvent: {}
+[16.485938] (-) TimerEvent: {}
+[16.587056] (-) TimerEvent: {}
+[16.688283] (-) TimerEvent: {}
+[16.753664] (img_proc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28\x1b[m\x1b[K,\n'}
+[16.754817] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:54\x1b[m\x1b[K,\n'}
+[16.757925] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[16.759507] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[16.760910] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[16.762396] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:1\x1b[m\x1b[K,\n'}
+[16.763749] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.765138] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.766579] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.767902] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.769368] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.770685] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Krclcpp::ParameterValue::get<std::vector<float, std::allocator<float> > >() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.772114] (img_proc) StderrLine: {'line': b'  239 |   return parameter->get_parameter_value().get<T>(\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[16.774305] (img_proc) StderrLine: {'line': b'      |                                                  \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[16.777635] (img_proc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:26\x1b[m\x1b[K,\n'}
+[16.778219] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28\x1b[m\x1b[K,\n'}
+[16.778748] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:54\x1b[m\x1b[K,\n'}
+[16.779329] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[16.779796] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[16.780304] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[16.780833] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:1\x1b[m\x1b[K,\n'}
+[16.781417] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.781879] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:148:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL), const bool&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.782468] (img_proc) StderrLine: {'line': b'  148 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.782906] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.783323] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:148:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.783751] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:159:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER), const long int&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.784258] (img_proc) StderrLine: {'line': b'  159 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.784765] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.785331] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:159:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.789573] (-) TimerEvent: {}
+[16.790126] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:170:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE), const double&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.790693] (img_proc) StderrLine: {'line': b'  170 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.791280] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.791676] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:170:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.792122] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:181:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING), const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.792866] (img_proc) StderrLine: {'line': b'  181 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.793366] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.793773] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:181:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.794244] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:193:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BYTE_ARRAY), const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.794696] (img_proc) StderrLine: {'line': b'  193 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.795109] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.795560] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:193:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.796002] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:205:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL_ARRAY), const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.796404] (img_proc) StderrLine: {'line': b'  205 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.796821] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.797380] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:205:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.797776] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:217:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER_ARRAY), const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.798193] (img_proc) StderrLine: {'line': b'  217 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.798626] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.799034] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:217:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.799449] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:229:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE_ARRAY), const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.799941] (img_proc) StderrLine: {'line': b'  229 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.800423] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.800820] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:229:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.801396] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:241:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING_ARRAY), const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.801930] (img_proc) StderrLine: {'line': b'  241 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.802474] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.802882] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:241:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.803301] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:254:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_same<T, bool>::value, const bool&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.803777] (img_proc) StderrLine: {'line': b'  254 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.804205] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.804627] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:254:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.805167] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_same<T, bool>::value, const bool&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.805753] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.806196] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.806622] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.807032] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.807461] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:254:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, const bool&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.807931] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.808380] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.808798] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.809590] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.810070] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:263:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<(std::is_integral<_Tp>::value && (! std::is_same<T, bool>::value)), const long int&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.810479] (img_proc) StderrLine: {'line': b'  263 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.810862] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.811257] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:263:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.811682] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<(std::is_integral<_Tp>::value && (! std::is_same<T, bool>::value)), const long int&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.812129] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.812520] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.813035] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.813501] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.813980] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:263:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, const long int&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.814376] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.814758] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.815164] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.815708] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.816148] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:271:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_floating_point<_Tp>::value, const double&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.816545] (img_proc) StderrLine: {'line': b'  271 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.816920] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.817602] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:271:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.818016] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_floating_point<_Tp>::value, const double&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.818450] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.819707] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.820372] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.820858] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.822571] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:271:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, const double&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.823128] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.823663] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.824136] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.824571] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.825129] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:279:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, std::__cxx11::basic_string<char> >::value, const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.825713] (img_proc) StderrLine: {'line': b'  279 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.826199] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.826620] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:279:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.827031] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, std::__cxx11::basic_string<char> >::value, const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.827445] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.827911] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.828348] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.828844] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.829371] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:279:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, const std::__cxx11::basic_string<char>&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.829870] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.830291] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.830676] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.831080] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.831487] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:289:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<unsigned char, std::allocator<unsigned char> >&>::value, const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.832040] (img_proc) StderrLine: {'line': b'  289 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.832421] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.832795] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:289:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.833535] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<unsigned char, std::allocator<unsigned char> >&>::value, const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.834043] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.834488] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.834921] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.835337] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.835743] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:289:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, const std::vector<unsigned char, std::allocator<unsigned char> >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.836213] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.836615] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.837064] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.837534] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.837987] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<bool, std::allocator<bool> >&>::value, const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.838573] (img_proc) StderrLine: {'line': b'  299 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.838960] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.839354] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:299:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.839765] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<bool, std::allocator<bool> >&>::value, const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.840211] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.840615] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.841072] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.841546] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.841984] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:299:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, const std::vector<bool, std::allocator<bool> >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.842416] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.842814] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.843190] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.843655] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.844102] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:309:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<long int, std::allocator<long int> >&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.844497] (img_proc) StderrLine: {'line': b'  309 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.844881] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.845421] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:309:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.845909] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<long int, std::allocator<long int> >&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.846340] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.846748] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.847175] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.847631] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.848120] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:309:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, const std::vector<long int, std::allocator<long int> >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.848518] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.848909] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.849587] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.850041] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.850448] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:319:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<double, std::allocator<double> >&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.850854] (img_proc) StderrLine: {'line': b'  319 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.851248] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.851644] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:319:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.852134] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<double, std::allocator<double> >&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.852526] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.853045] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.853493] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.853934] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.854349] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:319:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, const std::vector<double, std::allocator<double> >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.854734] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.855146] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.855565] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.856002] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.856391] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:329:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<std::__cxx11::basic_string<char> >&>::value, const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.856849] (img_proc) StderrLine: {'line': b'  329 |   \x1b[01;36m\x1b[Kget\x1b[m\x1b[K() const\n'}
+[16.857356] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~\x1b[m\x1b[K\n'}
+[16.857800] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:329:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[16.858202] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<std::__cxx11::basic_string<char> >&>::value, const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.858666] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.859059] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.859486] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K   required from \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.859937] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.860317] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:329:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno type named \xe2\x80\x98\x1b[01m\x1b[Ktype\x1b[m\x1b[K\xe2\x80\x99 in \xe2\x80\x98\x1b[01m\x1b[Kstruct std::enable_if<false, const std::vector<std::__cxx11::basic_string<char> >&>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[16.860714] (img_proc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node.hpp:1329\x1b[m\x1b[K,\n'}
+[16.861190] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28\x1b[m\x1b[K,\n'}
+[16.861663] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:22\x1b[m\x1b[K,\n'}
+[16.862088] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[16.862524] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:1\x1b[m\x1b[K,\n'}
+[16.862904] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1\x1b[m\x1b[K:\n'}
+[16.863304] (img_proc) StderrLine: {'line': b'/opt/ros/galactic/include/rclcpp/node_impl.hpp: In instantiation of \xe2\x80\x98\x1b[01m\x1b[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>]\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.863734] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:\x1b[m\x1b[K   required from here\n'}
+[16.864144] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kinvalid use of void expression\n'}
+[16.864531] (img_proc) StderrLine: {'line': b'  291 |     parameter = \x1b[01;31m\x1b[Kstatic_cast<ParameterT>(parameter_variant.get_value<ParameterT>())\x1b[m\x1b[K;\n'}
+[16.864924] (img_proc) StderrLine: {'line': b'      |                 \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.889839] (-) TimerEvent: {}
+[16.990898] (-) TimerEvent: {}
+[17.092097] (-) TimerEvent: {}
+[17.193391] (-) TimerEvent: {}
+[17.294596] (-) TimerEvent: {}
+[17.395747] (-) TimerEvent: {}
+[17.496809] (-) TimerEvent: {}
+[17.598075] (-) TimerEvent: {}
+[17.699248] (-) TimerEvent: {}
+[17.800414] (-) TimerEvent: {}
+[17.901637] (-) TimerEvent: {}
+[18.002764] (-) TimerEvent: {}
+[18.104003] (-) TimerEvent: {}
+[18.205323] (-) TimerEvent: {}
+[18.306577] (-) TimerEvent: {}
+[18.407746] (-) TimerEvent: {}
+[18.508827] (-) TimerEvent: {}
+[18.609992] (-) TimerEvent: {}
+[18.711090] (-) TimerEvent: {}
+[18.812216] (-) TimerEvent: {}
+[18.913377] (-) TimerEvent: {}
+[19.014490] (-) TimerEvent: {}
+[19.115633] (-) TimerEvent: {}
+[19.216844] (-) TimerEvent: {}
+[19.318070] (-) TimerEvent: {}
+[19.419245] (-) TimerEvent: {}
+[19.520344] (-) TimerEvent: {}
+[19.621612] (-) TimerEvent: {}
+[19.722925] (-) TimerEvent: {}
+[19.868267] (-) TimerEvent: {}
+[19.969585] (-) TimerEvent: {}
+[20.070728] (-) TimerEvent: {}
+[20.171891] (-) TimerEvent: {}
+[20.273219] (-) TimerEvent: {}
+[20.374380] (-) TimerEvent: {}
+[20.475638] (-) TimerEvent: {}
+[20.576753] (-) TimerEvent: {}
+[20.678042] (-) TimerEvent: {}
+[20.779182] (-) TimerEvent: {}
+[20.880287] (-) TimerEvent: {}
+[20.981520] (-) TimerEvent: {}
+[21.082703] (-) TimerEvent: {}
+[21.183844] (-) TimerEvent: {}
+[21.285152] (-) TimerEvent: {}
+[21.386255] (-) TimerEvent: {}
+[21.487335] (-) TimerEvent: {}
+[21.588490] (-) TimerEvent: {}
+[21.690316] (-) TimerEvent: {}
+[21.791878] (-) TimerEvent: {}
+[21.893192] (-) TimerEvent: {}
+[21.994349] (-) TimerEvent: {}
+[22.095431] (-) TimerEvent: {}
+[22.196583] (-) TimerEvent: {}
+[22.297795] (-) TimerEvent: {}
+[22.398949] (-) TimerEvent: {}
+[22.500042] (-) TimerEvent: {}
+[22.602331] (-) TimerEvent: {}
+[22.703544] (-) TimerEvent: {}
+[22.804622] (-) TimerEvent: {}
+[22.906368] (-) TimerEvent: {}
+[23.007858] (-) TimerEvent: {}
+[23.108907] (-) TimerEvent: {}
+[23.210193] (-) TimerEvent: {}
+[23.311345] (-) TimerEvent: {}
+[23.412487] (-) TimerEvent: {}
+[23.513633] (-) TimerEvent: {}
+[23.614763] (-) TimerEvent: {}
+[23.715767] (-) TimerEvent: {}
+[23.816987] (-) TimerEvent: {}
+[23.918151] (-) TimerEvent: {}
+[24.019212] (-) TimerEvent: {}
+[24.120322] (-) TimerEvent: {}
+[24.221552] (-) TimerEvent: {}
+[24.322689] (-) TimerEvent: {}
+[24.423895] (-) TimerEvent: {}
+[24.525119] (-) TimerEvent: {}
+[24.626257] (-) TimerEvent: {}
+[24.727419] (-) TimerEvent: {}
+[24.828652] (-) TimerEvent: {}
+[24.970192] (-) TimerEvent: {}
+[25.071346] (-) TimerEvent: {}
+[25.172508] (-) TimerEvent: {}
+[25.273800] (-) TimerEvent: {}
+[25.374939] (-) TimerEvent: {}
+[25.476018] (-) TimerEvent: {}
+[25.577070] (-) TimerEvent: {}
+[25.678137] (-) TimerEvent: {}
+[25.779299] (-) TimerEvent: {}
+[25.880468] (-) TimerEvent: {}
+[25.981776] (-) TimerEvent: {}
+[26.082881] (-) TimerEvent: {}
+[26.184092] (-) TimerEvent: {}
+[26.285340] (-) TimerEvent: {}
+[26.386526] (-) TimerEvent: {}
+[26.488032] (-) TimerEvent: {}
+[26.589884] (-) TimerEvent: {}
+[26.691150] (-) TimerEvent: {}
+[26.792277] (-) TimerEvent: {}
+[26.893572] (-) TimerEvent: {}
+[26.994777] (-) TimerEvent: {}
+[27.096028] (-) TimerEvent: {}
+[27.197565] (-) TimerEvent: {}
+[27.298685] (-) TimerEvent: {}
+[27.399756] (-) TimerEvent: {}
+[27.501022] (-) TimerEvent: {}
+[27.602148] (-) TimerEvent: {}
+[27.703216] (-) TimerEvent: {}
+[27.804348] (-) TimerEvent: {}
+[27.839266] (img_proc) StderrLine: {'line': b'make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1\n'}
+[27.841354] (img_proc) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2\n'}
+[27.842673] (img_proc) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[27.853858] (img_proc) CommandEnded: {'returncode': 2}
+[27.905132] (-) TimerEvent: {}
+[28.010482] (-) TimerEvent: {}
+[28.110532] (img_proc) JobEnded: {'identifier': 'img_proc', 'rc': 2}
+[28.115664] (-) TimerEvent: {}
+[28.123394] (-) EventReactorShutdown: {}

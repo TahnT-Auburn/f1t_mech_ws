@@ -1,0 +1,25 @@
+[0.112s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
+[0.367s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.711s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[15.956s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kcv::Mat ImageProcessor::waypointGen(cv::Mat&)[m[K’:
+[15.957s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:182:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kimg_clone[m[K’ was not declared in this scope
+[15.957s]   182 |     [01;31m[Kimg_clone[m[K = img.clone();
+[15.958s]       |     [01;31m[K^~~~~~~~~[m[K
+[15.967s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:219:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kcnt[m[K’ was not declared in this scope; did you mean ‘[01m[Kint[m[K’?
+[15.969s]   219 |     cv::RotatedRect box = minAreaRect([01;31m[Kcnt[m[K);
+[15.971s]       |                                       [01;31m[K^~~[m[K
+[15.973s]       |                                       [32m[Kint[m[K
+[15.975s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:219:27:[m[K [01;31m[Kerror: [m[K‘[01m[KminAreaRect[m[K’ was not declared in this scope; did you mean ‘[01m[Kcv::minAreaRect[m[K’?
+[15.976s]   219 |     cv::RotatedRect box = [01;31m[KminAreaRect[m[K(cnt);
+[15.977s]       |                           [01;31m[K^~~~~~~~~~~[m[K
+[15.979s]       |                           [32m[Kcv::minAreaRect[m[K
+[15.980s] In file included from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:74[m[K,
+[15.982s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:3[m[K,
+[15.983s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[15.985s] [01m[K/usr/include/opencv4/opencv2/imgproc.hpp:4003:26:[m[K [01;36m[Knote: [m[K‘[01m[Kcv::minAreaRect[m[K’ declared here
+[15.986s]  4003 | CV_EXPORTS_W RotatedRect [01;36m[KminAreaRect[m[K( InputArray points );
+[15.987s]       |                          [01;36m[K^~~~~~~~~~~[m[K
+[27.832s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+[27.835s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+[27.836s] make: *** [Makefile:141: all] Error 2
+[27.851s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6

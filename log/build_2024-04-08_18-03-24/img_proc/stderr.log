@@ -1,0 +1,33 @@
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:59:25:[m[K [01;35m[Kwarning: [m[Kcharacter constant too long for its type
+   59 |             cv::imwrite([01;35m[K'/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src'[m[K,raw_img);
+      |                         [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::processImage(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:56:24:[m[K [01;31m[Kerror: [m[K‘[01m[Kwaitkey[m[K’ is not a member of ‘[01m[Kcv[m[K’; did you mean ‘[01m[KwaitKey[m[K’?
+   56 |         char key = cv::[01;31m[Kwaitkey[m[K(1);
+      |                        [01;31m[K^~~~~~~[m[K
+      |                        [32m[KwaitKey[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:59:25:[m[K [01;31m[Kerror: [m[Kinvalid initialization of reference of type ‘[01m[Kconst String&[m[K’ {aka ‘[01m[Kconst std::__cxx11::basic_string<char>&[m[K’} from expression of type ‘[01m[Kint[m[K’
+   59 |             cv::imwrite([01;31m[K'/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src'[m[K,raw_img);
+      |                         [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+In file included from [01m[K/usr/include/opencv4/opencv2/highgui.hpp:48[m[K,
+                 from [01m[K/usr/include/opencv4/opencv2/opencv.hpp:68[m[K,
+                 from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:3[m[K,
+                 from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[01m[K/usr/include/opencv4/opencv2/imgcodecs.hpp:267:42:[m[K [01;36m[Knote: [m[Kin passing argument 1 of ‘[01m[Kbool cv::imwrite(const String&, cv::InputArray, const std::vector<int>&)[m[K’
+  267 | CV_EXPORTS_W bool imwrite( [01;36m[Kconst String& filename[m[K, InputArray img,
+      |                            [01;36m[K~~~~~~~~~~~~~~^~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::binaryThresholding(cv::Mat&)[m[K’:
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:85:26:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv_min[m[K’ was not declared in this scope; did you mean ‘[01m[Khsv_img[m[K’?
+   85 |     cv::inRange(hsv_img, [01;31m[Khsv_min[m[K, hsv_max, img);
+      |                          [01;31m[K^~~~~~~[m[K
+      |                          [32m[Khsv_img[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:85:35:[m[K [01;31m[Kerror: [m[K‘[01m[Khsv_max[m[K’ was not declared in this scope
+   85 |     cv::inRange(hsv_img, hsv_min, [01;31m[Khsv_max[m[K, img);
+      |                                   [01;31m[K^~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::histogram(cv::Mat&)[m[K’:
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:138:41:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kimg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+  138 | void ImageProcessor::histogram([01;35m[Kcv::Mat& img[m[K)
+      |                                [01;35m[K~~~~~~~~~^~~[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

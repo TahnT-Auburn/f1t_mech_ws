@@ -1,0 +1,69 @@
+[0.386s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/f1t/mech_devel/f1t_mech_ws/src/img_proc -DCMAKE_INSTALL_PREFIX=/home/f1t/mech_devel/f1t_mech_ws/install/img_proc
+[2.818s] -- The C compiler identification is GNU 9.4.0
+[4.031s] -- The CXX compiler identification is GNU 9.4.0
+[4.215s] -- Check for working C compiler: /usr/bin/cc
+[4.883s] -- Check for working C compiler: /usr/bin/cc -- works
+[5.033s] -- Detecting C compiler ABI info
+[5.750s] -- Detecting C compiler ABI info - done
+[5.968s] -- Detecting C compile features
+[5.971s] -- Detecting C compile features - done
+[5.992s] -- Check for working CXX compiler: /usr/bin/c++
+[6.624s] -- Check for working CXX compiler: /usr/bin/c++ -- works
+[6.630s] -- Detecting CXX compiler ABI info
+[7.263s] -- Detecting CXX compiler ABI info - done
+[7.334s] -- Detecting CXX compile features
+[7.337s] -- Detecting CXX compile features - done
+[7.499s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[7.797s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+[7.799s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[8.828s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[9.284s] -- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+[9.468s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[10.029s] -- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+[11.517s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[11.534s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[12.081s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[12.088s] -- Looking for pthread.h
+[12.685s] -- Looking for pthread.h - found
+[12.688s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[13.370s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+[13.371s] -- Looking for pthread_create in pthreads
+[14.013s] -- Looking for pthread_create in pthreads - not found
+[14.015s] -- Looking for pthread_create in pthread
+[14.436s] -- Looking for pthread_create in pthread - found
+[14.442s] -- Found Threads: TRUE  
+[16.731s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[17.735s] -- Found cv_bridge: 3.1.3 (/opt/ros/galactic/share/cv_bridge/cmake)
+[18.598s] -- Configuring done
+[18.826s] -- Generating done
+[18.835s] -- Build files have been written to: /home/f1t/mech_devel/f1t_mech_ws/build/img_proc
+[18.882s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake /home/f1t/mech_devel/f1t_mech_ws/src/img_proc -DCMAKE_INSTALL_PREFIX=/home/f1t/mech_devel/f1t_mech_ws/install/img_proc
+[18.899s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
+[19.147s] [35m[1mScanning dependencies of target img_proc_node[0m
+[20.139s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[65.483s] [100%] [32m[1mLinking CXX executable img_proc_node[0m
+[69.804s] /usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/galactic/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5
+[69.993s] [100%] Built target img_proc_node
+[70.150s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
+[70.344s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/f1t/mech_devel/f1t_mech_ws/build/img_proc
+[70.385s] -- Install configuration: ""
+[70.387s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node
+[70.417s] -- Set runtime path of "/home/f1t/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node" to ""
+[70.419s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/launch
+[70.422s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/launch/img_proc_launch.py
+[70.423s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/package_run_dependencies/img_proc
+[70.425s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/parent_prefix_path/img_proc
+[70.427s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.sh
+[70.428s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.dsv
+[70.430s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.sh
+[70.431s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.dsv
+[70.432s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.bash
+[70.434s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.sh
+[70.435s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.zsh
+[70.437s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.dsv
+[70.438s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.dsv
+[70.440s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/packages/img_proc
+[70.441s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig.cmake
+[70.442s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig-version.cmake
+[70.444s] -- Installing: /home/f1t/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.xml
+[70.453s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/f1t/mech_devel/f1t_mech_ws/build/img_proc

@@ -1,0 +1,198 @@
+[0.104s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
+[0.443s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.747s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[16.750s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[16.753s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:54[m[K,
+[16.755s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[16.756s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[16.758s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[16.759s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:1[m[K,
+[16.761s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[16.762s] /opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’:
+[16.763s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.765s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.766s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.768s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Krclcpp::ParameterValue::get<std::vector<float, std::allocator<float> > >() const[m[K’
+[16.769s]   239 |   return parameter->get_parameter_value().get<T>([01;31m[K)[m[K;
+[16.773s]       |                                                  [01;31m[K^[m[K
+[16.774s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:26[m[K,
+[16.774s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node_interfaces/node_parameters_interface.hpp:28[m[K,
+[16.775s]                  from [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:54[m[K,
+[16.776s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[16.776s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[16.777s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[16.777s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:1[m[K,
+[16.778s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[16.778s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:148:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL), const bool&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.779s]   148 |   [01;36m[Kget[m[K() const
+[16.779s]       |   [01;36m[K^~~[m[K
+[16.780s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:148:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.780s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:159:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER), const long int&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.780s]   159 |   [01;36m[Kget[m[K() const
+[16.781s]       |   [01;36m[K^~~[m[K
+[16.785s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:159:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.786s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:170:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE), const double&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.787s]   170 |   [01;36m[Kget[m[K() const
+[16.787s]       |   [01;36m[K^~~[m[K
+[16.788s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:170:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.789s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:181:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING), const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.789s]   181 |   [01;36m[Kget[m[K() const
+[16.790s]       |   [01;36m[K^~~[m[K
+[16.790s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:181:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.790s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:193:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BYTE_ARRAY), const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.791s]   193 |   [01;36m[Kget[m[K() const
+[16.791s]       |   [01;36m[K^~~[m[K
+[16.792s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:193:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.792s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:205:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_BOOL_ARRAY), const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.793s]   205 |   [01;36m[Kget[m[K() const
+[16.793s]       |   [01;36m[K^~~[m[K
+[16.794s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:205:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.794s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:217:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_INTEGER_ARRAY), const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.794s]   217 |   [01;36m[Kget[m[K() const
+[16.795s]       |   [01;36m[K^~~[m[K
+[16.795s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:217:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.796s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:229:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_DOUBLE_ARRAY), const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.796s]   229 |   [01;36m[Kget[m[K() const
+[16.797s]       |   [01;36m[K^~~[m[K
+[16.797s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:229:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.798s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:241:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<rclcpp::ParameterType type> constexpr typename std::enable_if<(type == rclcpp::PARAMETER_STRING_ARRAY), const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.798s]   241 |   [01;36m[Kget[m[K() const
+[16.799s]       |   [01;36m[K^~~[m[K
+[16.799s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:241:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.800s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:254:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_same<T, bool>::value, const bool&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.800s]   254 |   [01;36m[Kget[m[K() const
+[16.800s]       |   [01;36m[K^~~[m[K
+[16.801s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:254:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.802s] /opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_same<T, bool>::value, const bool&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>][m[K’:
+[16.802s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’
+[16.802s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.803s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.803s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.804s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:254:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const bool&>[m[K’
+[16.804s] /opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’:
+[16.805s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.805s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.806s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.806s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:263:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<(std::is_integral<_Tp>::value && (! std::is_same<T, bool>::value)), const long int&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.807s]   263 |   [01;36m[Kget[m[K() const
+[16.807s]       |   [01;36m[K^~~[m[K
+[16.807s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:263:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.808s] /opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<(std::is_integral<_Tp>::value && (! std::is_same<T, bool>::value)), const long int&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>][m[K’:
+[16.808s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’
+[16.809s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.809s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.810s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.810s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:263:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const long int&>[m[K’
+[16.811s] /opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’:
+[16.811s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.811s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.812s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.812s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:271:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_floating_point<_Tp>::value, const double&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.813s]   271 |   [01;36m[Kget[m[K() const
+[16.813s]       |   [01;36m[K^~~[m[K
+[16.814s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:271:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.814s] /opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_floating_point<_Tp>::value, const double&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>][m[K’:
+[16.815s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’
+[16.816s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.817s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.817s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.819s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:271:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const double&>[m[K’
+[16.819s] /opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’:
+[16.820s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.820s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.821s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.821s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:279:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, std::__cxx11::basic_string<char> >::value, const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.822s]   279 |   [01;36m[Kget[m[K() const
+[16.822s]       |   [01;36m[K^~~[m[K
+[16.823s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:279:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.823s] /opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, std::__cxx11::basic_string<char> >::value, const std::__cxx11::basic_string<char>&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>][m[K’:
+[16.824s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’
+[16.824s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.825s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.825s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.826s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:279:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::__cxx11::basic_string<char>&>[m[K’
+[16.826s] /opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’:
+[16.826s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.827s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.827s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.828s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:289:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<unsigned char, std::allocator<unsigned char> >&>::value, const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.828s]   289 |   [01;36m[Kget[m[K() const
+[16.829s]       |   [01;36m[K^~~[m[K
+[16.829s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:289:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.830s] /opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<unsigned char, std::allocator<unsigned char> >&>::value, const std::vector<unsigned char, std::allocator<unsigned char> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>][m[K’:
+[16.830s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’
+[16.831s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.831s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.832s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.832s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:289:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<unsigned char, std::allocator<unsigned char> >&>[m[K’
+[16.832s] /opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’:
+[16.833s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.833s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.834s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.834s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:299:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<bool, std::allocator<bool> >&>::value, const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.835s]   299 |   [01;36m[Kget[m[K() const
+[16.835s]       |   [01;36m[K^~~[m[K
+[16.836s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:299:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.836s] /opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<bool, std::allocator<bool> >&>::value, const std::vector<bool, std::allocator<bool> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>][m[K’:
+[16.836s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’
+[16.837s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.837s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.838s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.838s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:299:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<bool, std::allocator<bool> >&>[m[K’
+[16.839s] /opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’:
+[16.839s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.839s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.840s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.840s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:309:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<long int, std::allocator<long int> >&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.841s]   309 |   [01;36m[Kget[m[K() const
+[16.841s]       |   [01;36m[K^~~[m[K
+[16.842s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:309:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.842s] /opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<long int, std::allocator<long int> >&>::value, const std::vector<long int, std::allocator<long int> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>][m[K’:
+[16.843s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’
+[16.843s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.843s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.844s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.844s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:309:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<long int, std::allocator<long int> >&>[m[K’
+[16.845s] /opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’:
+[16.845s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.846s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.846s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.847s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:319:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<double, std::allocator<double> >&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.847s]   319 |   [01;36m[Kget[m[K() const
+[16.847s]       |   [01;36m[K^~~[m[K
+[16.848s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:319:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.848s] /opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<double, std::allocator<double> >&>::value, const std::vector<double, std::allocator<double> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>][m[K’:
+[16.849s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’
+[16.849s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.850s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.850s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.851s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:319:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<double, std::allocator<double> >&>[m[K’
+[16.851s] /opt/ros/galactic/include/rclcpp/parameter.hpp: In instantiation of ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’:
+[16.851s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.852s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.852s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.853s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:329:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<std::__cxx11::basic_string<char> >&>::value, const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const[m[K’
+[16.853s]   329 |   [01;36m[Kget[m[K() const
+[16.854s]       |   [01;36m[K^~~[m[K
+[16.854s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:329:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[16.854s] /opt/ros/galactic/include/rclcpp/parameter_value.hpp: In substitution of ‘[01m[Ktemplate<class type> constexpr typename std::enable_if<std::is_convertible<type, const std::vector<std::__cxx11::basic_string<char> >&>::value, const std::vector<std::__cxx11::basic_string<char> >&>::type rclcpp::ParameterValue::get() const [with type = std::vector<float>][m[K’:
+[16.855s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:239:50:[m[K   required from ‘[01m[Kauto rclcpp::detail::get_value_helper(const rclcpp::Parameter*) [with T = std::vector<float>][m[K’
+[16.855s] [01m[K/opt/ros/galactic/include/rclcpp/parameter.hpp:273:39:[m[K   required from ‘[01m[Kdecltype(auto) rclcpp::Parameter::get_value() const [with T = std::vector<float>][m[K’
+[16.856s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K   required from ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’
+[16.856s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.857s] [01m[K/opt/ros/galactic/include/rclcpp/parameter_value.hpp:329:3:[m[K [01;31m[Kerror: [m[Kno type named ‘[01m[Ktype[m[K’ in ‘[01m[Kstruct std::enable_if<false, const std::vector<std::__cxx11::basic_string<char> >&>[m[K’
+[16.857s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:1329[m[K,
+[16.857s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[16.858s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[16.858s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[16.859s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:1[m[K,
+[16.859s]                  from [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[16.860s] /opt/ros/galactic/include/rclcpp/node_impl.hpp: In instantiation of ‘[01m[Kbool rclcpp::Node::get_parameter(const string&, ParameterT&) const [with ParameterT = std::vector<float>; std::string = std::__cxx11::basic_string<char>][m[K’:
+[16.860s] [01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:27:37:[m[K   required from here
+[16.860s] [01m[K/opt/ros/galactic/include/rclcpp/node_impl.hpp:291:17:[m[K [01;31m[Kerror: [m[Kinvalid use of void expression
+[16.861s]   291 |     parameter = [01;31m[Kstatic_cast<ParameterT>(parameter_variant.get_value<ParameterT>())[m[K;
+[16.861s]       |                 [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[27.836s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+[27.838s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+[27.839s] make: *** [Makefile:141: all] Error 2
+[27.851s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6

@@ -1,0 +1,11 @@
+[35m[1mScanning dependencies of target img_proc_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable img_proc_node[0m
+/usr/bin/ld: warning: libopencv_imgproc.so.4.2, needed by /opt/ros/galactic/lib/libcv_bridge.so, may conflict with libopencv_imgproc.so.4.5
+/usr/bin/ld: warning: libopencv_core.so.4.2, needed by /opt/ros/galactic/lib/libcv_bridge.so, may conflict with libopencv_core.so.4.5
+/usr/bin/ld: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o: in function `ImageProcessor::processImage(std::shared_ptr<sensor_msgs::msg::Image_<std::allocator<void> > >)':
+img_proc_node.cpp:(.text+0x714): undefined reference to `ImageProcessor::erosionDilation(cv::Mat&)'
+collect2: error: ld returned 1 exit status
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:163: img_proc_node] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

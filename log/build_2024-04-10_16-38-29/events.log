@@ -1,0 +1,94 @@
+[0.000000] (-) TimerEvent: {}
+[0.002173] (img_proc) JobQueued: {'identifier': 'img_proc', 'dependencies': OrderedDict()}
+[0.003134] (img_proc) JobStarted: {'identifier': 'img_proc'}
+[0.098739] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'cmake'}
+[0.099543] (-) TimerEvent: {}
+[0.105120] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'build'}
+[0.110795] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc', '--', '-j6', '-l6'], 'cwd': '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'f1t'), ('SSH_AGENT_PID', '3451'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/f1t'), ('OLDPWD', '/home/f1t/mech_devel'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('MANAGERPID', '2691'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/f1t/mech_devel/f1t_mech_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'f1t'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421020009281'), ('JOURNAL_STREAM', '7:73853'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'f1t'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/f1t/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/f1t:@/tmp/.ICE-unix/3519,unix/f1t:/tmp/.ICE-unix/3519'), ('INVOCATION_ID', 'e796f3445c25459db3e3402a2adac3b5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4f41870d_a446_4465_a96c_459f77e35e50'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('GNOME_TERMINAL_SERVICE', ':1.80'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1t/mech_devel/f1t_mech_ws/install/img_proc:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/f1t/mech_devel/f1t_mech_ws/install/img_proc:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p3668-0000')]), 'shell': False}
+[0.200301] (-) TimerEvent: {}
+[0.302706] (-) TimerEvent: {}
+[0.371644] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc_node\x1b[0m\n'}
+[0.402974] (-) TimerEvent: {}
+[0.504750] (-) TimerEvent: {}
+[0.605991] (-) TimerEvent: {}
+[0.707750] (-) TimerEvent: {}
+[0.722788] (img_proc) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o\x1b[0m\n'}
+[0.807983] (-) TimerEvent: {}
+[0.909232] (-) TimerEvent: {}
+[1.010622] (-) TimerEvent: {}
+[1.111736] (-) TimerEvent: {}
+[1.212909] (-) TimerEvent: {}
+[1.313975] (-) TimerEvent: {}
+[1.415245] (-) TimerEvent: {}
+[1.516384] (-) TimerEvent: {}
+[1.617636] (-) TimerEvent: {}
+[1.718947] (-) TimerEvent: {}
+[1.985634] (-) TimerEvent: {}
+[2.086895] (-) TimerEvent: {}
+[2.188065] (-) TimerEvent: {}
+[2.290094] (-) TimerEvent: {}
+[2.391861] (-) TimerEvent: {}
+[2.492955] (-) TimerEvent: {}
+[2.593978] (-) TimerEvent: {}
+[2.695212] (-) TimerEvent: {}
+[2.796906] (-) TimerEvent: {}
+[2.903730] (-) TimerEvent: {}
+[3.006732] (-) TimerEvent: {}
+[3.107975] (-) TimerEvent: {}
+[3.209150] (-) TimerEvent: {}
+[3.310397] (-) TimerEvent: {}
+[3.411639] (-) TimerEvent: {}
+[3.513228] (-) TimerEvent: {}
+[3.614435] (-) TimerEvent: {}
+[3.715620] (-) TimerEvent: {}
+[3.816817] (-) TimerEvent: {}
+[3.918004] (-) TimerEvent: {}
+[4.019217] (-) TimerEvent: {}
+[4.120692] (-) TimerEvent: {}
+[4.222156] (-) TimerEvent: {}
+[4.323744] (-) TimerEvent: {}
+[4.426638] (-) TimerEvent: {}
+[4.528144] (-) TimerEvent: {}
+[4.629292] (-) TimerEvent: {}
+[4.730466] (-) TimerEvent: {}
+[4.831735] (-) TimerEvent: {}
+[4.932820] (-) TimerEvent: {}
+[5.034076] (-) TimerEvent: {}
+[5.135771] (-) TimerEvent: {}
+[5.236910] (-) TimerEvent: {}
+[5.337998] (-) TimerEvent: {}
+[5.439771] (-) TimerEvent: {}
+[5.540898] (-) TimerEvent: {}
+[5.641954] (-) TimerEvent: {}
+[5.743234] (-) TimerEvent: {}
+[5.844992] (-) TimerEvent: {}
+[5.946047] (-) TimerEvent: {}
+[6.047353] (-) TimerEvent: {}
+[6.148564] (-) TimerEvent: {}
+[6.249728] (-) TimerEvent: {}
+[6.351047] (-) TimerEvent: {}
+[6.452120] (-) TimerEvent: {}
+[6.554520] (-) TimerEvent: {}
+[6.655814] (-) TimerEvent: {}
+[6.756967] (-) TimerEvent: {}
+[6.858111] (-) TimerEvent: {}
+[6.959526] (-) TimerEvent: {}
+[7.061430] (-) TimerEvent: {}
+[7.162755] (-) TimerEvent: {}
+[7.264049] (-) TimerEvent: {}
+[7.365414] (-) TimerEvent: {}
+[7.466801] (-) TimerEvent: {}
+[7.568023] (-) TimerEvent: {}
+[7.669169] (-) TimerEvent: {}
+[7.770483] (-) TimerEvent: {}
+[7.872452] (-) TimerEvent: {}
+[7.955421] (img_proc) StderrLine: {'line': b'make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Interrupt\n'}
+[7.958449] (img_proc) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Interrupt\n'}
+[7.959720] (img_proc) StderrLine: {'line': b'make: *** [Makefile:141: all] Interrupt\n'}
+[7.972654] (-) TimerEvent: {}
+[8.049025] (img_proc) CommandEnded: {'returncode': -2}
+[8.073318] (-) TimerEvent: {}
+[8.175405] (-) TimerEvent: {}
+[8.278350] (-) TimerEvent: {}
+[8.319390] (img_proc) JobEnded: {'identifier': 'img_proc', 'rc': 'SIGINT'}
+[8.332284] (-) EventReactorShutdown: {}

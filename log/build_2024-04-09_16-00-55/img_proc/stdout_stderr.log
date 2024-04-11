@@ -1,0 +1,29 @@
+-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+-- Using single rosidl_typesupport_c: rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+-- Using single rosidl_typesupport_cpp: rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+-- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+-- Found cv_bridge: 3.1.3 (/opt/ros/galactic/share/cv_bridge/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/f1t/mech_devel/f1t_mech_ws/build/img_proc
+[35m[1mScanning dependencies of target img_proc_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kcv::Mat ImageProcessor::cannyEdgeDetection(cv::Mat&)[m[K’:
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:128:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kkernel_size[m[K’ was not declared in this scope
+  128 |     [01;31m[Kkernel_size[m[K = 11
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:133:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_thresh[m[K’ was not declared in this scope
+  133 |     [01;31m[Kmin_thresh[m[K = 60;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:134:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_thresh[m[K’ was not declared in this scope
+  134 |     [01;31m[Kmax_thresh[m[K = 150;
+      |     [01;31m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

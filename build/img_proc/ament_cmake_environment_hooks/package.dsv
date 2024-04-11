@@ -1,0 +1,4 @@
+source;share/img_proc/local_setup.bash
+source;share/img_proc/local_setup.dsv
+source;share/img_proc/local_setup.sh
+source;share/img_proc/local_setup.zsh

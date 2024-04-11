@@ -1,0 +1,13 @@
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kcv::Mat ImageProcessor::cannyEdgeDetection(cv::Mat&)[m[K’:
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:128:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kkernel_size[m[K’ was not declared in this scope
+  128 |     [01;31m[Kkernel_size[m[K = 11
+      |     [01;31m[K^~~~~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:133:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmin_thresh[m[K’ was not declared in this scope
+  133 |     [01;31m[Kmin_thresh[m[K = 60;
+      |     [01;31m[K^~~~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:134:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kmax_thresh[m[K’ was not declared in this scope
+  134 |     [01;31m[Kmax_thresh[m[K = 150;
+      |     [01;31m[K^~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

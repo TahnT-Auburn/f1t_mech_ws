@@ -1,0 +1,307 @@
+[0.000000] (-) TimerEvent: {}
+[0.002419] (img_proc) JobQueued: {'identifier': 'img_proc', 'dependencies': OrderedDict()}
+[0.003228] (img_proc) JobStarted: {'identifier': 'img_proc'}
+[0.098645] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'cmake'}
+[0.099959] (-) TimerEvent: {}
+[0.104647] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'build'}
+[0.108734] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc', '--', '-j6', '-l6'], 'cwd': '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'f1t'), ('SSH_AGENT_PID', '3451'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/aarch64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/f1t'), ('OLDPWD', '/home/f1t/mech_devel'), ('DESKTOP_SESSION', 'ubuntu'), ('JETSON_L4T', '35.3.1'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('JETSON_MODEL', 'NVIDIA Jetson Xavier NX Developer Kit'), ('MANAGERPID', '2691'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/f1t/mech_devel/f1t_mech_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'f1t'), ('JETSON_MODULE', 'NVIDIA Jetson Xavier NX (Developer kit)'), ('JETSON_SERIAL_NUMBER', '1421020009281'), ('JOURNAL_STREAM', '7:73853'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('JETSON_CODENAME', 'Jakku'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'f1t'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/home/f1t/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/f1t:@/tmp/.ICE-unix/3519,unix/f1t:/tmp/.ICE-unix/3519'), ('INVOCATION_ID', 'e796f3445c25459db3e3402a2adac3b5'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/4f41870d_a446_4465_a96c_459f77e35e50'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('JETSON_SOC', 'tegra194'), ('GNOME_TERMINAL_SERVICE', ':1.80'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/f1t/mech_devel/f1t_mech_ws/install/img_proc:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('JETSON_CUDA_ARCH_BIN', '7.2'), ('PWD', '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('JETSON_JETPACK', ''), ('CMAKE_PREFIX_PATH', '/home/f1t/mech_devel/f1t_mech_ws/install/img_proc:/opt/ros/galactic'), ('JETSON_P_NUMBER', 'p3668-0000')]), 'shell': False}
+[0.201856] (-) TimerEvent: {}
+[0.303721] (-) TimerEvent: {}
+[0.369789] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc_node\x1b[0m\n'}
+[0.404005] (-) TimerEvent: {}
+[0.505133] (-) TimerEvent: {}
+[0.606328] (-) TimerEvent: {}
+[0.707895] (-) TimerEvent: {}
+[0.714942] (img_proc) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o\x1b[0m\n'}
+[0.808154] (-) TimerEvent: {}
+[0.909325] (-) TimerEvent: {}
+[1.010636] (-) TimerEvent: {}
+[1.111659] (-) TimerEvent: {}
+[1.212780] (-) TimerEvent: {}
+[1.315136] (-) TimerEvent: {}
+[1.416354] (-) TimerEvent: {}
+[1.517510] (-) TimerEvent: {}
+[1.618784] (-) TimerEvent: {}
+[1.720037] (-) TimerEvent: {}
+[1.821163] (-) TimerEvent: {}
+[1.922419] (-) TimerEvent: {}
+[2.023522] (-) TimerEvent: {}
+[2.125206] (-) TimerEvent: {}
+[2.226865] (-) TimerEvent: {}
+[2.327913] (-) TimerEvent: {}
+[2.428995] (-) TimerEvent: {}
+[2.530447] (-) TimerEvent: {}
+[2.677636] (-) TimerEvent: {}
+[2.778662] (-) TimerEvent: {}
+[2.880423] (-) TimerEvent: {}
+[2.981777] (-) TimerEvent: {}
+[3.082953] (-) TimerEvent: {}
+[3.183998] (-) TimerEvent: {}
+[3.285151] (-) TimerEvent: {}
+[3.386483] (-) TimerEvent: {}
+[3.487635] (-) TimerEvent: {}
+[3.588815] (-) TimerEvent: {}
+[3.690021] (-) TimerEvent: {}
+[3.791186] (-) TimerEvent: {}
+[3.892210] (-) TimerEvent: {}
+[3.993524] (-) TimerEvent: {}
+[4.094778] (-) TimerEvent: {}
+[4.195932] (-) TimerEvent: {}
+[4.297070] (-) TimerEvent: {}
+[4.398303] (-) TimerEvent: {}
+[4.499433] (-) TimerEvent: {}
+[4.600582] (-) TimerEvent: {}
+[4.701990] (-) TimerEvent: {}
+[4.803159] (-) TimerEvent: {}
+[4.904272] (-) TimerEvent: {}
+[5.005444] (-) TimerEvent: {}
+[5.106711] (-) TimerEvent: {}
+[5.207890] (-) TimerEvent: {}
+[5.309119] (-) TimerEvent: {}
+[5.410484] (-) TimerEvent: {}
+[5.511639] (-) TimerEvent: {}
+[5.612777] (-) TimerEvent: {}
+[5.713810] (-) TimerEvent: {}
+[5.814983] (-) TimerEvent: {}
+[5.916105] (-) TimerEvent: {}
+[6.017250] (-) TimerEvent: {}
+[6.118836] (-) TimerEvent: {}
+[6.219925] (-) TimerEvent: {}
+[6.320998] (-) TimerEvent: {}
+[6.422224] (-) TimerEvent: {}
+[6.523366] (-) TimerEvent: {}
+[6.624512] (-) TimerEvent: {}
+[6.725534] (-) TimerEvent: {}
+[6.826692] (-) TimerEvent: {}
+[6.927944] (-) TimerEvent: {}
+[7.029182] (-) TimerEvent: {}
+[7.130411] (-) TimerEvent: {}
+[7.231566] (-) TimerEvent: {}
+[7.332709] (-) TimerEvent: {}
+[7.434282] (-) TimerEvent: {}
+[7.535431] (-) TimerEvent: {}
+[7.636562] (-) TimerEvent: {}
+[7.776320] (-) TimerEvent: {}
+[7.878096] (-) TimerEvent: {}
+[7.979215] (-) TimerEvent: {}
+[8.080350] (-) TimerEvent: {}
+[8.181465] (-) TimerEvent: {}
+[8.282710] (-) TimerEvent: {}
+[8.383827] (-) TimerEvent: {}
+[8.484869] (-) TimerEvent: {}
+[8.586131] (-) TimerEvent: {}
+[8.687231] (-) TimerEvent: {}
+[8.788239] (-) TimerEvent: {}
+[8.889355] (-) TimerEvent: {}
+[8.990520] (-) TimerEvent: {}
+[9.091658] (-) TimerEvent: {}
+[9.192894] (-) TimerEvent: {}
+[9.294088] (-) TimerEvent: {}
+[9.395143] (-) TimerEvent: {}
+[9.496337] (-) TimerEvent: {}
+[9.597502] (-) TimerEvent: {}
+[9.698697] (-) TimerEvent: {}
+[9.799701] (-) TimerEvent: {}
+[9.900850] (-) TimerEvent: {}
+[10.002303] (-) TimerEvent: {}
+[10.103475] (-) TimerEvent: {}
+[10.204739] (-) TimerEvent: {}
+[10.305999] (-) TimerEvent: {}
+[10.407218] (-) TimerEvent: {}
+[10.508448] (-) TimerEvent: {}
+[10.609494] (-) TimerEvent: {}
+[10.710860] (-) TimerEvent: {}
+[10.811896] (-) TimerEvent: {}
+[10.913054] (-) TimerEvent: {}
+[11.014312] (-) TimerEvent: {}
+[11.115424] (-) TimerEvent: {}
+[11.216590] (-) TimerEvent: {}
+[11.317831] (-) TimerEvent: {}
+[11.418928] (-) TimerEvent: {}
+[11.520110] (-) TimerEvent: {}
+[11.621238] (-) TimerEvent: {}
+[11.722418] (-) TimerEvent: {}
+[11.823439] (-) TimerEvent: {}
+[11.924627] (-) TimerEvent: {}
+[12.025904] (-) TimerEvent: {}
+[12.127028] (-) TimerEvent: {}
+[12.228369] (-) TimerEvent: {}
+[12.329676] (-) TimerEvent: {}
+[12.430939] (-) TimerEvent: {}
+[12.532802] (-) TimerEvent: {}
+[12.634110] (-) TimerEvent: {}
+[12.735501] (-) TimerEvent: {}
+[12.876064] (-) TimerEvent: {}
+[12.977236] (-) TimerEvent: {}
+[13.078768] (-) TimerEvent: {}
+[13.180049] (-) TimerEvent: {}
+[13.281392] (-) TimerEvent: {}
+[13.382799] (-) TimerEvent: {}
+[13.483992] (-) TimerEvent: {}
+[13.585128] (-) TimerEvent: {}
+[13.686579] (-) TimerEvent: {}
+[13.788775] (-) TimerEvent: {}
+[13.890494] (-) TimerEvent: {}
+[13.991749] (-) TimerEvent: {}
+[14.092935] (-) TimerEvent: {}
+[14.194427] (-) TimerEvent: {}
+[14.296256] (-) TimerEvent: {}
+[14.397439] (-) TimerEvent: {}
+[14.499674] (-) TimerEvent: {}
+[14.601956] (-) TimerEvent: {}
+[14.703050] (-) TimerEvent: {}
+[14.804200] (-) TimerEvent: {}
+[14.905369] (-) TimerEvent: {}
+[15.006584] (-) TimerEvent: {}
+[15.107775] (-) TimerEvent: {}
+[15.208894] (-) TimerEvent: {}
+[15.312341] (-) TimerEvent: {}
+[15.414054] (-) TimerEvent: {}
+[15.515190] (-) TimerEvent: {}
+[15.616391] (-) TimerEvent: {}
+[15.717529] (-) TimerEvent: {}
+[15.818699] (-) TimerEvent: {}
+[15.919863] (-) TimerEvent: {}
+[15.958936] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kcv::Mat ImageProcessor::waypointGen(cv::Mat&)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[15.960764] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:182:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kimg_clone\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope\n'}
+[15.961450] (img_proc) StderrLine: {'line': b'  182 |     \x1b[01;31m\x1b[Kimg_clone\x1b[m\x1b[K = img.clone();\n'}
+[15.962096] (img_proc) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~\x1b[m\x1b[K\n'}
+[15.970489] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:219:39:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcnt\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kint\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.972281] (img_proc) StderrLine: {'line': b'  219 |     cv::RotatedRect box = minAreaRect(\x1b[01;31m\x1b[Kcnt\x1b[m\x1b[K);\n'}
+[15.974288] (img_proc) StderrLine: {'line': b'      |                                       \x1b[01;31m\x1b[K^~~\x1b[m\x1b[K\n'}
+[15.976514] (img_proc) StderrLine: {'line': b'      |                                       \x1b[32m\x1b[Kint\x1b[m\x1b[K\n'}
+[15.978060] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:219:27:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KminAreaRect\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Kcv::minAreaRect\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[15.979496] (img_proc) StderrLine: {'line': b'  219 |     cv::RotatedRect box = \x1b[01;31m\x1b[KminAreaRect\x1b[m\x1b[K(cnt);\n'}
+[15.980837] (img_proc) StderrLine: {'line': b'      |                           \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[15.982381] (img_proc) StderrLine: {'line': b'      |                           \x1b[32m\x1b[Kcv::minAreaRect\x1b[m\x1b[K\n'}
+[15.983829] (img_proc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/opencv4/opencv2/opencv.hpp:74\x1b[m\x1b[K,\n'}
+[15.985256] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:3\x1b[m\x1b[K,\n'}
+[15.986772] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1\x1b[m\x1b[K:\n'}
+[15.988165] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/opencv4/opencv2/imgproc.hpp:4003:26:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kcv::minAreaRect\x1b[m\x1b[K\xe2\x80\x99 declared here\n'}
+[15.989475] (img_proc) StderrLine: {'line': b' 4003 | CV_EXPORTS_W RotatedRect \x1b[01;36m\x1b[KminAreaRect\x1b[m\x1b[K( InputArray points );\n'}
+[15.990991] (img_proc) StderrLine: {'line': b'      |                          \x1b[01;36m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.020097] (-) TimerEvent: {}
+[16.123883] (-) TimerEvent: {}
+[16.225920] (-) TimerEvent: {}
+[16.327083] (-) TimerEvent: {}
+[16.428799] (-) TimerEvent: {}
+[16.530167] (-) TimerEvent: {}
+[16.631347] (-) TimerEvent: {}
+[16.733013] (-) TimerEvent: {}
+[16.834603] (-) TimerEvent: {}
+[16.935878] (-) TimerEvent: {}
+[17.037110] (-) TimerEvent: {}
+[17.138550] (-) TimerEvent: {}
+[17.239837] (-) TimerEvent: {}
+[17.341095] (-) TimerEvent: {}
+[17.442324] (-) TimerEvent: {}
+[17.543580] (-) TimerEvent: {}
+[17.644693] (-) TimerEvent: {}
+[17.746325] (-) TimerEvent: {}
+[17.848160] (-) TimerEvent: {}
+[17.992024] (-) TimerEvent: {}
+[18.093392] (-) TimerEvent: {}
+[18.194601] (-) TimerEvent: {}
+[18.295664] (-) TimerEvent: {}
+[18.396905] (-) TimerEvent: {}
+[18.498175] (-) TimerEvent: {}
+[18.599191] (-) TimerEvent: {}
+[18.700303] (-) TimerEvent: {}
+[18.801269] (-) TimerEvent: {}
+[18.902496] (-) TimerEvent: {}
+[19.003592] (-) TimerEvent: {}
+[19.104829] (-) TimerEvent: {}
+[19.206000] (-) TimerEvent: {}
+[19.307223] (-) TimerEvent: {}
+[19.408313] (-) TimerEvent: {}
+[19.509486] (-) TimerEvent: {}
+[19.610809] (-) TimerEvent: {}
+[19.711932] (-) TimerEvent: {}
+[19.813118] (-) TimerEvent: {}
+[19.914369] (-) TimerEvent: {}
+[20.016048] (-) TimerEvent: {}
+[20.117162] (-) TimerEvent: {}
+[20.218431] (-) TimerEvent: {}
+[20.319528] (-) TimerEvent: {}
+[20.420612] (-) TimerEvent: {}
+[20.521893] (-) TimerEvent: {}
+[20.623137] (-) TimerEvent: {}
+[20.724828] (-) TimerEvent: {}
+[20.826044] (-) TimerEvent: {}
+[20.927173] (-) TimerEvent: {}
+[21.028247] (-) TimerEvent: {}
+[21.129399] (-) TimerEvent: {}
+[21.230613] (-) TimerEvent: {}
+[21.331850] (-) TimerEvent: {}
+[21.432978] (-) TimerEvent: {}
+[21.534304] (-) TimerEvent: {}
+[21.635594] (-) TimerEvent: {}
+[21.736715] (-) TimerEvent: {}
+[21.837852] (-) TimerEvent: {}
+[21.938940] (-) TimerEvent: {}
+[22.040048] (-) TimerEvent: {}
+[22.141171] (-) TimerEvent: {}
+[22.242363] (-) TimerEvent: {}
+[22.343516] (-) TimerEvent: {}
+[22.444759] (-) TimerEvent: {}
+[22.546055] (-) TimerEvent: {}
+[22.647250] (-) TimerEvent: {}
+[22.748342] (-) TimerEvent: {}
+[22.849440] (-) TimerEvent: {}
+[22.950736] (-) TimerEvent: {}
+[23.095852] (-) TimerEvent: {}
+[23.197261] (-) TimerEvent: {}
+[23.298454] (-) TimerEvent: {}
+[23.399682] (-) TimerEvent: {}
+[23.500929] (-) TimerEvent: {}
+[23.602109] (-) TimerEvent: {}
+[23.703277] (-) TimerEvent: {}
+[23.804680] (-) TimerEvent: {}
+[23.906194] (-) TimerEvent: {}
+[24.007883] (-) TimerEvent: {}
+[24.109106] (-) TimerEvent: {}
+[24.210516] (-) TimerEvent: {}
+[24.311700] (-) TimerEvent: {}
+[24.412821] (-) TimerEvent: {}
+[24.514306] (-) TimerEvent: {}
+[24.616384] (-) TimerEvent: {}
+[24.718643] (-) TimerEvent: {}
+[24.820720] (-) TimerEvent: {}
+[24.922269] (-) TimerEvent: {}
+[25.025106] (-) TimerEvent: {}
+[25.127291] (-) TimerEvent: {}
+[25.229869] (-) TimerEvent: {}
+[25.331163] (-) TimerEvent: {}
+[25.433114] (-) TimerEvent: {}
+[25.534750] (-) TimerEvent: {}
+[25.636133] (-) TimerEvent: {}
+[25.737499] (-) TimerEvent: {}
+[25.838993] (-) TimerEvent: {}
+[25.940484] (-) TimerEvent: {}
+[26.042140] (-) TimerEvent: {}
+[26.143693] (-) TimerEvent: {}
+[26.245064] (-) TimerEvent: {}
+[26.346873] (-) TimerEvent: {}
+[26.448164] (-) TimerEvent: {}
+[26.549394] (-) TimerEvent: {}
+[26.650726] (-) TimerEvent: {}
+[26.751833] (-) TimerEvent: {}
+[26.853773] (-) TimerEvent: {}
+[26.955451] (-) TimerEvent: {}
+[27.056755] (-) TimerEvent: {}
+[27.158212] (-) TimerEvent: {}
+[27.259522] (-) TimerEvent: {}
+[27.361968] (-) TimerEvent: {}
+[27.463763] (-) TimerEvent: {}
+[27.565168] (-) TimerEvent: {}
+[27.666293] (-) TimerEvent: {}
+[27.767519] (-) TimerEvent: {}
+[27.835416] (img_proc) StderrLine: {'line': b'make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1\n'}
+[27.838397] (img_proc) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2\n'}
+[27.839681] (img_proc) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[27.854496] (img_proc) CommandEnded: {'returncode': 2}
+[27.869272] (-) TimerEvent: {}
+[27.973493] (-) TimerEvent: {}
+[28.205745] (img_proc) JobEnded: {'identifier': 'img_proc', 'rc': 2}
+[28.212237] (-) TimerEvent: {}
+[28.218355] (-) EventReactorShutdown: {}

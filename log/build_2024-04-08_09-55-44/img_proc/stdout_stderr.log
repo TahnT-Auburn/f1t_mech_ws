@@ -1,0 +1,7 @@
+[35m[1mScanning dependencies of target img_proc_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[100%] [32m[1mLinking CXX executable img_proc_node[0m
+make[2]: *** Deleting file 'img_proc_node'
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:163: img_proc_node] Interrupt
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Interrupt
+make: *** [Makefile:141: all] Interrupt

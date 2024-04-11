@@ -1,0 +1,16 @@
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::parseParameters()[m[K’:
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:14:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kerode_size1_[m[K’ was not declared in this scope
+   14 |     this->get_parameter("erode_size1", [01;31m[Kerode_size1_[m[K);
+      |                                        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:17:40:[m[K [01;31m[Kerror: [m[K‘[01m[Kerode_size2_[m[K’ was not declared in this scope
+   17 |     this->get_parameter("erode_size2", [01;31m[Kerode_size2_[m[K);
+      |                                        [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:21:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kdilate_size1_[m[K’ was not declared in this scope
+   21 |     this->get_parameter("dilate_size1", [01;31m[Kdilate_size1_[m[K);
+      |                                         [01;31m[K^~~~~~~~~~~~~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:24:41:[m[K [01;31m[Kerror: [m[K‘[01m[Kdilate_size2_[m[K’ was not declared in this scope
+   24 |     this->get_parameter("dilate_size2", [01;31m[Kdilate_size2_[m[K);
+      |                                         [01;31m[K^~~~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

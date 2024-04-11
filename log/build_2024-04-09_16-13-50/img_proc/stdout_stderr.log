@@ -1,0 +1,12 @@
+[35m[1mScanning dependencies of target img_proc_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kcv::Mat ImageProcessor::cannyEdgeDetection(cv::Mat&)[m[K’:
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:129:5:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K,[m[K’ or ‘[01m[K;[m[K’ before ‘[01m[Kcv[m[K’
+  129 |     [01;31m[Kcv[m[K::GaussianBlur(img, smooth_img, cv::Size(kernel_size,kernel_size));
+      |     [01;31m[K^~[m[K
+[01m[K/home/f1t/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:128:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kkernel_size[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  128 |     int [01;35m[Kkernel_size[m[K = 11
+      |         [01;35m[K^~~~~~~~~~~[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2
