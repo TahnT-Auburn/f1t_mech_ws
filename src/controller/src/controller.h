@@ -23,8 +23,10 @@ private:
     void parseParameters();
     void laterr_callback(const mech_msg::msg::Laterr & msg);
     void yawerr_callback(const mech_msg::msg::Yawerr & msg);
+    float runController(const float yaw_err);
 
-    std::string test_;
+    float Kp_;
+    float Kd_;
 
     rclcpp::Subscription<mech_msg::msg::Laterr>::SharedPtr lat_err_sub_;
     rclcpp::Subscription<mech_msg::msg::Yawerr>::SharedPtr yaw_err_sub_;
