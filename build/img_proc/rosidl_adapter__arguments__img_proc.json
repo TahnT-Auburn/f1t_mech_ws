@@ -1,7 +1,0 @@
-{
-  "package_name": "img_proc",
-  "non_idl_tuples": [
-    "/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc:msg/LatErr.msg",
-    "/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc:msg/YawErr.msg"
-  ]
-}

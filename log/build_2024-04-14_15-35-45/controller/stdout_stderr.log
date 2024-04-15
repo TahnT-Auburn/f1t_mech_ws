@@ -1,7 +1,0 @@
-[100%] Built target controller
--- Install configuration: ""
-CMake Error at cmake_install.cmake:55 (file):
-  file cannot create directory: /controller.  Maybe need administrative
-  privileges.
-
-
