@@ -1,0 +1,154 @@
+[0.011s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4
+[0.068s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.081s] [  2%] Built target img_proc__cpp
+[0.084s] [ 12%] Built target img_proc__rosidl_generator_c
+[0.116s] [ 21%] Built target img_proc__rosidl_typesupport_fastrtps_cpp
+[0.119s] [ 24%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[0.132s] [ 34%] Built target img_proc__rosidl_typesupport_cpp
+[0.162s] [ 53%] Built target img_proc__rosidl_typesupport_introspection_cpp
+[0.163s] [ 53%] Built target img_proc__rosidl_typesupport_c
+[0.186s] [ 65%] Built target img_proc__rosidl_typesupport_fastrtps_c
+[0.187s] [ 73%] Built target img_proc__rosidl_typesupport_introspection_c
+[0.214s] [ 73%] Built target img_proc
+[0.236s] [ 75%] Built target img_proc__py
+[0.273s] [ 82%] Built target img_proc__python
+[0.310s] [ 87%] Built target img_proc__rosidl_typesupport_c__pyext
+[0.313s] [ 92%] Built target img_proc__rosidl_typesupport_introspection_c__pyext
+[0.322s] [ 97%] Built target img_proc__rosidl_typesupport_fastrtps_c__pyext
+[7.293s] [100%] [32m[1mLinking CXX executable img_proc_node[0m
+[7.886s] [100%] Built target img_proc_node
+[7.900s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4
+[8.021s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc
+[8.032s] -- Install configuration: ""
+[8.033s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/rosidl_interfaces/img_proc
+[8.033s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc
+[8.033s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg
+[8.033s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/yaw_err.h
+[8.033s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail
+[8.033s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__type_support.h
+[8.033s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__functions.h
+[8.034s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__functions.c
+[8.034s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__struct.h
+[8.034s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__struct.h
+[8.034s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__type_support.h
+[8.035s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__functions.h
+[8.035s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__functions.c
+[8.035s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/lat_err.h
+[8.035s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/rosidl_generator_c__visibility_control.h
+[8.035s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/library_path.sh
+[8.035s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/library_path.dsv
+[8.035s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_generator_c.so
+[8.035s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_generator_c.so" to ""
+[8.035s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc
+[8.035s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg
+[8.035s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail
+[8.035s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__rosidl_typesupport_fastrtps_c.h
+[8.039s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__rosidl_typesupport_fastrtps_c.h
+[8.039s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[8.039s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_fastrtps_c.so
+[8.039s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_fastrtps_c.so" to ""
+[8.040s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc
+[8.040s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg
+[8.040s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail
+[8.040s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/dds_fastrtps
+[8.040s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__rosidl_typesupport_fastrtps_cpp.hpp
+[8.040s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__rosidl_typesupport_fastrtps_cpp.hpp
+[8.040s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[8.040s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_fastrtps_cpp.so
+[8.040s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_fastrtps_cpp.so" to ""
+[8.040s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc
+[8.040s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg
+[8.040s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail
+[8.040s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__type_support.c
+[8.040s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__rosidl_typesupport_introspection_c.h
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__type_support.c
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__rosidl_typesupport_introspection_c.h
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_introspection_c.so
+[8.041s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_introspection_c.so" to ""
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_c.so
+[8.041s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_c.so" to ""
+[8.041s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc
+[8.041s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg
+[8.041s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__struct.hpp
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__builder.hpp
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__builder.hpp
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__traits.hpp
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__struct.hpp
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__traits.hpp
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/yaw_err.hpp
+[8.041s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/lat_err.hpp
+[8.041s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc
+[8.041s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg
+[8.042s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail
+[8.042s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__rosidl_typesupport_introspection_cpp.hpp
+[8.042s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__rosidl_typesupport_introspection_cpp.hpp
+[8.042s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__type_support.cpp
+[8.042s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__type_support.cpp
+[8.042s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_introspection_cpp.so
+[8.042s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_introspection_cpp.so" to ""
+[8.042s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_cpp.so
+[8.042s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_cpp.so" to ""
+[8.042s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/pythonpath.sh
+[8.042s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/pythonpath.dsv
+[8.042s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/__init__.py
+[8.066s] Compiling '/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/__init__.py'...
+[8.069s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg
+[8.069s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/_yaw_err_s.c
+[8.069s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/_lat_err.py
+[8.069s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/_lat_err_s.c
+[8.069s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/__init__.py
+[8.069s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/_yaw_err.py
+[8.069s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[8.070s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""
+[8.070s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[8.070s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""
+[8.071s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[8.071s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""
+[8.071s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__python.so
+[8.072s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__python.so" to ""
+[8.072s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/msg/LatErr.idl
+[8.072s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/msg/YawErr.idl
+[8.072s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/msg/LatErr.msg
+[8.072s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/msg/YawErr.msg
+[8.072s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node
+[8.076s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node" to ""
+[8.076s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//launch
+[8.076s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//launch/img_proc_launch.py
+[8.076s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//config
+[8.076s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//config/img_proc_config.yaml
+[8.076s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/package_run_dependencies/img_proc
+[8.077s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/parent_prefix_path/img_proc
+[8.077s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.sh
+[8.077s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.dsv
+[8.077s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.sh
+[8.078s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.dsv
+[8.078s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.bash
+[8.078s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.sh
+[8.078s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.zsh
+[8.078s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.dsv
+[8.079s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.dsv
+[8.079s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/packages/img_proc
+[8.080s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_generator_cExport.cmake
+[8.081s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_generator_cExport-noconfig.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_introspection_cExport.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_cExport.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_cExport-noconfig.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_generator_cppExport.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_introspection_cppExport.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_cppExport.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_cppExport-noconfig.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/rosidl_cmake-extras.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/ament_cmake_export_dependencies-extras.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/ament_cmake_export_libraries-extras.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/ament_cmake_export_targets-extras.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/ament_cmake_export_include_directories-extras.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig.cmake
+[8.082s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig-version.cmake
+[8.082s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.xml
+[8.096s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc

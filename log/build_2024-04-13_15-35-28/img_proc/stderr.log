@@ -1,0 +1,7 @@
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kcv::Mat ImageProcessor::waypointGen(cv::Mat&)[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:235:5:[m[K [01;31m[Kerror: [m[K‘[01m[Kcenter_x[m[K’ was not declared in this scope
+  235 |     [01;31m[Kcenter_x[m[K = m.m10/m.m00;
+      |     [01;31m[K^~~~~~~~[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

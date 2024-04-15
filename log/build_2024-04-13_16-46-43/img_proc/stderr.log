@@ -1,0 +1,8 @@
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::processImage(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:51:61:[m[K [01;31m[Kerror: [m[K‘[01m[Kraw_image[m[K’ was not declared in this scope; did you mean ‘[01m[Kraw_img[m[K’?
+   51 |         cv::Point origin = cv::Point(raw_img.size().width/2,[01;31m[Kraw_image[m[K.size().height);
+      |                                                             [01;31m[K^~~~~~~~~[m[K
+      |                                                             [32m[Kraw_img[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

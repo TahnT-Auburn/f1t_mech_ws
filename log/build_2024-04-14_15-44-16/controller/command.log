@@ -1,0 +1,2 @@
+Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/controller -- -j4 -l4
+Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/controller -- -j4 -l4

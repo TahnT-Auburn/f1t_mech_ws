@@ -11,6 +11,8 @@ find_package(rclcpp REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(cv_bridge REQUIRED)
 find_package(std_msgs REQUIRED)
+find_package(mech_msg REQUIRED)
+
 
 add_executable(img_proc_node src/img_proc_node.cpp)
 ament_target_dependencies(
@@ -19,6 +21,7 @@ ament_target_dependencies(
   sensor_msgs
   cv_bridge
   std_msgs
+  mech_msg
 )
 
 
@@ -29,7 +32,11 @@ install(TARGETS
 
 install(
   DIRECTORY launch
-  DESTINATION share/${PROJECT_NAME}
+  DESTINATION share/${PROJECT_NAME}/
 )
 
+install(
+  DIRECTORY config
+  DESTINATION share/${PROJECT_NAME}/
+)
 ament_package()

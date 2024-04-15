@@ -1,0 +1,4 @@
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::laterr_callback(const Laterr&)[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:11:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   11 | void Controller::laterr_callback([01;35m[Kconst mech_msg::msg::Laterr & msg[m[K)
+      |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K

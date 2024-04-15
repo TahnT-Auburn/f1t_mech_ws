@@ -1,0 +1,10 @@
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kint ImageProcessor::latErrorGen(cv::Point)[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:184:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwp_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  184 |     int [01;35m[Kwp_x[m[K = waypoint.x;
+      |         [01;35m[K^~~~[m[K
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:185:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwp_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  185 |     int [01;35m[Kwp_y[m[K = waypoint.y;
+      |         [01;35m[K^~~~[m[K
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:186:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+  186 | [01;35m[K}[m[K
+      | [01;35m[K^[m[K

@@ -1,0 +1,11 @@
+[0.012s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/controller -- -j4 -l4
+[0.070s] [100%] Built target controller
+[0.083s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/controller -- -j4 -l4
+[0.127s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/tahnt/mech_devel/f1t_mech_ws/build/controller
+[0.134s] -- Install configuration: ""
+[0.134s] CMake Error at cmake_install.cmake:55 (file):
+[0.134s]   file cannot create directory: /controller.  Maybe need administrative
+[0.134s]   privileges.
+[0.134s] 
+[0.134s] 
+[0.137s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/tahnt/mech_devel/f1t_mech_ws/build/controller

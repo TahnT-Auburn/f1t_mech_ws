@@ -1,0 +1,44 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg/rosidl_generator_c/custom_msg/msg/detail/lat_err__functions.c
+custom_msg/msg/detail/lat_err__functions.h
+/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg/rosidl_generator_c/custom_msg/msg/detail/custom_msg/msg/detail/lat_err__functions.h
+assert.h
+-
+stdbool.h
+-
+stdlib.h
+-
+string.h
+-
+
+/opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
+
+rosidl_generator_c/custom_msg/msg/detail/lat_err__functions.h
+stdbool.h
+-
+stdlib.h
+-
+rosidl_runtime_c/visibility_control.h
+rosidl_generator_c/custom_msg/msg/detail/rosidl_runtime_c/visibility_control.h
+custom_msg/msg/rosidl_generator_c__visibility_control.h
+rosidl_generator_c/custom_msg/msg/detail/custom_msg/msg/rosidl_generator_c__visibility_control.h
+custom_msg/msg/detail/lat_err__struct.h
+rosidl_generator_c/custom_msg/msg/detail/custom_msg/msg/detail/lat_err__struct.h
+
+rosidl_generator_c/custom_msg/msg/detail/lat_err__struct.h
+stdbool.h
+-
+stddef.h
+-
+stdint.h
+-
+
+rosidl_generator_c/custom_msg/msg/rosidl_generator_c__visibility_control.h
+

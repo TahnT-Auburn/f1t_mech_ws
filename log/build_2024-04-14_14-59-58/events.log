@@ -1,0 +1,300 @@
+[0.000000] (-) TimerEvent: {}
+[0.000147] (mech_msg) JobQueued: {'identifier': 'mech_msg', 'dependencies': OrderedDict()}
+[0.000199] (img_proc) JobQueued: {'identifier': 'img_proc', 'dependencies': OrderedDict([('mech_msg', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg')])}
+[0.000232] (mech_msg) JobStarted: {'identifier': 'mech_msg'}
+[0.010538] (mech_msg) JobProgress: {'identifier': 'mech_msg', 'progress': 'cmake'}
+[0.011957] (mech_msg) JobProgress: {'identifier': 'mech_msg', 'progress': 'build'}
+[0.012016] (mech_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg', '--', '-j4', '-l4'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '2082'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install:/home/tahnt/ros_sandbox/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:56066'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2117,unix/ubuntu:/tmp/.ICE-unix/2117'), ('INVOCATION_ID', '595c5440581e4238a2b84a808009a16c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ec5d742b_de64_4533_87f5_96a03d447325'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg:/home/tahnt/ros_sandbox/ros2_ws/install/simp_pub:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg:/home/tahnt/ros_sandbox/ros2_ws/install/simp_pub:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic')]), 'shell': False}
+[0.075650] (mech_msg) StdoutLine: {'line': b'[ 10%] Built target mech_msg__rosidl_generator_c\n'}
+[0.077359] (mech_msg) StdoutLine: {'line': b'[ 12%] Built target mech_msg__cpp\n'}
+[0.098804] (mech_msg) StdoutLine: {'line': b'[ 23%] Built target mech_msg__rosidl_typesupport_introspection_c\n'}
+[0.098940] (mech_msg) StdoutLine: {'line': b'[ 33%] Built target mech_msg__rosidl_typesupport_c\n'}
+[0.098985] (mech_msg) StdoutLine: {'line': b'[ 43%] Built target mech_msg__rosidl_typesupport_cpp\n'}
+[0.099049] (-) TimerEvent: {}
+[0.103549] (mech_msg) StdoutLine: {'line': b'[ 53%] Built target mech_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[0.122247] (mech_msg) StdoutLine: {'line': b'[ 64%] Built target mech_msg__rosidl_typesupport_introspection_cpp\n'}
+[0.133048] (mech_msg) StdoutLine: {'line': b'[ 74%] Built target mech_msg__rosidl_typesupport_fastrtps_c\n'}
+[0.156137] (mech_msg) StdoutLine: {'line': b'[ 74%] Built target mech_msg\n'}
+[0.179877] (mech_msg) StdoutLine: {'line': b'[ 76%] Built target mech_msg__py\n'}
+[0.199252] (-) TimerEvent: {}
+[0.205319] (mech_msg) StdoutLine: {'line': b'[ 84%] Built target mech_msg__python\n'}
+[0.231798] (mech_msg) StdoutLine: {'line': b'[ 92%] Built target mech_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[0.232750] (mech_msg) StdoutLine: {'line': b'[ 97%] Built target mech_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.232926] (mech_msg) StdoutLine: {'line': b'[100%] Built target mech_msg__rosidl_typesupport_c__pyext\n'}
+[0.245487] (mech_msg) CommandEnded: {'returncode': 0}
+[0.300299] (-) TimerEvent: {}
+[0.360242] (mech_msg) JobProgress: {'identifier': 'mech_msg', 'progress': 'install'}
+[0.372884] (mech_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '2082'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install:/home/tahnt/ros_sandbox/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:56066'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2117,unix/ubuntu:/tmp/.ICE-unix/2117'), ('INVOCATION_ID', '595c5440581e4238a2b84a808009a16c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ec5d742b_de64_4533_87f5_96a03d447325'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg:/home/tahnt/ros_sandbox/ros2_ws/install/simp_pub:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg:/home/tahnt/ros_sandbox/ros2_ws/install/simp_pub:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic')]), 'shell': False}
+[0.385224] (mech_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.385426] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/ament_index/resource_index/rosidl_interfaces/mech_msg\n'}
+[0.385479] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg\n'}
+[0.385575] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg\n'}
+[0.385664] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/laterr.h\n'}
+[0.385705] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/yaw_err.h\n'}
+[0.385742] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail\n'}
+[0.385779] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__type_support.h\n'}
+[0.385818] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__functions.c\n'}
+[0.385855] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__functions.h\n'}
+[0.385892] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__functions.c\n'}
+[0.385929] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__functions.h\n'}
+[0.385965] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__functions.c\n'}
+[0.386002] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__struct.h\n'}
+[0.386037] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__type_support.h\n'}
+[0.386073] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__type_support.h\n'}
+[0.386155] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__struct.h\n'}
+[0.386196] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__type_support.h\n'}
+[0.386280] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__functions.h\n'}
+[0.386344] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__functions.h\n'}
+[0.386386] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__struct.h\n'}
+[0.386480] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__type_support.h\n'}
+[0.386520] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__functions.h\n'}
+[0.386566] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__functions.c\n'}
+[0.386605] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__struct.h\n'}
+[0.386643] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__functions.c\n'}
+[0.386679] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__struct.h\n'}
+[0.386716] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/yawerr.h\n'}
+[0.386752] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/lat_err.h\n'}
+[0.386788] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/test.h\n'}
+[0.386826] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.386862] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/environment/library_path.sh\n'}
+[0.386902] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/environment/library_path.dsv\n'}
+[0.386976] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/libmech_msg__rosidl_generator_c.so\n'}
+[0.387017] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg\n'}
+[0.387054] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg\n'}
+[0.387090] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail\n'}
+[0.387127] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__rosidl_typesupport_fastrtps_c.h\n'}
+[0.387163] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__rosidl_typesupport_fastrtps_c.h\n'}
+[0.387232] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__rosidl_typesupport_fastrtps_c.h\n'}
+[0.387279] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__rosidl_typesupport_fastrtps_c.h\n'}
+[0.387336] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__rosidl_typesupport_fastrtps_c.h\n'}
+[0.387377] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.387433] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/libmech_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[0.387639] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg\n'}
+[0.387683] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg\n'}
+[0.387755] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail\n'}
+[0.387833] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.387872] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/dds_fastrtps\n'}
+[0.387913] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.387950] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.387987] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.388052] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.388130] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.388185] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/libmech_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.388412] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg\n'}
+[0.388505] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg\n'}
+[0.388574] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail\n'}
+[0.388649] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__type_support.c\n'}
+[0.388689] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__type_support.c\n'}
+[0.388726] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__type_support.c\n'}
+[0.388763] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__type_support.c\n'}
+[0.388829] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__rosidl_typesupport_introspection_c.h\n'}
+[0.388869] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__rosidl_typesupport_introspection_c.h\n'}
+[0.388906] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__type_support.c\n'}
+[0.388942] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__rosidl_typesupport_introspection_c.h\n'}
+[0.389026] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__rosidl_typesupport_introspection_c.h\n'}
+[0.389066] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__rosidl_typesupport_introspection_c.h\n'}
+[0.389104] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.389158] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/libmech_msg__rosidl_typesupport_introspection_c.so\n'}
+[0.389437] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/libmech_msg__rosidl_typesupport_c.so\n'}
+[0.389648] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg\n'}
+[0.389787] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg\n'}
+[0.389966] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail\n'}
+[0.390106] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__builder.hpp\n'}
+[0.390268] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__struct.hpp\n'}
+[0.390560] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__builder.hpp\n'}
+[0.390723] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__builder.hpp\n'}
+[0.390926] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__struct.hpp\n'}
+[0.391094] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__builder.hpp\n'}
+[0.391138] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__traits.hpp\n'}
+[0.391176] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__traits.hpp\n'}
+[0.391213] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__struct.hpp\n'}
+[0.391251] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__struct.hpp\n'}
+[0.391346] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__traits.hpp\n'}
+[0.391386] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__traits.hpp\n'}
+[0.391423] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__struct.hpp\n'}
+[0.391460] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__traits.hpp\n'}
+[0.391500] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__builder.hpp\n'}
+[0.391537] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/yaw_err.hpp\n'}
+[0.391573] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/laterr.hpp\n'}
+[0.391610] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/lat_err.hpp\n'}
+[0.391648] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/test.hpp\n'}
+[0.391684] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/yawerr.hpp\n'}
+[0.391780] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg\n'}
+[0.391820] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg\n'}
+[0.391858] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail\n'}
+[0.391894] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__type_support.cpp\n'}
+[0.391964] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__type_support.cpp\n'}
+[0.392113] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yawerr__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.392157] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.392194] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.392232] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__type_support.cpp\n'}
+[0.392274] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/test__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.392324] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/yaw_err__type_support.cpp\n'}
+[0.392366] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/laterr__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.392404] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/include/mech_msg/msg/detail/lat_err__type_support.cpp\n'}
+[0.392442] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/libmech_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[0.392479] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/libmech_msg__rosidl_typesupport_cpp.so\n'}
+[0.392516] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/environment/pythonpath.sh\n'}
+[0.392552] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/environment/pythonpath.dsv\n'}
+[0.392588] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/__init__.py\n'}
+[0.400507] (-) TimerEvent: {}
+[0.421155] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg\n'}
+[0.421628] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_test_s.c\n'}
+[0.421682] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_yaw_err_s.c\n'}
+[0.421771] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_lat_err.py\n'}
+[0.421814] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_test.py\n'}
+[0.421852] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_laterr.py\n'}
+[0.421889] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_lat_err_s.c\n'}
+[0.421925] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_yawerr.py\n'}
+[0.421962] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/__init__.py\n'}
+[0.422007] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_laterr_s.c\n'}
+[0.422044] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_yawerr_s.c\n'}
+[0.422082] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/msg/_yaw_err.py\n'}
+[0.422118] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/mech_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.422249] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/mech_msg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.423087] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages/mech_msg/mech_msg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[0.423496] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/libmech_msg__python.so\n'}
+[0.423747] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/msg/Laterr.idl\n'}
+[0.423864] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/msg/Yawerr.idl\n'}
+[0.423909] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/msg/Laterr.msg\n'}
+[0.423978] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/msg/Yawerr.msg\n'}
+[0.424060] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/ament_index/resource_index/package_run_dependencies/mech_msg\n'}
+[0.424100] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/ament_index/resource_index/parent_prefix_path/mech_msg\n'}
+[0.424139] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/environment/ament_prefix_path.sh\n'}
+[0.424202] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/environment/ament_prefix_path.dsv\n'}
+[0.424286] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/environment/path.sh\n'}
+[0.424327] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/environment/path.dsv\n'}
+[0.424365] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/local_setup.bash\n'}
+[0.424424] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/local_setup.sh\n'}
+[0.424628] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/local_setup.zsh\n'}
+[0.424686] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/local_setup.dsv\n'}
+[0.424724] (mech_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/package.dsv\n'}
+[0.424786] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/ament_index/resource_index/packages/mech_msg\n'}
+[0.424860] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_generator_cExport.cmake\n'}
+[0.424907] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.424964] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.425041] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.425103] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_typesupport_cExport.cmake\n'}
+[0.425143] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.425234] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_generator_cppExport.cmake\n'}
+[0.425364] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.425473] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.425571] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_typesupport_cppExport.cmake\n'}
+[0.425647] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.425721] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[0.425792] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.425881] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.426015] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.426128] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.426171] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.426217] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.426277] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msgConfig.cmake\n'}
+[0.426318] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake/mech_msgConfig-version.cmake\n'}
+[0.426355] (mech_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/package.xml\n'}
+[0.429396] (mech_msg) CommandEnded: {'returncode': 0}
+[0.501464] (-) TimerEvent: {}
+[0.577668] (mech_msg) JobEnded: {'identifier': 'mech_msg', 'rc': 0}
+[0.578700] (img_proc) JobStarted: {'identifier': 'img_proc'}
+[0.590530] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'cmake'}
+[0.595121] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'build'}
+[0.595342] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', '--', '-j4', '-l4'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '2082'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install:/home/tahnt/ros_sandbox/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:56066'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2117,unix/ubuntu:/tmp/.ICE-unix/2117'), ('INVOCATION_ID', '595c5440581e4238a2b84a808009a16c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ec5d742b_de64_4533_87f5_96a03d447325'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg:/home/tahnt/ros_sandbox/ros2_ws/install/simp_pub:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg:/home/tahnt/ros_sandbox/ros2_ws/install/simp_pub:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic')]), 'shell': False}
+[0.602346] (-) TimerEvent: {}
+[0.649169] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc_node\x1b[0m\n'}
+[0.690474] (img_proc) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o\x1b[0m\n'}
+[0.702702] (-) TimerEvent: {}
+[0.803478] (-) TimerEvent: {}
+[0.904119] (-) TimerEvent: {}
+[1.004994] (-) TimerEvent: {}
+[1.105826] (-) TimerEvent: {}
+[1.206415] (-) TimerEvent: {}
+[1.306755] (-) TimerEvent: {}
+[1.407512] (-) TimerEvent: {}
+[1.508750] (-) TimerEvent: {}
+[1.609472] (-) TimerEvent: {}
+[1.710040] (-) TimerEvent: {}
+[1.810637] (-) TimerEvent: {}
+[1.911419] (-) TimerEvent: {}
+[2.012294] (-) TimerEvent: {}
+[2.113667] (-) TimerEvent: {}
+[2.214510] (-) TimerEvent: {}
+[2.315123] (-) TimerEvent: {}
+[2.415727] (-) TimerEvent: {}
+[2.517272] (-) TimerEvent: {}
+[2.618023] (-) TimerEvent: {}
+[2.718403] (-) TimerEvent: {}
+[2.819006] (-) TimerEvent: {}
+[2.919884] (-) TimerEvent: {}
+[3.021320] (-) TimerEvent: {}
+[3.082659] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kfloat ImageProcessor::yawErrorGen(int)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.082852] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:230:52:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Katan2(int)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.082900] (img_proc) StderrLine: {'line': b'  230 |     float yaw_err = std::atan2((lat_err/look_dist_)\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[3.082939] (img_proc) StderrLine: {'line': b'      |                                                    \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[3.082976] (img_proc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/usr/include/features.h:461\x1b[m\x1b[K,\n'}
+[3.083013] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:39\x1b[m\x1b[K,\n'}
+[3.083050] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:528\x1b[m\x1b[K,\n'}
+[3.083092] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/type_traits:38\x1b[m\x1b[K,\n'}
+[3.083128] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/ratio:38\x1b[m\x1b[K,\n'}
+[3.083164] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/usr/include/c++/9/chrono:38\x1b[m\x1b[K,\n'}
+[3.083200] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:1\x1b[m\x1b[K,\n'}
+[3.083236] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.083272] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:59:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kdouble atan2(double, double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.083308] (img_proc) StderrLine: {'line': b'   59 | \x1b[01;36m\x1b[K__MATHCALL\x1b[m\x1b[K (atan2,, (_Mdouble_ __y, _Mdouble_ __x));\n'}
+[3.083347] (img_proc) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.083384] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:59:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[3.083420] (img_proc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/libstatistics_collector/moving_average_statistics/types.hpp:18\x1b[m\x1b[K,\n'}
+[3.083456] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/libstatistics_collector/collector/generate_statistics_message.hpp:24\x1b[m\x1b[K,\n'}
+[3.083491] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23\x1b[m\x1b[K,\n'}
+[3.083544] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/subscription.hpp:50\x1b[m\x1b[K,\n'}
+[3.083582] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:25\x1b[m\x1b[K,\n'}
+[3.083619] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[3.083655] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[3.083693] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[3.083729] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[3.083764] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[3.083800] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[3.083836] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[3.083871] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:4\x1b[m\x1b[K,\n'}
+[3.083906] (img_proc) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.083941] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/cmath:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr float std::atan2(float, float)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.083977] (img_proc) StderrLine: {'line': b'  144 |   \x1b[01;36m\x1b[Katan2\x1b[m\x1b[K(float __y, float __x)\n'}
+[3.084013] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.084047] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/cmath:144:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[3.084083] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/cmath:148:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kconstexpr long double std::atan2(long double, long double)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.084122] (img_proc) StderrLine: {'line': b'  148 |   \x1b[01;36m\x1b[Katan2\x1b[m\x1b[K(long double __y, long double __x)\n'}
+[3.084158] (img_proc) StderrLine: {'line': b'      |   \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.084195] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/cmath:148:3:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[3.084235] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/cmath:155:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Ktemplate<class _Tp, class _Up> constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::atan2(_Tp, _Up)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[3.084273] (img_proc) StderrLine: {'line': b'  155 |     \x1b[01;36m\x1b[Katan2\x1b[m\x1b[K(_Tp __y, _Up __x)\n'}
+[3.084310] (img_proc) StderrLine: {'line': b'      |     \x1b[01;36m\x1b[K^~~~~\x1b[m\x1b[K\n'}
+[3.084346] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/usr/include/c++/9/cmath:155:5:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  template argument deduction/substitution failed:\n'}
+[3.084384] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:230:52:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  candidate expects 2 arguments, 1 provided\n'}
+[3.084421] (img_proc) StderrLine: {'line': b'  230 |     float yaw_err = std::atan2((lat_err/look_dist_)\x1b[01;36m\x1b[K)\x1b[m\x1b[K;\n'}
+[3.084456] (img_proc) StderrLine: {'line': b'      |                                                    \x1b[01;36m\x1b[K^\x1b[m\x1b[K\n'}
+[3.122077] (-) TimerEvent: {}
+[3.222646] (-) TimerEvent: {}
+[3.323337] (-) TimerEvent: {}
+[3.424276] (-) TimerEvent: {}
+[3.525353] (-) TimerEvent: {}
+[3.626306] (-) TimerEvent: {}
+[3.727218] (-) TimerEvent: {}
+[3.828457] (-) TimerEvent: {}
+[3.928962] (-) TimerEvent: {}
+[4.029740] (-) TimerEvent: {}
+[4.130101] (-) TimerEvent: {}
+[4.231192] (-) TimerEvent: {}
+[4.331866] (-) TimerEvent: {}
+[4.432825] (-) TimerEvent: {}
+[4.534200] (-) TimerEvent: {}
+[4.634762] (-) TimerEvent: {}
+[4.735510] (-) TimerEvent: {}
+[4.836318] (-) TimerEvent: {}
+[4.937294] (-) TimerEvent: {}
+[5.038074] (-) TimerEvent: {}
+[5.138721] (-) TimerEvent: {}
+[5.226429] (img_proc) StderrLine: {'line': b'make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1\n'}
+[5.226622] (img_proc) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2\n'}
+[5.226665] (img_proc) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[5.229867] (img_proc) CommandEnded: {'returncode': 2}
+[5.240012] (-) TimerEvent: {}
+[5.277300] (img_proc) JobEnded: {'identifier': 'img_proc', 'rc': 2}
+[5.288166] (-) EventReactorShutdown: {}

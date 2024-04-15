@@ -1,0 +1,114 @@
+[0.000000] (-) TimerEvent: {}
+[0.000141] (-) JobUnselected: {'identifier': 'img_proc'}
+[0.000162] (-) JobUnselected: {'identifier': 'mech_msg'}
+[0.000176] (controller) JobQueued: {'identifier': 'controller', 'dependencies': OrderedDict()}
+[0.000188] (controller) JobStarted: {'identifier': 'controller'}
+[0.010959] (controller) JobProgress: {'identifier': 'controller', 'progress': 'cmake'}
+[0.012457] (controller) JobProgress: {'identifier': 'controller', 'progress': 'build'}
+[0.012549] (controller) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tahnt/mech_devel/f1t_mech_ws/build/controller', '--', '-j4', '-l4'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/controller', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '2082'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install:/home/tahnt/ros_sandbox/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:56066'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2117,unix/ubuntu:/tmp/.ICE-unix/2117'), ('INVOCATION_ID', '595c5440581e4238a2b84a808009a16c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ec5d742b_de64_4533_87f5_96a03d447325'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg:/home/tahnt/ros_sandbox/ros2_ws/install/simp_pub:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/controller'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/lib/python3.8/site-packages:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg:/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc:/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg:/home/tahnt/ros_sandbox/ros2_ws/install/simp_pub:/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic')]), 'shell': False}
+[0.062831] (controller) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target controller\x1b[0m\n'}
+[0.099866] (-) TimerEvent: {}
+[0.102781] (controller) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o\x1b[0m\n'}
+[0.200507] (-) TimerEvent: {}
+[0.301273] (-) TimerEvent: {}
+[0.402111] (-) TimerEvent: {}
+[0.502829] (-) TimerEvent: {}
+[0.604220] (-) TimerEvent: {}
+[0.704934] (-) TimerEvent: {}
+[0.805433] (-) TimerEvent: {}
+[0.906730] (-) TimerEvent: {}
+[1.007291] (-) TimerEvent: {}
+[1.108168] (-) TimerEvent: {}
+[1.208999] (-) TimerEvent: {}
+[1.309864] (-) TimerEvent: {}
+[1.327319] (controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.327539] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.h:9:1:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected class-name before \xe2\x80\x98\x1b[01m\x1b[K{\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.327612] (controller) StderrLine: {'line': b'    9 | \x1b[01;31m\x1b[K{\x1b[m\x1b[K\n'}
+[1.327651] (controller) StderrLine: {'line': b'      | \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.327688] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KController::Controller()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.327730] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.h:10:24:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kclass \xe2\x80\x98\x1b[01m\x1b[KController\x1b[m\x1b[K\xe2\x80\x99 does not have any field named \xe2\x80\x98\x1b[01m\x1b[KNode\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.327784] (controller) StderrLine: {'line': b'   10 | public: Controller() : \x1b[01;31m\x1b[KNode\x1b[m\x1b[K("controller")\n'}
+[1.327838] (controller) StderrLine: {'line': b'      |                        \x1b[01;31m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.330466] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.h:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kint main(int, char**)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.330690] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.h:28:22:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kno matching function for call to \xe2\x80\x98\x1b[01m\x1b[Kspin(std::shared_ptr<Controller>&)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.330982] (controller) StderrLine: {'line': b'   28 |     rclcpp::spin(node\x1b[01;31m\x1b[K)\x1b[m\x1b[K;\n'}
+[1.331041] (controller) StderrLine: {'line': b'      |                      \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.331093] (controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[1.331131] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.h:4\x1b[m\x1b[K,\n'}
+[1.331169] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.331205] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:45:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::spin(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.331243] (controller) StderrLine: {'line': b'   45 | \x1b[01;36m\x1b[Kspin\x1b[m\x1b[K(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr);\n'}
+[1.331289] (controller) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.331352] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:45:60:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[KController\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[Krclcpp::node_interfaces::NodeBaseInterface\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.331393] (controller) StderrLine: {'line': b'   45 | spin(\x1b[01;36m\x1b[Krclcpp::node_interfaces::NodeBaseInterface::SharedPtr node_ptr\x1b[m\x1b[K);\n'}
+[1.331431] (controller) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.331471] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:49:1:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[Kcandidate: \xe2\x80\x98\x1b[01m\x1b[Kvoid rclcpp::spin(rclcpp::Node::SharedPtr)\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.331507] (controller) StderrLine: {'line': b'   49 | \x1b[01;36m\x1b[Kspin\x1b[m\x1b[K(rclcpp::Node::SharedPtr node_ptr);\n'}
+[1.331544] (controller) StderrLine: {'line': b'      | \x1b[01;36m\x1b[K^~~~\x1b[m\x1b[K\n'}
+[1.331579] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:49:30:\x1b[m\x1b[K \x1b[01;36m\x1b[Knote: \x1b[m\x1b[K  no known conversion for argument 1 from \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[KController\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 to \xe2\x80\x98\x1b[01m\x1b[Kshared_ptr<\x1b[01;32m\x1b[Krclcpp::Node\x1b[m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.331617] (controller) StderrLine: {'line': b'   49 | spin(\x1b[01;36m\x1b[Krclcpp::Node::SharedPtr node_ptr\x1b[m\x1b[K);\n'}
+[1.331653] (controller) StderrLine: {'line': b'      |      \x1b[01;36m\x1b[K~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[1.331689] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:\x1b[m\x1b[K In member function \xe2\x80\x98\x1b[01m\x1b[Kvoid Controller::parseParameters()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[1.331726] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:5:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Controller\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kdeclare_parameter\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.331763] (controller) StderrLine: {'line': b'    5 |     this->\x1b[01;31m\x1b[Kdeclare_parameter\x1b[m\x1b[K<std::string>("test");\n'}
+[1.331806] (controller) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.331844] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:5:40:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Kexpected primary-expression before \xe2\x80\x98\x1b[01m\x1b[K>\x1b[m\x1b[K\xe2\x80\x99 token\n'}
+[1.331881] (controller) StderrLine: {'line': b'    5 |     this->declare_parameter<std::string\x1b[01;31m\x1b[K>\x1b[m\x1b[K("test");\n'}
+[1.331916] (controller) StderrLine: {'line': b'      |                                        \x1b[01;31m\x1b[K^\x1b[m\x1b[K\n'}
+[1.331952] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:6:11:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Controller\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_parameter\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.331990] (controller) StderrLine: {'line': b'    6 |     this->\x1b[01;31m\x1b[Kget_parameter\x1b[m\x1b[K("test", test_);\n'}
+[1.332027] (controller) StderrLine: {'line': b'      |           \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.332065] (controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/service.hpp:34\x1b[m\x1b[K,\n'}
+[1.332101] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:25\x1b[m\x1b[K,\n'}
+[1.332137] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.332172] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.332208] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.332243] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.332279] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[1.332348] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.332386] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.332494] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[1.332559] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.h:4\x1b[m\x1b[K,\n'}
+[1.332614] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.332656] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:8:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Controller\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.332695] (controller) StderrLine: {'line': b'    8 |     RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(),"Test: %s", test_.c_str());\n'}
+[1.332732] (controller) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.332768] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:8:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Controller\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.332808] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:8:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.332844] (controller) StderrLine: {'line': b'    8 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(),"Test: %s", test_.c_str());\n'}
+[1.332880] (controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.332915] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:8:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.332952] (controller) StderrLine: {'line': b'    8 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(),"Test: %s", test_.c_str());\n'}
+[1.332987] (controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.333025] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:8:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[Ktemplate argument 1 is invalid\n'}
+[1.333061] (controller) StderrLine: {'line': b'    8 |     \x1b[01;31m\x1b[KRCLCPP_INFO\x1b[m\x1b[K(this->get_logger(),"Test: %s", test_.c_str());\n'}
+[1.333097] (controller) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.333133] (controller) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/client.hpp:40\x1b[m\x1b[K,\n'}
+[1.333168] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23\x1b[m\x1b[K,\n'}
+[1.333204] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20\x1b[m\x1b[K,\n'}
+[1.333239] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25\x1b[m\x1b[K,\n'}
+[1.333275] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18\x1b[m\x1b[K,\n'}
+[1.333321] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20\x1b[m\x1b[K,\n'}
+[1.333408] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executor.hpp:36\x1b[m\x1b[K,\n'}
+[1.333454] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26\x1b[m\x1b[K,\n'}
+[1.333511] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/executors.hpp:21\x1b[m\x1b[K,\n'}
+[1.333551] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156\x1b[m\x1b[K,\n'}
+[1.333618] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.h:4\x1b[m\x1b[K,\n'}
+[1.333669] (controller) StderrLine: {'line': b'                 from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:1\x1b[m\x1b[K:\n'}
+[1.333728] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:8:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Controller\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.333778] (controller) StderrLine: {'line': b'    8 |     RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(),"Test: %s", test_.c_str());\n'}
+[1.333827] (controller) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.333869] (controller) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:8:23:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Kclass Controller\x1b[m\x1b[K\xe2\x80\x99 has no member named \xe2\x80\x98\x1b[01m\x1b[Kget_logger\x1b[m\x1b[K\xe2\x80\x99\n'}
+[1.333910] (controller) StderrLine: {'line': b'    8 |     RCLCPP_INFO(this->\x1b[01;31m\x1b[Kget_logger\x1b[m\x1b[K(),"Test: %s", test_.c_str());\n'}
+[1.333955] (controller) StderrLine: {'line': b'      |                       \x1b[01;31m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[1.410544] (-) TimerEvent: {}
+[1.510911] (-) TimerEvent: {}
+[1.611498] (-) TimerEvent: {}
+[1.712619] (-) TimerEvent: {}
+[1.774153] (controller) StderrLine: {'line': b'make[2]: *** [CMakeFiles/controller.dir/build.make:63: CMakeFiles/controller.dir/src/controller.cpp.o] Error 1\n'}
+[1.774370] (controller) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/controller.dir/all] Error 2\n'}
+[1.775646] (controller) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[1.778444] (controller) CommandEnded: {'returncode': 2}
+[1.813135] (-) TimerEvent: {}
+[1.822082] (controller) JobEnded: {'identifier': 'controller', 'rc': 2}
+[1.833649] (-) EventReactorShutdown: {}

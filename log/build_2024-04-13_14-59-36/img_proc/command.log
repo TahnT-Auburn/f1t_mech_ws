@@ -1,0 +1,2 @@
+Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc': /usr/bin/cmake /home/tahnt/mech_devel/f1t_mech_ws/src/img_proc -DCMAKE_INSTALL_PREFIX=/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc
+Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc' returned '1': /usr/bin/cmake /home/tahnt/mech_devel/f1t_mech_ws/src/img_proc -DCMAKE_INSTALL_PREFIX=/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc

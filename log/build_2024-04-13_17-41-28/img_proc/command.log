@@ -1,0 +1,2 @@
+Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc': /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4
+Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc' returned '2': /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4

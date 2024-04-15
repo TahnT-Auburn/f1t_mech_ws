@@ -1,4 +1,0 @@
-make[2]: *** Deleting file 'img_proc_node'
-make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:163: img_proc_node] Interrupt
-make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Interrupt
-make: *** [Makefile:141: all] Interrupt

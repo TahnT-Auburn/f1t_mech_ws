@@ -1,0 +1,21 @@
+{
+  "package_name": "mech_msg",
+  "output_dir": "/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg/rosidl_typesupport_introspection_cpp/mech_msg",
+  "template_dir": "/opt/ros/galactic/share/rosidl_typesupport_introspection_cpp/resource",
+  "idl_tuples": [
+    "/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg/rosidl_adapter/mech_msg:msg/Laterr.idl",
+    "/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg/rosidl_adapter/mech_msg:msg/Yawerr.idl"
+  ],
+  "target_dependencies": [
+    "/opt/ros/galactic/lib/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp",
+    "/opt/ros/galactic/lib/python3.8/site-packages/rosidl_typesupport_introspection_cpp/__init__.py",
+    "/opt/ros/galactic/share/rosidl_typesupport_introspection_cpp/resource/idl__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/galactic/share/rosidl_typesupport_introspection_cpp/resource/idl__type_support.cpp.em",
+    "/opt/ros/galactic/share/rosidl_typesupport_introspection_cpp/resource/msg__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/galactic/share/rosidl_typesupport_introspection_cpp/resource/msg__type_support.cpp.em",
+    "/opt/ros/galactic/share/rosidl_typesupport_introspection_cpp/resource/srv__rosidl_typesupport_introspection_cpp.hpp.em",
+    "/opt/ros/galactic/share/rosidl_typesupport_introspection_cpp/resource/srv__type_support.cpp.em",
+    "/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg/rosidl_adapter/mech_msg/msg/Laterr.idl",
+    "/home/tahnt/mech_devel/f1t_mech_ws/build/mech_msg/rosidl_adapter/mech_msg/msg/Yawerr.idl"
+  ]
+}

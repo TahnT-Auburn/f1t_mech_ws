@@ -1,0 +1,254 @@
+[0.000000] (-) TimerEvent: {}
+[0.000409] (-) JobUnselected: {'identifier': 'img_proc'}
+[0.000450] (custom_msg) JobQueued: {'identifier': 'custom_msg', 'dependencies': OrderedDict()}
+[0.000469] (custom_msg) JobStarted: {'identifier': 'custom_msg'}
+[0.009728] (custom_msg) JobProgress: {'identifier': 'custom_msg', 'progress': 'cmake'}
+[0.010293] (custom_msg) Command: {'cmd': ['/usr/bin/cmake', '/home/tahnt/mech_devel/f1t_mech_ws/src/custom_msg', '-DCMAKE_INSTALL_PREFIX=/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '2082'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:56066'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2117,unix/ubuntu:/tmp/.ICE-unix/2117'), ('INVOCATION_ID', '595c5440581e4238a2b84a808009a16c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ec5d742b_de64_4533_87f5_96a03d447325'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic')]), 'shell': False}
+[0.066372] (custom_msg) StdoutLine: {'line': b'-- The C compiler identification is GNU 9.4.0\n'}
+[0.099614] (-) TimerEvent: {}
+[0.115065] (custom_msg) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 9.4.0\n'}
+[0.119437] (custom_msg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc\n'}
+[0.196321] (custom_msg) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc -- works\n'}
+[0.197421] (custom_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199914] (-) TimerEvent: {}
+[0.272988] (custom_msg) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.280413] (custom_msg) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.280588] (custom_msg) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.282712] (custom_msg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++\n'}
+[0.300779] (-) TimerEvent: {}
+[0.363156] (custom_msg) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ -- works\n'}
+[0.363351] (custom_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.401106] (-) TimerEvent: {}
+[0.453578] (custom_msg) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.459161] (custom_msg) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.460099] (custom_msg) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.461898] (custom_msg) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.483041] (custom_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.483220] (custom_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.501340] (-) TimerEvent: {}
+[0.541596] (custom_msg) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[0.543649] (custom_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.548453] (custom_msg) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.601683] (-) TimerEvent: {}
+[0.636717] (custom_msg) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  \n'}
+[0.658611] (custom_msg) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/galactic/include  \n'}
+[0.701828] (-) TimerEvent: {}
+[0.721243] (custom_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.759424] (custom_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.802275] (-) TimerEvent: {}
+[0.844822] (custom_msg) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.9.2 (/opt/ros/galactic/share/ament_cmake_ros/cmake)\n'}
+[0.903386] (-) TimerEvent: {}
+[0.920868] (custom_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.925364] (custom_msg) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.945487] (custom_msg) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.947985] (custom_msg) StdoutLine: {'line': b'-- Found python_cmake_module: 0.8.1 (/opt/ros/galactic/share/python_cmake_module/cmake)\n'}
+[0.969538] (custom_msg) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.8.so (found suitable version "3.8.10", minimum required is "3.5") \n'}
+[0.969787] (custom_msg) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.969840] (custom_msg) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.8\n'}
+[0.969879] (custom_msg) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.8.so\n'}
+[0.986709] (custom_msg) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.003854] (-) TimerEvent: {}
+[1.016550] (custom_msg) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.10.7 (/opt/ros/galactic/share/ament_lint_auto/cmake)\n'}
+[1.031091] (custom_msg) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[1.032714] (custom_msg) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.033509] (custom_msg) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.037876] (custom_msg) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.065591] (custom_msg) StdoutLine: {'line': b'-- Generating done\n'}
+[1.067993] (custom_msg) StdoutLine: {'line': b'-- Build files have been written to: /home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg\n'}
+[1.075702] (custom_msg) CommandEnded: {'returncode': 0}
+[1.076662] (custom_msg) JobProgress: {'identifier': 'custom_msg', 'progress': 'build'}
+[1.076745] (custom_msg) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg', '--', '-j4', '-l4'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '2082'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:56066'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2117,unix/ubuntu:/tmp/.ICE-unix/2117'), ('INVOCATION_ID', '595c5440581e4238a2b84a808009a16c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ec5d742b_de64_4533_87f5_96a03d447325'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic')]), 'shell': False}
+[1.104151] (-) TimerEvent: {}
+[1.117411] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__cpp\x1b[0m\n'}
+[1.117591] (custom_msg) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.128289] (custom_msg) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.206133] (-) TimerEvent: {}
+[1.286526] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_generator_c\x1b[0m\n'}
+[1.299772] (custom_msg) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/custom_msg__rosidl_generator_c.dir/rosidl_generator_c/custom_msg/msg/detail/lat_err__functions.c.o\x1b[0m\n'}
+[1.305365] (custom_msg) StdoutLine: {'line': b'[  9%] Built target custom_msg__cpp\n'}
+[1.306490] (-) TimerEvent: {}
+[1.315919] (custom_msg) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.316484] (custom_msg) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.317142] (custom_msg) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[1.343566] (custom_msg) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libcustom_msg__rosidl_generator_c.so\x1b[0m\n'}
+[1.377641] (custom_msg) StdoutLine: {'line': b'[ 22%] Built target custom_msg__rosidl_generator_c\n'}
+[1.388161] (custom_msg) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[1.407497] (-) TimerEvent: {}
+[1.467429] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_typesupport_cpp\x1b[0m\n'}
+[1.478343] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[1.478896] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[1.489770] (custom_msg) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msg/msg/lat_err__type_support.cpp.o\x1b[0m\n'}
+[1.497956] (custom_msg) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msg/msg/detail/lat_err__type_support.cpp.o\x1b[0m\n'}
+[1.499986] (custom_msg) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msg/msg/detail/dds_fastrtps/lat_err__type_support.cpp.o\x1b[0m\n'}
+[1.508215] (-) TimerEvent: {}
+[1.550528] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_typesupport_c\x1b[0m\n'}
+[1.572620] (custom_msg) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msg/msg/lat_err__type_support.cpp.o\x1b[0m\n'}
+[1.603701] (custom_msg) StdoutLine: {'line': b'[ 41%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.608551] (-) TimerEvent: {}
+[1.657632] (custom_msg) StdoutLine: {'line': b'[ 41%] Built target custom_msg__rosidl_typesupport_c\n'}
+[1.668883] (custom_msg) StdoutLine: {'line': b'[ 45%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.703629] (custom_msg) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[1.709020] (-) TimerEvent: {}
+[1.741734] (custom_msg) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.751025] (custom_msg) StdoutLine: {'line': b'[ 51%] Built target custom_msg__rosidl_typesupport_cpp\n'}
+[1.782811] (custom_msg) StdoutLine: {'line': b'[ 51%] Built target custom_msg__rosidl_typesupport_introspection_cpp\n'}
+[1.809920] (-) TimerEvent: {}
+[1.824480] (custom_msg) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.843083] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.863201] (custom_msg) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/custom_msg__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msg/msg/detail/lat_err__type_support.c.o\x1b[0m\n'}
+[1.894531] (custom_msg) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library libcustom_msg__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.903492] (custom_msg) StdoutLine: {'line': b'[ 61%] Built target custom_msg__rosidl_typesupport_fastrtps_cpp\n'}
+[1.911156] (-) TimerEvent: {}
+[1.915476] (custom_msg) StdoutLine: {'line': b'[ 64%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.926697] (custom_msg) StdoutLine: {'line': b'[ 64%] Built target custom_msg__rosidl_typesupport_introspection_c\n'}
+[2.011410] (-) TimerEvent: {}
+[2.073931] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[2.090449] (custom_msg) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/custom_msg__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msg/msg/detail/lat_err__type_support_c.cpp.o\x1b[0m\n'}
+[2.112159] (-) TimerEvent: {}
+[2.214425] (-) TimerEvent: {}
+[2.318247] (-) TimerEvent: {}
+[2.351014] (custom_msg) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libcustom_msg__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.418537] (-) TimerEvent: {}
+[2.431705] (custom_msg) StdoutLine: {'line': b'[ 70%] Built target custom_msg__rosidl_typesupport_fastrtps_c\n'}
+[2.442820] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg\x1b[0m\n'}
+[2.454923] (custom_msg) StdoutLine: {'line': b'[ 70%] Built target custom_msg\n'}
+[2.466067] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__py\x1b[0m\n'}
+[2.477390] (custom_msg) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.519212] (-) TimerEvent: {}
+[2.619863] (-) TimerEvent: {}
+[2.720591] (-) TimerEvent: {}
+[2.740135] (custom_msg) StdoutLine: {'line': b'[ 74%] Built target custom_msg__py\n'}
+[2.752527] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__python\x1b[0m\n'}
+[2.774912] (custom_msg) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/custom_msg__python.dir/rosidl_generator_py/custom_msg/msg/_lat_err_s.c.o\x1b[0m\n'}
+[2.821193] (-) TimerEvent: {}
+[2.850522] (custom_msg) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msg/libcustom_msg__python.so\x1b[0m\n'}
+[2.889469] (custom_msg) StdoutLine: {'line': b'[ 80%] Built target custom_msg__python\n'}
+[2.899350] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.899919] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.900150] (custom_msg) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target custom_msg__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.919900] (custom_msg) StdoutLine: {'line': b'[ 83%] \x1b[32mBuilding C object CMakeFiles/custom_msg__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/custom_msg/_custom_msg_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[2.922106] (custom_msg) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/custom_msg__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/custom_msg/_custom_msg_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[2.922248] (-) TimerEvent: {}
+[2.929113] (custom_msg) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/custom_msg__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/custom_msg/_custom_msg_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.988270] (custom_msg) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msg/custom_msg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.991564] (custom_msg) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/custom_msg/custom_msg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[2.995259] (custom_msg) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/custom_msg/custom_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.021921] (custom_msg) StdoutLine: {'line': b'[100%] Built target custom_msg__rosidl_typesupport_introspection_c__pyext\n'}
+[3.022638] (-) TimerEvent: {}
+[3.028539] (custom_msg) StdoutLine: {'line': b'[100%] Built target custom_msg__rosidl_typesupport_c__pyext\n'}
+[3.061858] (custom_msg) StdoutLine: {'line': b'[100%] Built target custom_msg__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.076292] (custom_msg) CommandEnded: {'returncode': 0}
+[3.123096] (-) TimerEvent: {}
+[3.157097] (custom_msg) JobProgress: {'identifier': 'custom_msg', 'progress': 'install'}
+[3.168978] (custom_msg) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '2082'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib:/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1975'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:56066'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/2117,unix/ubuntu:/tmp/.ICE-unix/2117'), ('INVOCATION_ID', '595c5440581e4238a2b84a808009a16c'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/ec5d742b_de64_4533_87f5_96a03d447325'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.85'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/custom_msg'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg/lib/python3.8/site-packages:/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/home/tahnt/ros_sandbox/ros2_ws/install/custom_msg:/opt/ros/galactic')]), 'shell': False}
+[3.177089] (custom_msg) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.177840] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/ament_index/resource_index/rosidl_interfaces/custom_msg\n'}
+[3.178466] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg\n'}
+[3.179192] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg\n'}
+[3.179730] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail\n'}
+[3.180725] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__type_support.h\n'}
+[3.181295] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__functions.h\n'}
+[3.182585] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__struct.h\n'}
+[3.184304] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__functions.c\n'}
+[3.184359] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/lat_err.h\n'}
+[3.184400] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.184439] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/environment/library_path.sh\n'}
+[3.184477] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/environment/library_path.dsv\n'}
+[3.184514] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_generator_c.so\n'}
+[3.184551] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_generator_c.so" to ""\n'}
+[3.184588] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg\n'}
+[3.184625] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg\n'}
+[3.184669] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail\n'}
+[3.184715] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__rosidl_typesupport_fastrtps_c.h\n'}
+[3.184753] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.184797] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_fastrtps_c.so\n'}
+[3.184834] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[3.184871] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg\n'}
+[3.184908] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg\n'}
+[3.184963] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail\n'}
+[3.185003] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/dds_fastrtps\n'}
+[3.185041] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.185082] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.185119] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.185156] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[3.185192] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg\n'}
+[3.185229] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg\n'}
+[3.185265] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail\n'}
+[3.185302] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__type_support.c\n'}
+[3.185339] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__rosidl_typesupport_introspection_c.h\n'}
+[3.185376] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.185413] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_introspection_c.so\n'}
+[3.185454] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_introspection_c.so" to ""\n'}
+[3.185492] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_c.so\n'}
+[3.185528] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_c.so" to ""\n'}
+[3.185565] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg\n'}
+[3.185645] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg\n'}
+[3.185735] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail\n'}
+[3.185776] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__struct.hpp\n'}
+[3.185814] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__builder.hpp\n'}
+[3.185851] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__traits.hpp\n'}
+[3.185888] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/lat_err.hpp\n'}
+[3.185939] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg\n'}
+[3.185985] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg\n'}
+[3.186024] (custom_msg) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail\n'}
+[3.186061] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.186105] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/include/custom_msg/msg/detail/lat_err__type_support.cpp\n'}
+[3.186143] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_introspection_cpp.so\n'}
+[3.186216] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[3.186266] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_cpp.so\n'}
+[3.186306] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__rosidl_typesupport_cpp.so" to ""\n'}
+[3.186344] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/environment/pythonpath.sh\n'}
+[3.186720] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/environment/pythonpath.dsv\n'}
+[3.186877] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/__init__.py\n'}
+[3.209831] (custom_msg) StdoutLine: {'line': b"Compiling '/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/__init__.py'...\n"}
+[3.213257] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/msg\n'}
+[3.213408] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/msg/_lat_err.py\n'}
+[3.213487] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/msg/_lat_err_s.c\n'}
+[3.213534] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/msg/__init__.py\n'}
+[3.213630] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/custom_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.214154] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/custom_msg_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[3.214287] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/custom_msg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.215017] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/custom_msg_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[3.215447] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/custom_msg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[3.215966] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/python3.8/site-packages/custom_msg/custom_msg_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[3.216040] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__python.so\n'}
+[3.216396] (custom_msg) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/lib/libcustom_msg__python.so" to ""\n'}
+[3.216485] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/msg/LatErr.idl\n'}
+[3.216647] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/msg/LatErr.msg\n'}
+[3.216849] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/ament_index/resource_index/package_run_dependencies/custom_msg\n'}
+[3.217009] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/ament_index/resource_index/parent_prefix_path/custom_msg\n'}
+[3.217125] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/environment/ament_prefix_path.sh\n'}
+[3.217220] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/environment/ament_prefix_path.dsv\n'}
+[3.217316] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/environment/path.sh\n'}
+[3.217438] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/environment/path.dsv\n'}
+[3.217544] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/local_setup.bash\n'}
+[3.217766] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/local_setup.sh\n'}
+[3.217875] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/local_setup.zsh\n'}
+[3.217949] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/local_setup.dsv\n'}
+[3.218067] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/package.dsv\n'}
+[3.218311] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/ament_index/resource_index/packages/custom_msg\n'}
+[3.218485] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_generator_cExport.cmake\n'}
+[3.218608] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_generator_cExport-noconfig.cmake\n'}
+[3.219100] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_typesupport_introspection_cExport.cmake\n'}
+[3.219216] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[3.219470] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_typesupport_cExport.cmake\n'}
+[3.219616] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[3.219728] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_generator_cppExport.cmake\n'}
+[3.219850] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[3.220039] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[3.220252] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_typesupport_cppExport.cmake\n'}
+[3.220411] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msg__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[3.220538] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/rosidl_cmake-extras.cmake\n'}
+[3.220662] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[3.220770] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[3.220895] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[3.221017] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[3.221143] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[3.221253] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[3.221379] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msgConfig.cmake\n'}
+[3.221482] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/cmake/custom_msgConfig-version.cmake\n'}
+[3.221566] (custom_msg) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/custom_msg/share/custom_msg/package.xml\n'}
+[3.224224] (custom_msg) CommandEnded: {'returncode': 0}
+[3.224521] (-) TimerEvent: {}
+[3.322601] (custom_msg) JobEnded: {'identifier': 'custom_msg', 'rc': 0}
+[3.322974] (-) EventReactorShutdown: {}

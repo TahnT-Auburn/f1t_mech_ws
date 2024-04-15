@@ -1,0 +1,115 @@
+[0.000000] (-) TimerEvent: {}
+[0.000186] (img_proc) JobQueued: {'identifier': 'img_proc', 'dependencies': OrderedDict()}
+[0.000223] (img_proc) JobStarted: {'identifier': 'img_proc'}
+[0.010501] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'cmake'}
+[0.011812] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'build'}
+[0.011856] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', '--', '-j4', '-l4'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '1503'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1399'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:50924'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1538,unix/ubuntu:/tmp/.ICE-unix/1538'), ('INVOCATION_ID', '8ee42b8d7d3f4c25b17f371cf51713af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c933ebb8_ce30_4368_85d9_9392d75d2f97'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.81'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.061501] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc_node\x1b[0m\n'}
+[0.099183] (-) TimerEvent: {}
+[0.103993] (img_proc) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o\x1b[0m\n'}
+[0.199734] (-) TimerEvent: {}
+[0.300253] (-) TimerEvent: {}
+[0.400983] (-) TimerEvent: {}
+[0.501606] (-) TimerEvent: {}
+[0.602388] (-) TimerEvent: {}
+[0.703207] (-) TimerEvent: {}
+[0.803524] (-) TimerEvent: {}
+[0.903898] (-) TimerEvent: {}
+[1.004359] (-) TimerEvent: {}
+[1.105637] (-) TimerEvent: {}
+[1.206568] (-) TimerEvent: {}
+[1.307458] (-) TimerEvent: {}
+[1.408195] (-) TimerEvent: {}
+[1.508561] (-) TimerEvent: {}
+[1.609759] (-) TimerEvent: {}
+[1.710519] (-) TimerEvent: {}
+[1.811223] (-) TimerEvent: {}
+[1.911807] (-) TimerEvent: {}
+[2.012170] (-) TimerEvent: {}
+[2.112869] (-) TimerEvent: {}
+[2.213200] (-) TimerEvent: {}
+[2.313819] (-) TimerEvent: {}
+[2.414249] (-) TimerEvent: {}
+[2.515003] (-) TimerEvent: {}
+[2.615924] (-) TimerEvent: {}
+[2.716353] (-) TimerEvent: {}
+[2.817025] (-) TimerEvent: {}
+[2.917539] (-) TimerEvent: {}
+[3.018320] (-) TimerEvent: {}
+[3.118733] (-) TimerEvent: {}
+[3.219171] (-) TimerEvent: {}
+[3.320173] (-) TimerEvent: {}
+[3.420913] (-) TimerEvent: {}
+[3.521689] (-) TimerEvent: {}
+[3.622759] (-) TimerEvent: {}
+[3.723653] (-) TimerEvent: {}
+[3.824686] (-) TimerEvent: {}
+[3.925052] (-) TimerEvent: {}
+[4.025613] (-) TimerEvent: {}
+[4.126065] (-) TimerEvent: {}
+[4.227443] (-) TimerEvent: {}
+[4.327846] (-) TimerEvent: {}
+[4.428314] (-) TimerEvent: {}
+[4.531608] (-) TimerEvent: {}
+[4.633795] (-) TimerEvent: {}
+[4.735069] (-) TimerEvent: {}
+[4.835539] (-) TimerEvent: {}
+[4.936242] (-) TimerEvent: {}
+[5.037463] (-) TimerEvent: {}
+[5.137898] (-) TimerEvent: {}
+[5.238333] (-) TimerEvent: {}
+[5.339051] (-) TimerEvent: {}
+[5.439955] (-) TimerEvent: {}
+[5.540731] (-) TimerEvent: {}
+[5.641816] (-) TimerEvent: {}
+[5.742169] (-) TimerEvent: {}
+[5.842549] (-) TimerEvent: {}
+[5.943085] (-) TimerEvent: {}
+[6.043391] (-) TimerEvent: {}
+[6.144042] (-) TimerEvent: {}
+[6.244822] (-) TimerEvent: {}
+[6.345148] (-) TimerEvent: {}
+[6.445993] (-) TimerEvent: {}
+[6.546333] (-) TimerEvent: {}
+[6.647092] (-) TimerEvent: {}
+[6.748060] (-) TimerEvent: {}
+[6.848506] (-) TimerEvent: {}
+[6.949450] (-) TimerEvent: {}
+[6.994036] (img_proc) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable img_proc_node\x1b[0m\n'}
+[7.049577] (-) TimerEvent: {}
+[7.150475] (-) TimerEvent: {}
+[7.251142] (-) TimerEvent: {}
+[7.351839] (-) TimerEvent: {}
+[7.452547] (-) TimerEvent: {}
+[7.553209] (-) TimerEvent: {}
+[7.628156] (img_proc) StdoutLine: {'line': b'[100%] Built target img_proc_node\n'}
+[7.644649] (img_proc) CommandEnded: {'returncode': 0}
+[7.653416] (-) TimerEvent: {}
+[7.685965] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'install'}
+[7.704814] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '1503'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1399'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:50924'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1538,unix/ubuntu:/tmp/.ICE-unix/1538'), ('INVOCATION_ID', '8ee42b8d7d3f4c25b17f371cf51713af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c933ebb8_ce30_4368_85d9_9392d75d2f97'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.81'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[7.713394] (img_proc) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[7.714245] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node\n'}
+[7.718188] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node" to ""\n'}
+[7.718331] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//launch\n'}
+[7.718398] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//launch/img_proc_launch.py\n'}
+[7.718490] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//config\n'}
+[7.718581] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//config/img_proc_config.yaml\n'}
+[7.718622] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/package_run_dependencies/img_proc\n'}
+[7.718690] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/parent_prefix_path/img_proc\n'}
+[7.718767] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.sh\n'}
+[7.718815] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.dsv\n'}
+[7.718908] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.sh\n'}
+[7.718956] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.dsv\n'}
+[7.719050] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.bash\n'}
+[7.719115] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.sh\n'}
+[7.719157] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.zsh\n'}
+[7.719235] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.dsv\n'}
+[7.719294] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.dsv\n'}
+[7.719433] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/packages/img_proc\n'}
+[7.719584] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig.cmake\n'}
+[7.719670] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig-version.cmake\n'}
+[7.719731] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.xml\n'}
+[7.727515] (img_proc) CommandEnded: {'returncode': 0}
+[7.754231] (-) TimerEvent: {}
+[7.799339] (img_proc) JobEnded: {'identifier': 'img_proc', 'rc': 0}
+[7.801834] (-) EventReactorShutdown: {}

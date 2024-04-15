@@ -1,6 +1,12 @@
 source;share/img_proc/hook/cmake_prefix_path.ps1
 source;share/img_proc/hook/cmake_prefix_path.dsv
 source;share/img_proc/hook/cmake_prefix_path.sh
+source;share/img_proc/hook/ld_library_path_lib.ps1
+source;share/img_proc/hook/ld_library_path_lib.dsv
+source;share/img_proc/hook/ld_library_path_lib.sh
+source;share/img_proc/hook/pythonpath.ps1
+source;share/img_proc/hook/pythonpath.dsv
+source;share/img_proc/hook/pythonpath.sh
 source;share/img_proc/local_setup.bash
 source;share/img_proc/local_setup.dsv
 source;share/img_proc/local_setup.ps1

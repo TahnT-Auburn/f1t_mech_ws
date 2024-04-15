@@ -1,0 +1,30 @@
+[35m[1mScanning dependencies of target controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:[m[K In member function ‘[01m[Kvoid Controller::laterr_callback(const Laterr&)[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/controller/src/controller.cpp:11:64:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kmsg[m[K’ [[01;35m[K-Wunused-parameter[m[K]
+   11 | void Controller::laterr_callback([01;35m[Kconst mech_msg::msg::Laterr & msg[m[K)
+      |                                  [01;35m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~[m[K
+[100%] [32m[1mLinking CXX executable controller[0m
+[100%] Built target controller
+-- Install configuration: ""
+-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/lib/controller/controller
+-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/controller/lib/controller/controller" to ""
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller//launch
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller//launch/controller_launch.py
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller//config
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller//config/controller_config.yaml
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/ament_index/resource_index/package_run_dependencies/controller
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/ament_index/resource_index/parent_prefix_path/controller
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/environment/ament_prefix_path.sh
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/environment/path.sh
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/environment/path.dsv
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/local_setup.bash
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/local_setup.sh
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/local_setup.zsh
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/local_setup.dsv
+-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/package.dsv
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/ament_index/resource_index/packages/controller
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/cmake/controllerConfig.cmake
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/cmake/controllerConfig-version.cmake
+-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/package.xml

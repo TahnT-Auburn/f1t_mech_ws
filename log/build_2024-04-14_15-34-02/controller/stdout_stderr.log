@@ -1,0 +1,10 @@
+[35m[1mScanning dependencies of target controller[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[100%] [32m[1mLinking CXX executable controller[0m
+[100%] Built target controller
+-- Install configuration: ""
+CMake Error at cmake_install.cmake:55 (file):
+  file cannot create directory: /controller.  Maybe need administrative
+  privileges.
+
+

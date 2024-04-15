@@ -1,0 +1,40 @@
+[0.013s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4
+[0.060s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.096s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[2.378s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kint ImageProcessor::latErrorGen(cv::Point)[m[K’:
+[2.378s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:184:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwp_x[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.379s]   184 |     int [01;35m[Kwp_x[m[K = waypoint.x;
+[2.379s]       |         [01;35m[K^~~~[m[K
+[2.379s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:185:9:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwp_y[m[K’ [[01;35m[K-Wunused-variable[m[K]
+[2.379s]   185 |     int [01;35m[Kwp_y[m[K = waypoint.y;
+[2.379s]       |         [01;35m[K^~~~[m[K
+[2.379s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:186:1:[m[K [01;35m[Kwarning: [m[Kno return statement in function returning non-void [[01;35m[K-Wreturn-type[m[K]
+[2.379s]   186 | [01;35m[K}[m[K
+[2.379s]       | [01;35m[K^[m[K
+[6.646s] [100%] [32m[1mLinking CXX executable img_proc_node[0m
+[7.266s] [100%] Built target img_proc_node
+[7.277s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4
+[7.324s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc
+[7.333s] -- Install configuration: ""
+[7.334s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node
+[7.337s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node" to ""
+[7.338s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//launch
+[7.338s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//launch/img_proc_launch.py
+[7.338s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//config
+[7.338s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//config/img_proc_config.yaml
+[7.339s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/package_run_dependencies/img_proc
+[7.339s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/parent_prefix_path/img_proc
+[7.339s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.sh
+[7.339s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.dsv
+[7.339s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.sh
+[7.340s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.dsv
+[7.340s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.bash
+[7.340s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.sh
+[7.340s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.zsh
+[7.340s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.dsv
+[7.341s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.dsv
+[7.341s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/packages/img_proc
+[7.341s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig.cmake
+[7.341s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig-version.cmake
+[7.341s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.xml
+[7.345s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc' returned '0': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --install /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc

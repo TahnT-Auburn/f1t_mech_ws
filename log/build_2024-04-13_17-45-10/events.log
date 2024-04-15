@@ -1,0 +1,142 @@
+[0.000000] (-) TimerEvent: {}
+[0.000365] (img_proc) JobQueued: {'identifier': 'img_proc', 'dependencies': OrderedDict()}
+[0.000442] (img_proc) JobStarted: {'identifier': 'img_proc'}
+[0.009140] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'cmake'}
+[0.009967] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'build'}
+[0.013085] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', '--', '-j4', '-l4'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '1503'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1399'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:50924'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1538,unix/ubuntu:/tmp/.ICE-unix/1538'), ('INVOCATION_ID', '8ee42b8d7d3f4c25b17f371cf51713af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c933ebb8_ce30_4368_85d9_9392d75d2f97'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.81'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.068407] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc_node\x1b[0m\n'}
+[0.078913] (img_proc) StdoutLine: {'line': b'[  2%] Built target img_proc__cpp\n'}
+[0.091558] (img_proc) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[0.092702] (img_proc) StdoutLine: {'line': b'[ 14%] Built target img_proc__rosidl_generator_c\n'}
+[0.101873] (-) TimerEvent: {}
+[0.106056] (img_proc) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[0.129581] (img_proc) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o\x1b[0m\n'}
+[0.140676] (img_proc) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[0.201837] (-) TimerEvent: {}
+[0.293468] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__rosidl_typesupport_cpp\x1b[0m\n'}
+[0.302415] (-) TimerEvent: {}
+[0.312680] (img_proc) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/img_proc/msg/lat_err__type_support.cpp.o\x1b[0m\n'}
+[0.364246] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[0.386944] (img_proc) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/img_proc/msg/detail/dds_fastrtps/lat_err__type_support.cpp.o\x1b[0m\n'}
+[0.403065] (-) TimerEvent: {}
+[0.438942] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[0.456485] (img_proc) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/img_proc/msg/detail/lat_err__type_support.cpp.o\x1b[0m\n'}
+[0.503349] (-) TimerEvent: {}
+[0.551426] (img_proc) StdoutLine: {'line': b'[ 31%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/img_proc/msg/yaw_err__type_support.cpp.o\x1b[0m\n'}
+[0.603999] (-) TimerEvent: {}
+[0.691016] (img_proc) StdoutLine: {'line': b'[ 34%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/img_proc/msg/detail/yaw_err__type_support.cpp.o\x1b[0m\n'}
+[0.703093] (img_proc) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/img_proc/msg/detail/dds_fastrtps/yaw_err__type_support.cpp.o\x1b[0m\n'}
+[0.704486] (-) TimerEvent: {}
+[0.791437] (img_proc) StdoutLine: {'line': b'[ 39%] \x1b[32m\x1b[1mLinking CXX shared library libimg_proc__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[0.815232] (-) TimerEvent: {}
+[0.859568] (img_proc) StdoutLine: {'line': b'[ 39%] Built target img_proc__rosidl_typesupport_cpp\n'}
+[0.906355] (img_proc) StdoutLine: {'line': b'[ 41%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[0.915625] (-) TimerEvent: {}
+[1.020195] (-) TimerEvent: {}
+[1.035487] (img_proc) StdoutLine: {'line': b'[ 43%] \x1b[32m\x1b[1mLinking CXX shared library libimg_proc__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[1.112885] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__rosidl_typesupport_c\x1b[0m\n'}
+[1.120872] (-) TimerEvent: {}
+[1.127707] (img_proc) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_c.dir/rosidl_typesupport_c/img_proc/msg/lat_err__type_support.cpp.o\x1b[0m\n'}
+[1.141242] (img_proc) StdoutLine: {'line': b'[ 46%] Built target img_proc__rosidl_typesupport_introspection_cpp\n'}
+[1.152186] (img_proc) StdoutLine: {'line': b'[ 48%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[1.163888] (img_proc) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_c.dir/rosidl_typesupport_c/img_proc/msg/yaw_err__type_support.cpp.o\x1b[0m\n'}
+[1.192809] (img_proc) StdoutLine: {'line': b'[ 53%] \x1b[32m\x1b[1mLinking CXX shared library libimg_proc__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[1.194044] (img_proc) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking CXX shared library libimg_proc__rosidl_typesupport_c.so\x1b[0m\n'}
+[1.221483] (-) TimerEvent: {}
+[1.283535] (img_proc) StdoutLine: {'line': b'[ 56%] Built target img_proc__rosidl_typesupport_c\n'}
+[1.323960] (-) TimerEvent: {}
+[1.371002] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[1.371169] (img_proc) StdoutLine: {'line': b'[ 56%] Built target img_proc__rosidl_typesupport_fastrtps_cpp\n'}
+[1.387466] (img_proc) StdoutLine: {'line': b'[ 58%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[1.392541] (img_proc) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/img_proc/msg/detail/yaw_err__type_support.c.o\x1b[0m\n'}
+[1.392752] (img_proc) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/img_proc/msg/detail/lat_err__type_support.c.o\x1b[0m\n'}
+[1.424269] (-) TimerEvent: {}
+[1.483357] (img_proc) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C shared library libimg_proc__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[1.520093] (img_proc) StdoutLine: {'line': b'[ 65%] Built target img_proc__rosidl_typesupport_introspection_c\n'}
+[1.524579] (-) TimerEvent: {}
+[1.625332] (-) TimerEvent: {}
+[1.628913] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[1.654619] (img_proc) StdoutLine: {'line': b'[ 68%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/img_proc/msg/detail/lat_err__type_support_c.cpp.o\x1b[0m\n'}
+[1.658363] (img_proc) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/img_proc/msg/detail/yaw_err__type_support_c.cpp.o\x1b[0m\n'}
+[1.726498] (-) TimerEvent: {}
+[1.827942] (-) TimerEvent: {}
+[1.928494] (-) TimerEvent: {}
+[2.029628] (-) TimerEvent: {}
+[2.106023] (img_proc) StdoutLine: {'line': b'[ 73%] \x1b[32m\x1b[1mLinking CXX shared library libimg_proc__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[2.129961] (-) TimerEvent: {}
+[2.191505] (img_proc) StdoutLine: {'line': b'[ 73%] Built target img_proc__rosidl_typesupport_fastrtps_c\n'}
+[2.205264] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc\x1b[0m\n'}
+[2.217727] (img_proc) StdoutLine: {'line': b'[ 73%] Built target img_proc\n'}
+[2.230868] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__py\x1b[0m\n'}
+[2.231339] (-) TimerEvent: {}
+[2.242367] (img_proc) StdoutLine: {'line': b'[ 75%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[2.331913] (-) TimerEvent: {}
+[2.432415] (-) TimerEvent: {}
+[2.533673] (-) TimerEvent: {}
+[2.634346] (-) TimerEvent: {}
+[2.688654] (img_proc) StdoutLine: {'line': b'[ 75%] Built target img_proc__py\n'}
+[2.700985] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__python\x1b[0m\n'}
+[2.739969] (-) TimerEvent: {}
+[2.755371] (img_proc) StdoutLine: {'line': b'[ 78%] \x1b[32mBuilding C object CMakeFiles/img_proc__python.dir/rosidl_generator_py/img_proc/msg/_lat_err_s.c.o\x1b[0m\n'}
+[2.770056] (img_proc) StdoutLine: {'line': b'[ 80%] \x1b[32mBuilding C object CMakeFiles/img_proc__python.dir/rosidl_generator_py/img_proc/msg/_yaw_err_s.c.o\x1b[0m\n'}
+[2.841346] (-) TimerEvent: {}
+[2.863226] (img_proc) StdoutLine: {'line': b'[ 82%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/img_proc/libimg_proc__python.so\x1b[0m\n'}
+[2.910803] (img_proc) StdoutLine: {'line': b'[ 82%] Built target img_proc__python\n'}
+[2.923955] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[2.924731] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[2.941816] (-) TimerEvent: {}
+[2.942431] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[2.967373] (img_proc) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/img_proc/_img_proc_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[2.984164] (img_proc) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/img_proc/_img_proc_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[3.005267] (img_proc) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/img_proc/_img_proc_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[3.042690] (-) TimerEvent: {}
+[3.141771] (img_proc) StdoutLine: {'line': b'[ 92%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/img_proc/img_proc_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.143480] (-) TimerEvent: {}
+[3.153381] (img_proc) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking CXX shared library rosidl_generator_py/img_proc/img_proc_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.182406] (img_proc) StdoutLine: {'line': b'[ 95%] Built target img_proc__rosidl_typesupport_c__pyext\n'}
+[3.190562] (img_proc) StdoutLine: {'line': b'[ 97%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/img_proc/img_proc_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\x1b[0m\n'}
+[3.225858] (img_proc) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1\x1b[m\x1b[K:\n'}
+[3.226181] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:58:5:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Krclcpp\x1b[m\x1b[K\xe2\x80\x99 in namespace \xe2\x80\x98\x1b[01m\x1b[Kstd_msgs::msg\x1b[m\x1b[K\xe2\x80\x99 does not name a type\n'}
+[3.226233] (img_proc) StderrLine: {'line': b'   58 |     \x1b[01;31m\x1b[Krclcpp\x1b[m\x1b[K::Subscription<sensor_msgs::msg::Image>::SharedPtr subscription_;\n'}
+[3.226274] (img_proc) StderrLine: {'line': b'      |     \x1b[01;31m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[3.232334] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KImageProcessor::ImageProcessor()\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[3.232768] (img_proc) StderrLine: {'line': b'\x1b[01m\x1b[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:24:3:\x1b[m\x1b[K \x1b[01;31m\x1b[Kerror: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[Ksubscription_\x1b[m\x1b[K\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98\x1b[01m\x1b[Krcl_subscription_t\x1b[m\x1b[K\xe2\x80\x99?\n'}
+[3.232827] (img_proc) StderrLine: {'line': b'   24 |   \x1b[01;31m\x1b[Ksubscription_\x1b[m\x1b[K = this->create_subscription<sensor_msgs::msg::Image>(\n'}
+[3.232871] (img_proc) StderrLine: {'line': b'      |   \x1b[01;31m\x1b[K^~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[3.232925] (img_proc) StderrLine: {'line': b'      |   \x1b[32m\x1b[Krcl_subscription_t\x1b[m\x1b[K\n'}
+[3.244102] (-) TimerEvent: {}
+[3.249170] (img_proc) StdoutLine: {'line': b'[ 97%] Built target img_proc__rosidl_typesupport_fastrtps_c__pyext\n'}
+[3.271153] (img_proc) StdoutLine: {'line': b'[ 97%] Built target img_proc__rosidl_typesupport_introspection_c__pyext\n'}
+[3.344659] (-) TimerEvent: {}
+[3.445140] (-) TimerEvent: {}
+[3.546001] (-) TimerEvent: {}
+[3.646611] (-) TimerEvent: {}
+[3.747824] (-) TimerEvent: {}
+[3.848475] (-) TimerEvent: {}
+[3.949653] (-) TimerEvent: {}
+[4.050112] (-) TimerEvent: {}
+[4.151022] (-) TimerEvent: {}
+[4.252005] (-) TimerEvent: {}
+[4.353124] (-) TimerEvent: {}
+[4.453524] (-) TimerEvent: {}
+[4.553937] (-) TimerEvent: {}
+[4.654993] (-) TimerEvent: {}
+[4.755830] (-) TimerEvent: {}
+[4.856419] (-) TimerEvent: {}
+[4.957167] (-) TimerEvent: {}
+[5.058220] (-) TimerEvent: {}
+[5.159219] (-) TimerEvent: {}
+[5.259643] (-) TimerEvent: {}
+[5.360458] (-) TimerEvent: {}
+[5.461684] (-) TimerEvent: {}
+[5.562181] (-) TimerEvent: {}
+[5.663292] (-) TimerEvent: {}
+[5.763825] (-) TimerEvent: {}
+[5.864736] (-) TimerEvent: {}
+[5.880729] (img_proc) StderrLine: {'line': b'make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1\n'}
+[5.881026] (img_proc) StderrLine: {'line': b'make[1]: *** [CMakeFiles/Makefile2:123: CMakeFiles/img_proc_node.dir/all] Error 2\n'}
+[5.881145] (img_proc) StderrLine: {'line': b'make: *** [Makefile:141: all] Error 2\n'}
+[5.883457] (img_proc) CommandEnded: {'returncode': 2}
+[5.965215] (-) TimerEvent: {}
+[6.019836] (img_proc) JobEnded: {'identifier': 'img_proc', 'rc': 2}
+[6.020939] (-) EventReactorShutdown: {}

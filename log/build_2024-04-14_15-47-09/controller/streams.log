@@ -1,0 +1,30 @@
+[0.017s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/controller -- -j4 -l4
+[0.063s] [35m[1mScanning dependencies of target controller[0m
+[0.099s] [ 50%] [32mBuilding CXX object CMakeFiles/controller.dir/src/controller.cpp.o[0m
+[4.939s] [100%] [32m[1mLinking CXX executable controller[0m
+[5.202s] [100%] Built target controller
+[5.215s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/controller -- -j4 -l4
+[5.290s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/tahnt/mech_devel/f1t_mech_ws/build/controller
+[5.302s] -- Install configuration: ""
+[5.304s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/lib/controller/controller
+[5.309s] -- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/controller/lib/controller/controller" to ""
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller//launch
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller//launch/controller_launch.py
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller//config
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller//config/controller_config.yaml
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/ament_index/resource_index/package_run_dependencies/controller
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/ament_index/resource_index/parent_prefix_path/controller
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/environment/ament_prefix_path.sh
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/environment/ament_prefix_path.dsv
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/environment/path.sh
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/environment/path.dsv
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/local_setup.bash
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/local_setup.sh
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/local_setup.zsh
+[5.310s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/local_setup.dsv
+[5.311s] -- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/package.dsv
+[5.311s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/ament_index/resource_index/packages/controller
+[5.311s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/cmake/controllerConfig.cmake
+[5.311s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/cmake/controllerConfig-version.cmake
+[5.311s] -- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/controller/share/controller/package.xml
+[5.315s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/controller' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --install /home/tahnt/mech_devel/f1t_mech_ws/build/controller

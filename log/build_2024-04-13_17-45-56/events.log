@@ -1,0 +1,243 @@
+[0.000000] (-) TimerEvent: {}
+[0.000347] (img_proc) JobQueued: {'identifier': 'img_proc', 'dependencies': OrderedDict()}
+[0.000390] (img_proc) JobStarted: {'identifier': 'img_proc'}
+[0.009963] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'cmake'}
+[0.010412] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'build'}
+[0.011163] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', '--', '-j4', '-l4'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '1503'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1399'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:50924'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1538,unix/ubuntu:/tmp/.ICE-unix/1538'), ('INVOCATION_ID', '8ee42b8d7d3f4c25b17f371cf51713af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c933ebb8_ce30_4368_85d9_9392d75d2f97'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.81'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[0.068031] (img_proc) StdoutLine: {'line': b'\x1b[35m\x1b[1mScanning dependencies of target img_proc_node\x1b[0m\n'}
+[0.081649] (img_proc) StdoutLine: {'line': b'[  2%] Built target img_proc__cpp\n'}
+[0.084293] (img_proc) StdoutLine: {'line': b'[ 12%] Built target img_proc__rosidl_generator_c\n'}
+[0.100539] (-) TimerEvent: {}
+[0.116018] (img_proc) StdoutLine: {'line': b'[ 21%] Built target img_proc__rosidl_typesupport_fastrtps_cpp\n'}
+[0.119117] (img_proc) StdoutLine: {'line': b'[ 24%] \x1b[32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o\x1b[0m\n'}
+[0.131887] (img_proc) StdoutLine: {'line': b'[ 34%] Built target img_proc__rosidl_typesupport_cpp\n'}
+[0.162376] (img_proc) StdoutLine: {'line': b'[ 53%] Built target img_proc__rosidl_typesupport_introspection_cpp\n'}
+[0.162808] (img_proc) StdoutLine: {'line': b'[ 53%] Built target img_proc__rosidl_typesupport_c\n'}
+[0.186249] (img_proc) StdoutLine: {'line': b'[ 65%] Built target img_proc__rosidl_typesupport_fastrtps_c\n'}
+[0.187138] (img_proc) StdoutLine: {'line': b'[ 73%] Built target img_proc__rosidl_typesupport_introspection_c\n'}
+[0.202858] (-) TimerEvent: {}
+[0.214075] (img_proc) StdoutLine: {'line': b'[ 73%] Built target img_proc\n'}
+[0.236660] (img_proc) StdoutLine: {'line': b'[ 75%] Built target img_proc__py\n'}
+[0.273431] (img_proc) StdoutLine: {'line': b'[ 82%] Built target img_proc__python\n'}
+[0.303378] (-) TimerEvent: {}
+[0.309747] (img_proc) StdoutLine: {'line': b'[ 87%] Built target img_proc__rosidl_typesupport_c__pyext\n'}
+[0.312998] (img_proc) StdoutLine: {'line': b'[ 92%] Built target img_proc__rosidl_typesupport_introspection_c__pyext\n'}
+[0.321855] (img_proc) StdoutLine: {'line': b'[ 97%] Built target img_proc__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.403793] (-) TimerEvent: {}
+[0.504445] (-) TimerEvent: {}
+[0.604953] (-) TimerEvent: {}
+[0.705878] (-) TimerEvent: {}
+[0.806414] (-) TimerEvent: {}
+[0.907095] (-) TimerEvent: {}
+[1.008442] (-) TimerEvent: {}
+[1.109081] (-) TimerEvent: {}
+[1.209685] (-) TimerEvent: {}
+[1.310097] (-) TimerEvent: {}
+[1.410750] (-) TimerEvent: {}
+[1.511320] (-) TimerEvent: {}
+[1.612161] (-) TimerEvent: {}
+[1.713232] (-) TimerEvent: {}
+[1.813694] (-) TimerEvent: {}
+[1.914737] (-) TimerEvent: {}
+[2.015047] (-) TimerEvent: {}
+[2.115443] (-) TimerEvent: {}
+[2.216350] (-) TimerEvent: {}
+[2.316809] (-) TimerEvent: {}
+[2.417733] (-) TimerEvent: {}
+[2.519225] (-) TimerEvent: {}
+[2.620027] (-) TimerEvent: {}
+[2.720495] (-) TimerEvent: {}
+[2.820875] (-) TimerEvent: {}
+[2.921203] (-) TimerEvent: {}
+[3.022523] (-) TimerEvent: {}
+[3.122881] (-) TimerEvent: {}
+[3.223509] (-) TimerEvent: {}
+[3.324094] (-) TimerEvent: {}
+[3.425032] (-) TimerEvent: {}
+[3.525811] (-) TimerEvent: {}
+[3.626422] (-) TimerEvent: {}
+[3.727116] (-) TimerEvent: {}
+[3.827789] (-) TimerEvent: {}
+[3.928349] (-) TimerEvent: {}
+[4.028831] (-) TimerEvent: {}
+[4.129746] (-) TimerEvent: {}
+[4.230286] (-) TimerEvent: {}
+[4.331264] (-) TimerEvent: {}
+[4.431796] (-) TimerEvent: {}
+[4.532489] (-) TimerEvent: {}
+[4.632964] (-) TimerEvent: {}
+[4.734054] (-) TimerEvent: {}
+[4.834573] (-) TimerEvent: {}
+[4.935323] (-) TimerEvent: {}
+[5.036226] (-) TimerEvent: {}
+[5.136778] (-) TimerEvent: {}
+[5.237470] (-) TimerEvent: {}
+[5.337967] (-) TimerEvent: {}
+[5.438396] (-) TimerEvent: {}
+[5.538872] (-) TimerEvent: {}
+[5.640030] (-) TimerEvent: {}
+[5.740948] (-) TimerEvent: {}
+[5.841304] (-) TimerEvent: {}
+[5.942627] (-) TimerEvent: {}
+[6.043302] (-) TimerEvent: {}
+[6.143753] (-) TimerEvent: {}
+[6.244483] (-) TimerEvent: {}
+[6.345016] (-) TimerEvent: {}
+[6.445829] (-) TimerEvent: {}
+[6.546259] (-) TimerEvent: {}
+[6.647434] (-) TimerEvent: {}
+[6.747932] (-) TimerEvent: {}
+[6.848593] (-) TimerEvent: {}
+[6.949315] (-) TimerEvent: {}
+[7.050019] (-) TimerEvent: {}
+[7.150546] (-) TimerEvent: {}
+[7.251301] (-) TimerEvent: {}
+[7.292869] (img_proc) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable img_proc_node\x1b[0m\n'}
+[7.352373] (-) TimerEvent: {}
+[7.453145] (-) TimerEvent: {}
+[7.553522] (-) TimerEvent: {}
+[7.654312] (-) TimerEvent: {}
+[7.755649] (-) TimerEvent: {}
+[7.856543] (-) TimerEvent: {}
+[7.886144] (img_proc) StdoutLine: {'line': b'[100%] Built target img_proc_node\n'}
+[7.898542] (img_proc) CommandEnded: {'returncode': 0}
+[7.957264] (-) TimerEvent: {}
+[8.008042] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'install'}
+[8.020912] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '1503'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1399'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:50924'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1538,unix/ubuntu:/tmp/.ICE-unix/1538'), ('INVOCATION_ID', '8ee42b8d7d3f4c25b17f371cf51713af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c933ebb8_ce30_4368_85d9_9392d75d2f97'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.81'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003'), ('CMAKE_PREFIX_PATH', '/opt/ros/galactic')]), 'shell': False}
+[8.032052] (img_proc) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[8.033049] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/rosidl_interfaces/img_proc\n'}
+[8.033387] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc\n'}
+[8.033531] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg\n'}
+[8.033611] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/yaw_err.h\n'}
+[8.033692] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail\n'}
+[8.033736] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__type_support.h\n'}
+[8.033815] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__functions.h\n'}
+[8.033886] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__functions.c\n'}
+[8.033930] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__struct.h\n'}
+[8.034009] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__struct.h\n'}
+[8.034052] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__type_support.h\n'}
+[8.034859] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__functions.h\n'}
+[8.035027] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__functions.c\n'}
+[8.035080] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/lat_err.h\n'}
+[8.035162] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/rosidl_generator_c__visibility_control.h\n'}
+[8.035211] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/library_path.sh\n'}
+[8.035251] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/library_path.dsv\n'}
+[8.035290] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_generator_c.so\n'}
+[8.035328] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_generator_c.so" to ""\n'}
+[8.035366] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc\n'}
+[8.035410] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg\n'}
+[8.035452] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail\n'}
+[8.035489] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__rosidl_typesupport_fastrtps_c.h\n'}
+[8.039481] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__rosidl_typesupport_fastrtps_c.h\n'}
+[8.039645] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[8.039822] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_fastrtps_c.so\n'}
+[8.039874] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[8.039914] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc\n'}
+[8.039960] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg\n'}
+[8.040041] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail\n'}
+[8.040086] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/dds_fastrtps\n'}
+[8.040230] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.040357] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[8.040399] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[8.040438] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_fastrtps_cpp.so\n'}
+[8.040477] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[8.040516] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc\n'}
+[8.040553] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg\n'}
+[8.040676] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail\n'}
+[8.040788] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__type_support.c\n'}
+[8.040872] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__rosidl_typesupport_introspection_c.h\n'}
+[8.040914] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__type_support.c\n'}
+[8.041086] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__rosidl_typesupport_introspection_c.h\n'}
+[8.041194] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[8.041238] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_introspection_c.so\n'}
+[8.041280] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_introspection_c.so" to ""\n'}
+[8.041323] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_c.so\n'}
+[8.041361] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_c.so" to ""\n'}
+[8.041398] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc\n'}
+[8.041436] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg\n'}
+[8.041473] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail\n'}
+[8.041511] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__struct.hpp\n'}
+[8.041549] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__builder.hpp\n'}
+[8.041588] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__builder.hpp\n'}
+[8.041626] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__traits.hpp\n'}
+[8.041663] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__struct.hpp\n'}
+[8.041701] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__traits.hpp\n'}
+[8.041739] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/yaw_err.hpp\n'}
+[8.041776] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/lat_err.hpp\n'}
+[8.041814] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc\n'}
+[8.041851] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg\n'}
+[8.041888] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail\n'}
+[8.041925] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.041962] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__rosidl_typesupport_introspection_cpp.hpp\n'}
+[8.042035] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/yaw_err__type_support.cpp\n'}
+[8.042082] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/include/img_proc/msg/detail/lat_err__type_support.cpp\n'}
+[8.042224] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_introspection_cpp.so\n'}
+[8.042268] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[8.042306] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_cpp.so\n'}
+[8.042344] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__rosidl_typesupport_cpp.so" to ""\n'}
+[8.042382] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/pythonpath.sh\n'}
+[8.042514] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/pythonpath.dsv\n'}
+[8.042584] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/__init__.py\n'}
+[8.057822] (-) TimerEvent: {}
+[8.066058] (img_proc) StdoutLine: {'line': b"Compiling '/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/__init__.py'...\n"}
+[8.068964] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg\n'}
+[8.069226] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/_yaw_err_s.c\n'}
+[8.069397] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/_lat_err.py\n'}
+[8.069450] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/_lat_err_s.c\n'}
+[8.069598] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/__init__.py\n'}
+[8.069650] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/msg/_yaw_err.py\n'}
+[8.069690] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.070065] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[8.070246] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.070732] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[8.070950] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so\n'}
+[8.071534] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/python3.8/site-packages/img_proc/img_proc_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so" to ""\n'}
+[8.071686] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__python.so\n'}
+[8.072090] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/libimg_proc__python.so" to ""\n'}
+[8.072270] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/msg/LatErr.idl\n'}
+[8.072466] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/msg/YawErr.idl\n'}
+[8.072569] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/msg/LatErr.msg\n'}
+[8.072609] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/msg/YawErr.msg\n'}
+[8.072794] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node\n'}
+[8.076092] (img_proc) StdoutLine: {'line': b'-- Set runtime path of "/home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/lib/img_proc/img_proc_node" to ""\n'}
+[8.076211] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//launch\n'}
+[8.076456] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//launch/img_proc_launch.py\n'}
+[8.076521] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//config\n'}
+[8.076607] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc//config/img_proc_config.yaml\n'}
+[8.076747] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/package_run_dependencies/img_proc\n'}
+[8.076899] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/parent_prefix_path/img_proc\n'}
+[8.077170] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.sh\n'}
+[8.077425] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/ament_prefix_path.dsv\n'}
+[8.077470] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.sh\n'}
+[8.077906] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/environment/path.dsv\n'}
+[8.078089] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.bash\n'}
+[8.078260] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.sh\n'}
+[8.078402] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.zsh\n'}
+[8.078693] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/local_setup.dsv\n'}
+[8.078794] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.dsv\n'}
+[8.078996] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/ament_index/resource_index/packages/img_proc\n'}
+[8.079136] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_generator_cExport.cmake\n'}
+[8.080548] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_generator_cExport-noconfig.cmake\n'}
+[8.081922] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_introspection_cExport.cmake\n'}
+[8.082090] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[8.082143] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_cExport.cmake\n'}
+[8.082182] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[8.082221] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_generator_cppExport.cmake\n'}
+[8.082264] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[8.082302] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[8.082382] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_cppExport.cmake\n'}
+[8.082450] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_proc__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[8.082490] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/rosidl_cmake-extras.cmake\n'}
+[8.082551] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[8.082591] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[8.082630] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[8.082668] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[8.082706] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[8.082744] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[8.082782] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig.cmake\n'}
+[8.082819] (img_proc) StdoutLine: {'line': b'-- Up-to-date: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/cmake/img_procConfig-version.cmake\n'}
+[8.082861] (img_proc) StdoutLine: {'line': b'-- Installing: /home/tahnt/mech_devel/f1t_mech_ws/install/img_proc/share/img_proc/package.xml\n'}
+[8.096425] (img_proc) CommandEnded: {'returncode': 0}
+[8.158646] (-) TimerEvent: {}
+[8.221509] (img_proc) JobEnded: {'identifier': 'img_proc', 'rc': 0}
+[8.222781] (-) EventReactorShutdown: {}

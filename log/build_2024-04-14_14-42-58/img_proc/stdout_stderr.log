@@ -1,0 +1,21 @@
+[35m[1mScanning dependencies of target img_proc_node[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/service.hpp:34[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:4[m[K,
+                 from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::processImage(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:74:78:[m[K [01;31m[Kerror: [m[K‘[01m[Kstruct mech_msg::msg::Laterr_<std::allocator<void> >[m[K’ has no member named ‘[01m[Kyawerr[m[K’; did you mean ‘[01m[Klaterr[m[K’?
+   74 |         RCLCPP_INFO_STREAM(this->get_logger(), "Publishing: " << lat_err_msg.[01;31m[Kyawerr[m[K);
+      |                                                                              [01;31m[K^~~~~~[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

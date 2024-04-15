@@ -1,2 +1,0 @@
-Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
-Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6

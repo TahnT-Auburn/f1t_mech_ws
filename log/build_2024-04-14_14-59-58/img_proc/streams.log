@@ -1,0 +1,52 @@
+[0.018s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4
+[0.071s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.112s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[2.504s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kfloat ImageProcessor::yawErrorGen(int)[m[K’:
+[2.504s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:230:52:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Katan2(int)[m[K’
+[2.504s]   230 |     float yaw_err = std::atan2((lat_err/look_dist_)[01;31m[K)[m[K;
+[2.504s]       |                                                    [01;31m[K^[m[K
+[2.504s] In file included from [01m[K/usr/include/features.h:461[m[K,
+[2.504s]                  from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h:39[m[K,
+[2.504s]                  from [01m[K/usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h:528[m[K,
+[2.504s]                  from [01m[K/usr/include/c++/9/type_traits:38[m[K,
+[2.504s]                  from [01m[K/usr/include/c++/9/ratio:38[m[K,
+[2.504s]                  from [01m[K/usr/include/c++/9/chrono:38[m[K,
+[2.504s]                  from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:1[m[K,
+[2.505s]                  from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[2.505s] [01m[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:59:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kdouble atan2(double, double)[m[K’
+[2.505s]    59 | [01;36m[K__MATHCALL[m[K (atan2,, (_Mdouble_ __y, _Mdouble_ __x));
+[2.505s]       | [01;36m[K^~~~~~~~~~[m[K
+[2.505s] [01m[K/usr/include/x86_64-linux-gnu/bits/mathcalls.h:59:1:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.505s] In file included from [01m[K/opt/ros/galactic/include/libstatistics_collector/moving_average_statistics/types.hpp:18[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/libstatistics_collector/collector/generate_statistics_message.hpp:24[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/topic_statistics/subscription_topic_statistics.hpp:23[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/subscription.hpp:50[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:25[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+[2.505s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[2.505s]                  from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:4[m[K,
+[2.505s]                  from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[2.505s] [01m[K/usr/include/c++/9/cmath:144:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr float std::atan2(float, float)[m[K’
+[2.505s]   144 |   [01;36m[Katan2[m[K(float __y, float __x)
+[2.505s]       |   [01;36m[K^~~~~[m[K
+[2.505s] [01m[K/usr/include/c++/9/cmath:144:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.505s] [01m[K/usr/include/c++/9/cmath:148:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Kconstexpr long double std::atan2(long double, long double)[m[K’
+[2.505s]   148 |   [01;36m[Katan2[m[K(long double __y, long double __x)
+[2.505s]       |   [01;36m[K^~~~~[m[K
+[2.505s] [01m[K/usr/include/c++/9/cmath:148:3:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.506s] [01m[K/usr/include/c++/9/cmath:155:5:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class _Tp, class _Up> constexpr typename __gnu_cxx::__promote_2<_Tp, _Up>::__type std::atan2(_Tp, _Up)[m[K’
+[2.506s]   155 |     [01;36m[Katan2[m[K(_Tp __y, _Up __x)
+[2.506s]       |     [01;36m[K^~~~~[m[K
+[2.506s] [01m[K/usr/include/c++/9/cmath:155:5:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.506s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:230:52:[m[K [01;36m[Knote: [m[K  candidate expects 2 arguments, 1 provided
+[2.506s]   230 |     float yaw_err = std::atan2((lat_err/look_dist_)[01;36m[K)[m[K;
+[2.506s]       |                                                    [01;36m[K^[m[K
+[4.648s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+[4.648s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+[4.648s] make: *** [Makefile:141: all] Error 2
+[4.652s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4

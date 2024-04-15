@@ -1,0 +1,74 @@
+[35m[1mScanning dependencies of target img_proc_node[0m
+[  2%] Built target img_proc__cpp
+[  4%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[ 14%] Built target img_proc__rosidl_generator_c
+[ 17%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[ 19%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[ 21%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[35m[1mScanning dependencies of target img_proc__rosidl_typesupport_cpp[0m
+[ 24%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/img_proc/msg/lat_err__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target img_proc__rosidl_typesupport_fastrtps_cpp[0m
+[ 26%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/img_proc/msg/detail/dds_fastrtps/lat_err__type_support.cpp.o[0m
+[35m[1mScanning dependencies of target img_proc__rosidl_typesupport_introspection_cpp[0m
+[ 29%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/img_proc/msg/detail/lat_err__type_support.cpp.o[0m
+[ 31%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/img_proc/msg/yaw_err__type_support.cpp.o[0m
+[ 34%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/img_proc/msg/detail/yaw_err__type_support.cpp.o[0m
+[ 36%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/img_proc/msg/detail/dds_fastrtps/yaw_err__type_support.cpp.o[0m
+[ 39%] [32m[1mLinking CXX shared library libimg_proc__rosidl_typesupport_cpp.so[0m
+[ 39%] Built target img_proc__rosidl_typesupport_cpp
+[ 41%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[ 43%] [32m[1mLinking CXX shared library libimg_proc__rosidl_typesupport_introspection_cpp.so[0m
+[35m[1mScanning dependencies of target img_proc__rosidl_typesupport_c[0m
+[ 46%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_c.dir/rosidl_typesupport_c/img_proc/msg/lat_err__type_support.cpp.o[0m
+[ 46%] Built target img_proc__rosidl_typesupport_introspection_cpp
+[ 48%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[ 51%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_c.dir/rosidl_typesupport_c/img_proc/msg/yaw_err__type_support.cpp.o[0m
+[ 53%] [32m[1mLinking CXX shared library libimg_proc__rosidl_typesupport_fastrtps_cpp.so[0m
+[ 56%] [32m[1mLinking CXX shared library libimg_proc__rosidl_typesupport_c.so[0m
+[ 56%] Built target img_proc__rosidl_typesupport_c
+[35m[1mScanning dependencies of target img_proc__rosidl_typesupport_introspection_c[0m
+[ 56%] Built target img_proc__rosidl_typesupport_fastrtps_cpp
+[ 58%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[ 60%] [32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/img_proc/msg/detail/yaw_err__type_support.c.o[0m
+[ 63%] [32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/img_proc/msg/detail/lat_err__type_support.c.o[0m
+[ 65%] [32m[1mLinking C shared library libimg_proc__rosidl_typesupport_introspection_c.so[0m
+[ 65%] Built target img_proc__rosidl_typesupport_introspection_c
+[35m[1mScanning dependencies of target img_proc__rosidl_typesupport_fastrtps_c[0m
+[ 68%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/img_proc/msg/detail/lat_err__type_support_c.cpp.o[0m
+[ 70%] [32mBuilding CXX object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/img_proc/msg/detail/yaw_err__type_support_c.cpp.o[0m
+[ 73%] [32m[1mLinking CXX shared library libimg_proc__rosidl_typesupport_fastrtps_c.so[0m
+[ 73%] Built target img_proc__rosidl_typesupport_fastrtps_c
+[35m[1mScanning dependencies of target img_proc[0m
+[ 73%] Built target img_proc
+[35m[1mScanning dependencies of target img_proc__py[0m
+[ 75%] [34m[1mGenerating Python code for ROS interfaces[0m
+[ 75%] Built target img_proc__py
+[35m[1mScanning dependencies of target img_proc__python[0m
+[ 78%] [32mBuilding C object CMakeFiles/img_proc__python.dir/rosidl_generator_py/img_proc/msg/_lat_err_s.c.o[0m
+[ 80%] [32mBuilding C object CMakeFiles/img_proc__python.dir/rosidl_generator_py/img_proc/msg/_yaw_err_s.c.o[0m
+[ 82%] [32m[1mLinking C shared library rosidl_generator_py/img_proc/libimg_proc__python.so[0m
+[ 82%] Built target img_proc__python
+[35m[1mScanning dependencies of target img_proc__rosidl_typesupport_introspection_c__pyext[0m
+[35m[1mScanning dependencies of target img_proc__rosidl_typesupport_fastrtps_c__pyext[0m
+[35m[1mScanning dependencies of target img_proc__rosidl_typesupport_c__pyext[0m
+[ 85%] [32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/img_proc/_img_proc_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[ 87%] [32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/img_proc/_img_proc_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[ 90%] [32mBuilding C object CMakeFiles/img_proc__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/img_proc/_img_proc_s.ep.rosidl_typesupport_c.c.o[0m
+[ 92%] [32m[1mLinking C shared library rosidl_generator_py/img_proc/img_proc_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so[0m
+[ 95%] [32m[1mLinking CXX shared library rosidl_generator_py/img_proc/img_proc_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so[0m
+[ 95%] Built target img_proc__rosidl_typesupport_c__pyext
+[ 97%] [32m[1mLinking C shared library rosidl_generator_py/img_proc/img_proc_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so[0m
+In file included from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+   58 |     [01;31m[Krclcpp[m[K::Subscription<sensor_msgs::msg::Image>::SharedPtr subscription_;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:[m[K In constructor ‘[01m[KImageProcessor::ImageProcessor()[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:24:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+   24 |   [01;31m[Ksubscription_[m[K = this->create_subscription<sensor_msgs::msg::Image>(
+      |   [01;31m[K^~~~~~~~~~~~~[m[K
+      |   [32m[Krcl_subscription_t[m[K
+[ 97%] Built target img_proc__rosidl_typesupport_fastrtps_c__pyext
+[ 97%] Built target img_proc__rosidl_typesupport_introspection_c__pyext
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:123: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

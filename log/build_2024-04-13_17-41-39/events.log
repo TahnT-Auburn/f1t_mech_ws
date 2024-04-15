@@ -1,0 +1,72 @@
+[0.000000] (-) TimerEvent: {}
+[0.000286] (img_proc) JobQueued: {'identifier': 'img_proc', 'dependencies': OrderedDict()}
+[0.000346] (img_proc) JobStarted: {'identifier': 'img_proc'}
+[0.008714] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'cmake'}
+[0.009554] (img_proc) JobProgress: {'identifier': 'img_proc', 'progress': 'build'}
+[0.011261] (img_proc) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', '--', '-j4', '-l4'], 'cwd': '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'tahnt'), ('SSH_AGENT_PID', '1503'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/galactic/opt/yaml_cpp_vendor/lib:/opt/ros/galactic/opt/rviz_ogre_vendor/lib:/opt/ros/galactic/lib/x86_64-linux-gnu:/opt/ros/galactic/lib'), ('HOME', '/home/tahnt'), ('OLDPWD', '/home/tahnt/mech_devel/f1t_mech_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('MANAGERPID', '1399'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'galactic'), ('LOGNAME', 'tahnt'), ('JOURNAL_STREAM', '8:50924'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'tahnt'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/galactic/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('SESSION_MANAGER', 'local/ubuntu:@/tmp/.ICE-unix/1538,unix/ubuntu:/tmp/.ICE-unix/1538'), ('INVOCATION_ID', '8ee42b8d7d3f4c25b17f371cf51713af'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/c933ebb8_ce30_4368_85d9_9392d75d2f97'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.81'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/galactic'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/galactic/lib/python3.8/site-packages'), ('COLCON', '1'), ('VTE_VERSION', '6003')]), 'shell': False}
+[0.037250] (img_proc) StdoutLine: {'line': b'-- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)\n'}
+[0.054459] (img_proc) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") \n'}
+[0.054622] (img_proc) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[0.099578] (-) TimerEvent: {}
+[0.102783] (img_proc) StdoutLine: {'line': b'-- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)\n'}
+[0.128810] (img_proc) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.131224] (img_proc) StdoutLine: {'line': b'-- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)\n'}
+[0.199747] (-) TimerEvent: {}
+[0.222509] (img_proc) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.263395] (img_proc) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)\n'}
+[0.264543] (img_proc) StdoutLine: {'line': b'-- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)\n'}
+[0.277983] (img_proc) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_cyclonedds_cpp' as default\n"}
+[0.300196] (-) TimerEvent: {}
+[0.378211] (img_proc) StdoutLine: {'line': b'-- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)\n'}
+[0.403567] (-) TimerEvent: {}
+[0.465592] (img_proc) StdoutLine: {'line': b'-- Found cv_bridge: 3.1.3 (/opt/ros/galactic/share/cv_bridge/cmake)\n'}
+[0.483581] (img_proc) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.1.1 (/opt/ros/galactic/share/rosidl_default_generators/cmake)\n'}
+[0.503782] (-) TimerEvent: {}
+[0.508090] (img_proc) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found version "3.8.10") \n'}
+[0.588811] (img_proc) StderrLine: {'line': b"Error parsing '/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/package.xml':\n"}
+[0.604404] (-) TimerEvent: {}
+[0.675289] (img_proc) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.675474] (img_proc) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 610, in parse_package_string\n'}
+[0.675519] (img_proc) StderrLine: {'line': b'    root = dom.parseString(data)\n'}
+[0.675557] (img_proc) StderrLine: {'line': b'  File "/usr/lib/python3.8/xml/dom/minidom.py", line 1969, in parseString\n'}
+[0.675595] (img_proc) StderrLine: {'line': b'    return expatbuilder.parseString(string)\n'}
+[0.675631] (img_proc) StderrLine: {'line': b'  File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 925, in parseString\n'}
+[0.675669] (img_proc) StderrLine: {'line': b'    return builder.parseString(string)\n'}
+[0.675704] (img_proc) StderrLine: {'line': b'  File "/usr/lib/python3.8/xml/dom/expatbuilder.py", line 223, in parseString\n'}
+[0.675740] (img_proc) StderrLine: {'line': b'    parser.Parse(string, True)\n'}
+[0.675777] (img_proc) StderrLine: {'line': b'xml.parsers.expat.ExpatError: mismatched tag: line 15, column 47\n'}
+[0.675812] (img_proc) StderrLine: {'line': b'\n'}
+[0.675849] (img_proc) StderrLine: {'line': b'During handling of the above exception, another exception occurred:\n'}
+[0.675886] (img_proc) StderrLine: {'line': b'\n'}
+[0.675921] (img_proc) StderrLine: {'line': b'Traceback (most recent call last):\n'}
+[0.675957] (img_proc) StderrLine: {'line': b'  File "/opt/ros/galactic/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 151, in <module>\n'}
+[0.676011] (img_proc) StderrLine: {'line': b'    main()\n'}
+[0.676063] (img_proc) StderrLine: {'line': b'  File "/opt/ros/galactic/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 54, in main\n'}
+[0.676180] (img_proc) StderrLine: {'line': b'    raise e\n'}
+[0.676219] (img_proc) StderrLine: {'line': b'  File "/opt/ros/galactic/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py", line 50, in main\n'}
+[0.676257] (img_proc) StderrLine: {'line': b'    package = parse_package_string(\n'}
+[0.676293] (img_proc) StderrLine: {'line': b'  File "/usr/lib/python3/dist-packages/catkin_pkg/package.py", line 612, in parse_package_string\n'}
+[0.676330] (img_proc) StderrLine: {'line': b"    raise InvalidPackage('The manifest contains invalid XML:\\n%s' % ex, filename)\n"}
+[0.676367] (img_proc) StderrLine: {'line': b"catkin_pkg.package.InvalidPackage: Error(s) in package '/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/package.xml':\n"}
+[0.676403] (img_proc) StderrLine: {'line': b'The manifest contains invalid XML:\n'}
+[0.676439] (img_proc) StderrLine: {'line': b'mismatched tag: line 15, column 47\n'}
+[0.691583] (img_proc) StderrLine: {'line': b'CMake Error at /opt/ros/galactic/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:94 (message):\n'}
+[0.691837] (img_proc) StderrLine: {'line': b'  execute_process(/usr/bin/python3\n'}
+[0.691884] (img_proc) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake_core/cmake/core/package_xml_2_cmake.py\n'}
+[0.691923] (img_proc) StderrLine: {'line': b'  /home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/package.xml\n'}
+[0.691960] (img_proc) StderrLine: {'line': b'  /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc/ament_cmake_core/package.cmake)\n'}
+[0.691996] (img_proc) StderrLine: {'line': b'  returned error code 1\n'}
+[0.692032] (img_proc) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[0.692069] (img_proc) StderrLine: {'line': b'  /opt/ros/galactic/share/ament_cmake_core/cmake/core/ament_package_xml.cmake:49 (_ament_package_xml)\n'}
+[0.692107] (img_proc) StderrLine: {'line': b'  /opt/ros/galactic/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:226 (ament_package_xml)\n'}
+[0.692143] (img_proc) StderrLine: {'line': b'  CMakeLists.txt:16 (rosidl_generate_interfaces)\n'}
+[0.692179] (img_proc) StderrLine: {'line': b'\n'}
+[0.692216] (img_proc) StderrLine: {'line': b'\n'}
+[0.693747] (img_proc) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[0.693888] (img_proc) StdoutLine: {'line': b'See also "/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc/CMakeFiles/CMakeOutput.log".\n'}
+[0.693936] (img_proc) StdoutLine: {'line': b'See also "/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc/CMakeFiles/CMakeError.log".\n'}
+[0.699760] (img_proc) StderrLine: {'line': b'make: *** [Makefile:266: cmake_check_build_system] Error 1\n'}
+[0.701758] (img_proc) CommandEnded: {'returncode': 2}
+[0.702060] (img_proc) JobEnded: {'identifier': 'img_proc', 'rc': 2}
+[0.705195] (-) TimerEvent: {}
+[0.712292] (-) EventReactorShutdown: {}

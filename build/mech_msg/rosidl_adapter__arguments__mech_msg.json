@@ -1,0 +1,7 @@
+{
+  "package_name": "mech_msg",
+  "non_idl_tuples": [
+    "/home/tahnt/mech_devel/f1t_mech_ws/src/mech_msg:msg/Laterr.msg",
+    "/home/tahnt/mech_devel/f1t_mech_ws/src/mech_msg:msg/Yawerr.msg"
+  ]
+}

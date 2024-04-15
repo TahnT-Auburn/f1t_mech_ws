@@ -1,0 +1,24 @@
+In file included from [01m[K/opt/ros/galactic/include/rclcpp/client.hpp:40[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/callback_group.hpp:23[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/any_executable.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategy.hpp:25[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/memory_strategies.hpp:18[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor_options.hpp:20[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executor.hpp:36[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors/multi_threaded_executor.hpp:26[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:21[m[K,
+                 from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+                 from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:4[m[K,
+                 from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kfloat ImageProcessor::yawErrorGen(int)[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:231:36:[m[K [01;35m[Kwarning: [m[Kformat ‘[01m[K%f[m[K’ expects argument of type ‘[01m[Kdouble[m[K’, but argument 5 has type ‘[01m[Kint[m[K’ [[01;35m[K-Wformat=[m[K]
+  231 |     RCLCPP_INFO(this->get_logger(),[01;35m[K"Lat Error: %f"[m[K,[32m[Klat_err[m[K);
+      |                                    [01;35m[K^~~~~~~~~~~~~~~[m[K [32m[K~~~~~~~[m[K
+      |                                                    [32m[K|[m[K
+      |                                                    [32m[Kint[m[K
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:231:49:[m[K [01;36m[Knote: [m[Kformat string is defined here
+  231 |     RCLCPP_INFO(this->get_logger(),"Lat Error: [01;36m[K%f[m[K",lat_err);
+      |                                                [01;36m[K~^[m[K
+      |                                                 [01;36m[K|[m[K
+      |                                                 [01;36m[Kdouble[m[K
+      |                                                [32m[K%d[m[K

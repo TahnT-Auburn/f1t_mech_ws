@@ -1,0 +1,8 @@
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::processImage(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:53:74:[m[K [01;31m[Kerror: [m[K‘[01m[KtipLength[m[K’ was not declared in this scope
+   53 | ::arrowedLine(raw_img, origin, waypoint, cv::Scalar(0,0,255),2,[01;31m[KtipLength[m[K=0.05);
+      |                                                                [01;31m[K^~~~~~~~~[m[K
+
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

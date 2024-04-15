@@ -1,0 +1,12 @@
+[0.012s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4
+[0.065s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.128s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[2.610s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::processImage(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.610s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:75:42:[m[K [01;31m[Kerror: [m[K‘[01m[Kprocess_img[m[K’ was not declared in this scope; did you mean ‘[01m[KprocessImage[m[K’?
+[2.610s]    75 |         cv::imshow("Contour Processing", [01;31m[Kprocess_img[m[K);
+[2.610s]       |                                          [01;31m[K^~~~~~~~~~~[m[K
+[2.610s]       |                                          [32m[KprocessImage[m[K
+[5.110s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+[5.110s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+[5.110s] make: *** [Makefile:141: all] Error 2
+[5.115s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc' returned '2': CMAKE_PREFIX_PATH=/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4

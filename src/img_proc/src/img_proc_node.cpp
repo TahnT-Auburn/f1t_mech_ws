@@ -9,13 +9,6 @@ void ImageProcessor::parseParameters()
     this->declare_parameter<float>("height_scale");
     this->get_parameter("height_scale", height_scale_);
 
-    // // Erosion and Dilation parameters
-    // this->declare_parameter<std::vector<double>>("erode_size");
-    // this->get_parameter("erode_size",erode_size_);
-
-    // this->declare_parameter<std::vector<double>>("dilate_size");
-    // this->get_parameter("dilate_size",dilate_size_);
-
     //Hough transform parameters
     this->declare_parameter<int>("rho");
     this->get_parameter("rho", rho_);
@@ -29,35 +22,65 @@ void ImageProcessor::parseParameters()
     this->declare_parameter<int>("max_line_gap");
     this->get_parameter("max_line_gap", max_line_gap_);
 
+    //Waypoint parameters
+    this->declare_parameter<int>("look_dist");
+    this->get_parameter("look_dist", look_dist_);
+
 }
 
 void ImageProcessor::processImage(const sensor_msgs::msg::Image::SharedPtr msg)
 {
     try
-    {
+    {   
+        //Convert to cv image
         cv_bridge::CvImagePtr cv_ptr = cv_bridge::toCvCopy(msg, sensor_msgs::image_encodings::BGR8);
         cv::Mat raw_img = cv_ptr->image;
         cv::Mat raw_copy1 = raw_img.clone();
 
         //Binary thresholding
         binaryThresholding(raw_copy1);
+
         //Masking
         cv::Mat mask;
         mask = maskImage(raw_copy1);
-        //Erosion and dilation
-        // erosionDilation(raw_copy1);
-
-        //Edge detection
-        // cv::Mat edge_img;
-        // edge_img = cannyEdgeDetection(raw_copy1);
-
-        //Hough Transform
-        // cv::Mat hough_img;
-        // hough_img = houghTransform(edge_img, raw_img);
 
         //Waypoint Gen
-        cv::Mat process_img;
-        process_img = waypointGen(raw_copy1);
+        cv::Point waypoint;
+        waypoint = waypointGen(raw_copy1);
+
+        //Lateral error
+        int lat_err = latErrorGen(raw_img, waypoint);
+
+        //Yaw error
+        float yaw_err = yawErrorGen(lat_err);
+        
+        //Publish
+        // mech_msg::msg::LatErr lat_err_msg;
+        // mech_msg::msg::yawErr yaw_err_msg;
+
+        // lat_err_msg.lat_err = lat_err;
+        // yaw_err_msg.yaw_err = yaw_err;
+
+        // lat_err_msg.header.stamp = get_clock()->now();
+        // yaw_err_msg.header.stamp = get_clock()->now();
+
+        auto lat_err_msg = mech_msg::msg::Laterr();
+        auto yaw_err_msg = mech_msg::msg::Yawerr();
+
+        lat_err_msg.laterr = lat_err;
+        yaw_err_msg.yawerr = yaw_err;
+
+        //Test
+        // RCLCPP_INFO_STREAM(this->get_logger(), "Publishing: " << yaw_err_msg.yawerr);
+
+        publisher_le_->publish(lat_err_msg);
+        publisher_ye_->publish(yaw_err_msg);
+
+        //Draw on Original Image
+        cv::circle(raw_img, waypoint,10,cv::Scalar(0,0,255),2);
+        cv::Point origin = cv::Point(raw_img.size().width/2,raw_img.size().height);
+        cv::arrowedLine(raw_img, origin, waypoint, cv::Scalar(0,0,255),2,8,0,0.05);
+        cv::arrowedLine(raw_img, origin, cv::Point(origin.x,origin.y-30), cv::Scalar(255,255,255),2);
 
         //Display
         cv::imshow("Raw", raw_img);
@@ -65,15 +88,9 @@ void ImageProcessor::processImage(const sensor_msgs::msg::Image::SharedPtr msg)
 
         cv::imshow("Binary Thresholding", raw_copy1);
         cv::waitKey(1);
-        // // cv::imshow("Mask", mask);
-        // // cv::waitKey(1);
-        // cv::imshow("Edge Image", edge_img);
+        // cv::imshow("Mask", mask);
         // cv::waitKey(1);
-        // cv::imshow("Hough Lines", hough_img);
-        // cv::waitKey(1);
-        cv::imshow("Contour Processing", process_img);
-        cv::waitKey(1);
-
+ 
     }   
     catch(cv_bridge::Exception& e)
     {
@@ -161,52 +178,22 @@ cv::Mat ImageProcessor::houghTransform(cv::Mat& img, const cv::Mat& raw_img)
     return hough_img;
 }
 
-
-cv::Mat ImageProcessor::waypointGen(cv::Mat& img)
+cv::Point ImageProcessor::waypointGen(cv::Mat& img)
 {   
     //Create clone of imgs
     cv::Mat img_clone = img.clone();
-
-    // //Region of interest
-    // cv::Rect rect(rect_x_, rect_y_, rect_w_, rect_h_);
-
-    // //Determine contours
-    // std::vector<std::vector<cv::Point>> contours;
-    // cv::findContours(img_clone, contours, cv::RETR_LIST, cv::CHAIN_APPROX_NONE)
-    // cv::Mat contourImage(img_clone.size(), cv_8UC1, cv::Scalar(0));
-
-    // //Determine contour w/ max area
-    // double max_area = 0;
-    // int max_element;
-    // if (contours.size()>0)
-    // {
-    //     for (auto i=0; i<contours.size(); i++)
-    //     {
-    //         double new_area = cv::contourArea(contours[i]);
-    //         if (new_area > max_area)
-    //         {
-    //             max_area = new_area;
-    //             max_element = i;
-    //         }
-    //     }
-    // }
-
-    // //Drawing largest contour
-    // cv::drawContours(contourImage, contours, max_element, cv::Scalar(255), CV_FILLED);
-
-    // //Defining Region of Interest
-    // cv::Mat ROI(contourImage, rect);24
 
     //Determine contours
     std::vector<std::vector<cv::Point>> contours;
     cv::findContours(img_clone, contours, cv::RETR_LIST, cv::CHAIN_APPROX_NONE);
     cv::Mat contour_img(img_clone.size(), CV_8UC1, cv::Scalar(0));
 
+    //Find max contour
     double max_area = 0;
     int max_element;
     if (contours.size()>0)
     {
-        for (int i=0; i<contours.size(); i++)
+        for (long unsigned i=0; i<contours.size(); i++)
         {
             double new_area = cv::contourArea(contours[i]);
             if (new_area > max_area)
@@ -216,20 +203,32 @@ cv::Mat ImageProcessor::waypointGen(cv::Mat& img)
             }
         }
     }
-
     cv::drawContours(contour_img, contours, max_element, cv::Scalar(255), CV_FILLED);
-    // std::vector<cv::Point> cnt = contours[0];
 
-    // cv::RotatedRect box = cv::minAreaRect(cnt);
+    //Generate waypoint
+    cv::Moments m = moments(contour_img, true);
+    int center_x = m.m10/m.m00;
+    cv::Point waypoint = cv::Point(center_x, look_dist_);
 
-    // cv::Point2f vertices[4];
-    // box.points(vertices);
+    return waypoint;
+}
 
-    // for (auto i=0;i<4;i++)
-    // {
-    //     cv::line(img_clone, vertices[i], vertices[(i+1)%4], cv::Scalar(0,255,0), 2);
-    // }
+int ImageProcessor::latErrorGen(const cv::Mat& img, const cv::Point waypoint)
+{
+    //Generate origin
+    cv::Point origin = cv::Point(img.size().width/2, img.size().height);
 
-    return contour_img;
+    //Generate lateral error
+    int lat_err = waypoint.x - origin.x;
 
+    return lat_err;
+}
+
+float ImageProcessor::yawErrorGen(int lat_err)
+{
+    //Yaw error
+    float yaw_err = std::atan2(lat_err, look_dist_);
+    yaw_err = yaw_err*(180/3.14159265359);
+    
+    return yaw_err;
 }

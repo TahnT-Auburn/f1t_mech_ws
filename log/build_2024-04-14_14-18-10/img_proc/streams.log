@@ -1,0 +1,113 @@
+[0.014s] Invoking command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4
+[0.041s] -- Found ament_cmake: 1.1.6 (/opt/ros/galactic/share/ament_cmake/cmake)
+[0.060s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.108s] -- Found rclcpp: 9.2.2 (/opt/ros/galactic/share/rclcpp/cmake)
+[0.135s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.138s] -- Found rosidl_adapter: 2.2.3 (/opt/ros/galactic/share/rosidl_adapter/cmake)
+[0.232s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.279s] -- Found rmw_implementation_cmake: 3.3.1 (/opt/ros/galactic/share/rmw_implementation_cmake/cmake)
+[0.279s] -- Found rmw_cyclonedds_cpp: 0.22.6 (/opt/ros/galactic/share/rmw_cyclonedds_cpp/cmake)
+[0.292s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[0.400s] -- Found sensor_msgs: 2.2.4 (/opt/ros/galactic/share/sensor_msgs/cmake)
+[0.479s] -- Found cv_bridge: 3.1.3 (/opt/ros/galactic/share/cv_bridge/cmake)
+[0.500s] -- Found mech_msg: 0.0.0 (/home/tahnt/mech_devel/f1t_mech_ws/install/mech_msg/share/mech_msg/cmake)
+[0.562s] -- Configuring done
+[0.578s] -- Generating done
+[0.580s] -- Build files have been written to: /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc
+[0.610s] [35m[1mScanning dependencies of target img_proc_node[0m
+[0.652s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
+[2.770s] In file included from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[2.770s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:54:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmech_msg[m[K’ was not declared in this scope
+[2.770s]    54 |     rclcpp::Publisher<[01;31m[Kmech_msg[m[K::msg::Laterr>::SharedPtr publisher_le_;
+[2.770s]       |                       [01;31m[K^~~~~~~~[m[K
+[2.771s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:54:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.771s]    54 |     rclcpp::Publisher<mech_msg::msg::Laterr[01;31m[K>[m[K::SharedPtr publisher_le_;
+[2.771s]       |                                            [01;31m[K^[m[K
+[2.771s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:54:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.771s]    54 |     rclcpp::Publisher<mech_msg::msg::Laterr>::[01;31m[KSharedPtr[m[K publisher_le_;
+[2.771s]       |                                               [01;31m[K^~~~~~~~~[m[K
+[2.771s]       |                                                        [32m[K;[m[K
+[2.775s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:54:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_le_[m[K’ does not name a type
+[2.775s]    54 |     rclcpp::Publisher<mech_msg::msg::Laterr>::SharedPtr [01;31m[Kpublisher_le_[m[K;
+[2.775s]       |                                                         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.778s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:55:23:[m[K [01;31m[Kerror: [m[K‘[01m[Kmech_msg[m[K’ was not declared in this scope
+[2.778s]    55 |     rclcpp::Publisher<[01;31m[Kmech_msg[m[K::msg::Yawerr>::SharedPtr publisher_ye_;
+[2.778s]       |                       [01;31m[K^~~~~~~~[m[K
+[2.778s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:55:44:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.778s]    55 |     rclcpp::Publisher<mech_msg::msg::Yawerr[01;31m[K>[m[K::SharedPtr publisher_ye_;
+[2.778s]       |                                            [01;31m[K^[m[K
+[2.778s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:55:47:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+[2.778s]    55 |     rclcpp::Publisher<mech_msg::msg::Yawerr>::[01;31m[KSharedPtr[m[K publisher_ye_;
+[2.778s]       |                                               [01;31m[K^~~~~~~~~[m[K
+[2.778s]       |                                                        [32m[K;[m[K
+[2.778s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:55:47:[m[K [01;31m[Kerror: [m[Kredeclaration of ‘[01m[Kint ImageProcessor::SharedPtr[m[K’
+[2.779s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:54:47:[m[K [01;36m[Knote: [m[Kprevious declaration ‘[01m[Kint ImageProcessor::SharedPtr[m[K’
+[2.779s]    54 |     rclcpp::Publisher<mech_msg::msg::Laterr>::[01;36m[KSharedPtr[m[K publisher_le_;
+[2.779s]       |                                               [01;36m[K^~~~~~~~~[m[K
+[2.782s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:55:57:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_ye_[m[K’ does not name a type
+[2.782s]    55 |     rclcpp::Publisher<mech_msg::msg::Yawerr>::SharedPtr [01;31m[Kpublisher_ye_[m[K;
+[2.782s]       |                                                         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.794s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:[m[K In constructor ‘[01m[KImageProcessor::ImageProcessor()[m[K’:
+[2.794s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:29:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_le_[m[K’ was not declared in this scope
+[2.794s]    29 |         [01;31m[Kpublisher_le_[m[K = this->create_publisher<mech_msg::msg::Laterr>("lat_err",10);
+[2.794s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.796s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:29:48:[m[K [01;31m[Kerror: [m[K‘[01m[Kmech_msg[m[K’ was not declared in this scope
+[2.797s]    29 |         publisher_le_ = this->create_publisher<[01;31m[Kmech_msg[m[K::msg::Laterr>("lat_err",10);
+[2.797s]       |                                                [01;31m[K^~~~~~~~[m[K
+[2.797s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:29:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.797s]    29 |         publisher_le_ = this->[01;31m[Kcreate_publisher<mech_msg::msg::Laterr>[m[K("lat_err",10);
+[2.797s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.797s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:29:83:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KImageProcessor::create_publisher<<expression error> >(const char [8], int)[m[K’
+[2.797s]    29 | = this->create_publisher<mech_msg::msg::Laterr>("lat_err",10[01;31m[K)[m[K;
+[2.797s]       |                                                             [01;31m[K^[m[K
+[2.797s] 
+[2.797s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.797s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[2.797s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[2.798s]                  from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:4[m[K,
+[2.798s]                  from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[2.798s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.798s]   200 |   [01;36m[Kcreate_publisher[m[K(
+[2.798s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.798s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:200:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.798s] In file included from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[2.798s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:29:83:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[2.798s]    29 | = this->create_publisher<mech_msg::msg::Laterr>("lat_err",10[01;31m[K)[m[K;
+[2.799s]       |                                                             [01;31m[K^[m[K
+[2.799s] 
+[2.804s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:30:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_ye_[m[K’ was not declared in this scope
+[2.804s]    30 |         [01;31m[Kpublisher_ye_[m[K = this->create_publisher<mech_msg::msg::Yawerr>("yaw_err",10);
+[2.804s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.804s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:30:31:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[2.804s]    30 |         publisher_ye_ = this->[01;31m[Kcreate_publisher<mech_msg::msg::Yawerr>[m[K("yaw_err",10);
+[2.804s]       |                               [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[2.804s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:30:83:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[KImageProcessor::create_publisher<mech_msg>(const char [8], int)[m[K’
+[2.804s]    30 | = this->create_publisher<mech_msg::msg::Yawerr>("yaw_err",10[01;31m[K)[m[K;
+[2.804s]       |                                                             [01;31m[K^[m[K
+[2.804s] 
+[2.804s] In file included from [01m[K/opt/ros/galactic/include/rclcpp/executors/single_threaded_executor.hpp:28[m[K,
+[2.804s]                  from [01m[K/opt/ros/galactic/include/rclcpp/executors.hpp:22[m[K,
+[2.804s]                  from [01m[K/opt/ros/galactic/include/rclcpp/rclcpp.hpp:156[m[K,
+[2.804s]                  from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:4[m[K,
+[2.805s]                  from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[2.805s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:200:3:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class MessageT, class AllocatorT, class PublisherT> std::shared_ptr<PublisherT> rclcpp::Node::create_publisher(const string&, const rclcpp::QoS&, const rclcpp::PublisherOptionsWithAllocator<AllocatorT>&)[m[K’
+[2.805s]   200 |   [01;36m[Kcreate_publisher[m[K(
+[2.805s]       |   [01;36m[K^~~~~~~~~~~~~~~~[m[K
+[2.805s] [01m[K/opt/ros/galactic/include/rclcpp/node.hpp:200:3:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[2.819s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:[m[K In member function ‘[01m[Kvoid ImageProcessor::processImage(sensor_msgs::msg::Image_<std::allocator<void> >::SharedPtr)[m[K’:
+[2.819s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:67:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kmech_msg[m[K’ has not been declared
+[2.819s]    67 |         auto lat_err_msg = [01;31m[Kmech_msg[m[K::msg::Laterr();
+[2.819s]       |                            [01;31m[K^~~~~~~~[m[K
+[2.819s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:68:28:[m[K [01;31m[Kerror: [m[K‘[01m[Kmech_msg[m[K’ has not been declared
+[2.819s]    68 |         auto yaw_err_msg = [01;31m[Kmech_msg[m[K::msg::Yawerr();
+[2.819s]       |                            [01;31m[K^~~~~~~~[m[K
+[2.825s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:76:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_le_[m[K’ was not declared in this scope
+[2.825s]    76 |         [01;31m[Kpublisher_le_[m[K->publish(lat_err_msg);
+[2.825s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[2.830s] [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:77:9:[m[K [01;31m[Kerror: [m[K‘[01m[Kpublisher_ye_[m[K’ was not declared in this scope
+[2.830s]    77 |         [01;31m[Kpublisher_ye_[m[K->publish(yaw_err_msg);
+[2.830s]       |         [01;31m[K^~~~~~~~~~~~~[m[K
+[4.945s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+[4.945s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Error 2
+[4.945s] make: *** [Makefile:141: all] Error 2
+[4.949s] Invoked command in '/home/tahnt/mech_devel/f1t_mech_ws/build/img_proc' returned '2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/tahnt/mech_devel/f1t_mech_ws/build/img_proc -- -j4 -l4

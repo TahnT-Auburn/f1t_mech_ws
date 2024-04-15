@@ -1,0 +1,12 @@
+In file included from [01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.cpp:1[m[K:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:58:5:[m[K [01;31m[Kerror: [m[K‘[01m[Krclcpp[m[K’ in namespace ‘[01m[Kstd_msgs::msg[m[K’ does not name a type
+   58 |     [01;31m[Krclcpp[m[K::Subscription<sensor_msgs::msg::Image>::SharedPtr subscription_;
+      |     [01;31m[K^~~~~~[m[K
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:[m[K In constructor ‘[01m[KImageProcessor::ImageProcessor()[m[K’:
+[01m[K/home/tahnt/mech_devel/f1t_mech_ws/src/img_proc/src/img_proc_node.h:24:3:[m[K [01;31m[Kerror: [m[K‘[01m[Ksubscription_[m[K’ was not declared in this scope; did you mean ‘[01m[Krcl_subscription_t[m[K’?
+   24 |   [01;31m[Ksubscription_[m[K = this->create_subscription<sensor_msgs::msg::Image>(
+      |   [01;31m[K^~~~~~~~~~~~~[m[K
+      |   [32m[Krcl_subscription_t[m[K
+make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:123: CMakeFiles/img_proc_node.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

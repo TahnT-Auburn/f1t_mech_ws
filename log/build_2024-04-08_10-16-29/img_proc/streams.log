@@ -1,7 +1,0 @@
-[0.103s] Invoking command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
-[0.377s] [35m[1mScanning dependencies of target img_proc_node[0m
-[0.747s] [ 50%] [32mBuilding CXX object CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o[0m
-[6.420s] make[2]: *** [CMakeFiles/img_proc_node.dir/build.make:63: CMakeFiles/img_proc_node.dir/src/img_proc_node.cpp.o] Interrupt
-[6.421s] make[1]: *** [CMakeFiles/Makefile2:78: CMakeFiles/img_proc_node.dir/all] Interrupt
-[6.422s] make: *** [Makefile:141: all] Interrupt
-[6.482s] Invoked command in '/home/f1t/mech_devel/f1t_mech_ws/build/img_proc' returned '-2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/galactic /usr/bin/cmake --build /home/f1t/mech_devel/f1t_mech_ws/build/img_proc -- -j6 -l6
