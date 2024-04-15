@@ -17,7 +17,7 @@ public: Controller() : Node("controller")
 
     yaw_err_sub_ = this->create_subscription<mech_msg::msg::Yawerr>(
         "yaw_err", 10,
-        std::bind(&Controller::laterr_callback, this, std::placeholders::_1));
+        std::bind(&Controller::yawerr_callback, this, std::placeholders::_1));
 }
 private:
     void parseParameters();
