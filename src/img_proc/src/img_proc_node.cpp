@@ -1,7 +1,11 @@
 #include "img_proc_node.h"
 
 void ImageProcessor::parseParameters()
-{   
+{       
+    //Publisher rate
+    this->declare_parameter<int>("pub_rate_ms", 1);
+    this->get_parameter("pub_rate_ms", pub_rate_);
+
     //Mask parameters
     this->declare_parameter<int>("width_tolerance");
     this->get_parameter("width_tolerance", width_tolerance_);
@@ -26,7 +30,14 @@ void ImageProcessor::parseParameters()
     this->declare_parameter<int>("look_dist");
     this->get_parameter("look_dist", look_dist_);
 
+    //Region of interest parameters
+    this->declare_parameter<int>("roi_width");
+    this->get_parameter("roi_width", roi_width_);
+
+    this->declare_parameter<int>("roi_height");
+    this->get_parameter("roi_height", roi_height_);
 }
+
 
 void ImageProcessor::processImage(const sensor_msgs::msg::Image::SharedPtr msg)
 {
@@ -49,10 +60,10 @@ void ImageProcessor::processImage(const sensor_msgs::msg::Image::SharedPtr msg)
         waypoint = waypointGen(raw_copy1);
 
         //Lateral error
-        int lat_err = latErrorGen(raw_img, waypoint);
+        lat_err_ = latErrorGen(raw_img, waypoint);
 
         //Yaw error
-        float yaw_err = yawErrorGen(lat_err);
+        yaw_err_ = yawErrorGen(lat_err_);
         
         //Publish
         // mech_msg::msg::LatErr lat_err_msg;
@@ -64,23 +75,26 @@ void ImageProcessor::processImage(const sensor_msgs::msg::Image::SharedPtr msg)
         // lat_err_msg.header.stamp = get_clock()->now();
         // yaw_err_msg.header.stamp = get_clock()->now();
 
-        auto lat_err_msg = mech_msg::msg::Laterr();
-        auto yaw_err_msg = mech_msg::msg::Yawerr();
-
-        lat_err_msg.laterr = lat_err;
-        yaw_err_msg.yawerr = yaw_err;
-
-        //Test
-        // RCLCPP_INFO_STREAM(this->get_logger(), "Publishing: " << yaw_err_msg.yawerr);
-
-        publisher_le_->publish(lat_err_msg);
-        publisher_ye_->publish(yaw_err_msg);
-
         //Draw on Original Image
-        cv::circle(raw_img, waypoint,10,cv::Scalar(0,0,255),2);
+        cv::circle(raw_img, waypoint, 10, cv::Scalar(0,0,255), 2);
         cv::Point origin = cv::Point(raw_img.size().width/2,raw_img.size().height);
         cv::arrowedLine(raw_img, origin, waypoint, cv::Scalar(0,0,255),2,8,0,0.05);
         cv::arrowedLine(raw_img, origin, cv::Point(origin.x,origin.y-30), cv::Scalar(255,255,255),2);
+
+        //Region of interest
+        int roi_x, roi_y;
+        roi_x = (raw_img.size().width/2) - (roi_width_/2);
+        roi_y = look_dist_ - (roi_height_/2);
+        if (roi_x < 0)
+        {
+            roi_x = 0;
+        }
+        if (roi_y < 0)
+        {
+            roi_y = 0;
+        }
+        cv::Rect regionRect(roi_x, roi_y, roi_width_, roi_height_);
+        cv::rectangle(raw_img, regionRect, cv::Scalar(255,0,0), 2);
 
         //Display
         cv::imshow("Raw", raw_img);
@@ -99,6 +113,24 @@ void ImageProcessor::processImage(const sensor_msgs::msg::Image::SharedPtr msg)
     
 }
 
+
+void ImageProcessor::pubCallback()
+{   
+    //Publish error
+    auto lat_err_msg = mech_msg::msg::Laterr();
+    auto yaw_err_msg = mech_msg::msg::Yawerr();
+
+    lat_err_msg.laterr = lat_err_;
+    yaw_err_msg.yawerr = yaw_err_;
+
+    //Test
+    RCLCPP_INFO_STREAM(this->get_logger(), "Publishing: " << yaw_err_msg.yawerr);
+
+    lat_err_pub->publish(lat_err_msg);
+    yaw_err_pub->publish(yaw_err_msg);
+}
+
+
 void ImageProcessor::binaryThresholding(cv::Mat& img)
 {
     cv::Mat hsv_img;
@@ -111,6 +143,7 @@ void ImageProcessor::binaryThresholding(cv::Mat& img)
 
     cv::inRange(hsv_img, hsv_min, hsv_max, img);
 }
+
 
 cv::Mat ImageProcessor::maskImage(cv::Mat& img)
 {
@@ -136,12 +169,14 @@ cv::Mat ImageProcessor::maskImage(cv::Mat& img)
     return mask;    
 }
 
+
 void ImageProcessor::erosionDilation(cv::Mat& img)
 {   
     cv::Mat eros_elem=cv::getStructuringElement(cv::MORPH_RECT,cv::Size(3,3));
     cv::Mat dial_elem=cv::getStructuringElement(cv::MORPH_RECT,cv::Size(3,3));
     cv::dilate(img,img,dial_elem);
 }
+
 
 cv::Mat ImageProcessor::cannyEdgeDetection(cv::Mat& img)
 {
@@ -160,6 +195,7 @@ cv::Mat ImageProcessor::cannyEdgeDetection(cv::Mat& img)
 
 }
 
+
 cv::Mat ImageProcessor::houghTransform(cv::Mat& img, const cv::Mat& raw_img)
 {   
     cv::Mat hough_img = raw_img.clone();
@@ -177,6 +213,7 @@ cv::Mat ImageProcessor::houghTransform(cv::Mat& img, const cv::Mat& raw_img)
 
     return hough_img;
 }
+
 
 cv::Point ImageProcessor::waypointGen(cv::Mat& img)
 {   
@@ -204,14 +241,31 @@ cv::Point ImageProcessor::waypointGen(cv::Mat& img)
         }
     }
     cv::drawContours(contour_img, contours, max_element, cv::Scalar(255), CV_FILLED);
+    
+    //Region of interest
+    int roi_x, roi_y;
+    roi_x = (img_clone.size().width/2) - (roi_width_/2);
+    roi_y = look_dist_ - (roi_height_/2);
+    if (roi_x < 0)
+    {
+        roi_x = 0;
+    }
+    if (roi_y < 0)
+    {
+        roi_y = 0;
+    }
+    //Define ROI in contour image
+    cv::Rect regionRect(roi_x, roi_y, roi_width_, roi_height_);
+    cv::Mat ROI(contour_img, regionRect);
 
     //Generate waypoint
-    cv::Moments m = moments(contour_img, true);
+    cv::Moments m = moments(ROI, true);
     int center_x = m.m10/m.m00;
     cv::Point waypoint = cv::Point(center_x, look_dist_);
 
     return waypoint;
 }
+
 
 int ImageProcessor::latErrorGen(const cv::Mat& img, const cv::Point waypoint)
 {
@@ -223,6 +277,7 @@ int ImageProcessor::latErrorGen(const cv::Mat& img, const cv::Point waypoint)
 
     return lat_err;
 }
+
 
 float ImageProcessor::yawErrorGen(int lat_err)
 {

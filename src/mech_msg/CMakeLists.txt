@@ -11,7 +11,8 @@ find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/Laterr.msg"
-  "msg/Yawerr.msg")
+  "msg/Yawerr.msg"
+  "msg/Steer.msg")
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

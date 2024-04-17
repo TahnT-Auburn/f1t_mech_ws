@@ -26,12 +26,17 @@ public:
 			"/camera/color/image_raw", 1,
 			std::bind(&ImageProcessor::processImage, this, std::placeholders::_1));
         
-        publisher_le_ = this->create_publisher<mech_msg::msg::Laterr>("lat_err",10);
-        publisher_ye_ = this->create_publisher<mech_msg::msg::Yawerr>("yaw_err",10);
+        lat_err_pub = this->create_publisher<mech_msg::msg::Laterr>("laterr",10);
+        yaw_err_pub = this->create_publisher<mech_msg::msg::Yawerr>("yawerr",10);
+
+        pub_timer_ = this->create_wall_timer(std::chrono::milliseconds(pub_rate_),
+            std::bind(&ImageProcessor::pubCallback, this));
     }
 private:
     void parseParameters();
     void processImage(const sensor_msgs::msg::Image::SharedPtr msg);
+    void pubCallback();
+
     void binaryThresholding(cv::Mat& img);
     cv::Mat maskImage(cv::Mat& img);
     void erosionDilation(cv::Mat& img);
@@ -40,7 +45,8 @@ private:
     cv::Point waypointGen(cv::Mat& img);
     int latErrorGen(const cv::Mat& img, const cv::Point waypoint);
     float yawErrorGen(int lat_err);
-
+    
+    int pub_rate_;
     int width_tolerance_;
     float height_scale_;
     int rho_;
@@ -48,11 +54,16 @@ private:
     int min_line_length_;
     int max_line_gap_;
     int look_dist_;
-
+    int roi_width_;
+    int roi_height_;
+    float lat_err_;
+    float yaw_err_;
 
     rclcpp::Subscription<sensor_msgs::msg::Image>::SharedPtr subscription_;
-    rclcpp::Publisher<mech_msg::msg::Laterr>::SharedPtr publisher_le_;
-    rclcpp::Publisher<mech_msg::msg::Yawerr>::SharedPtr publisher_ye_;
+    rclcpp::Publisher<mech_msg::msg::Laterr>::SharedPtr lat_err_pub;
+    rclcpp::Publisher<mech_msg::msg::Yawerr>::SharedPtr yaw_err_pub;
+
+    rclcpp::TimerBase::SharedPtr pub_timer_;
 };
 
 int main(int argc, char* argv[])

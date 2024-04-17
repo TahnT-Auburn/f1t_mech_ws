@@ -1,6 +1,9 @@
 /**:
     ros__parameters:
 
+        # Publisher Parameters
+        pub_rate: 10
+        
         # Mask Parameters
         width_tolerance: 275
         height_scale: 0.25
@@ -12,6 +15,9 @@
         max_line_gap: 15
 
         # Waypoint Parameters
-        look_dist: 300
+        look_dist: 125
 
+        # ROI Parameters
+        roi_width: 620
+        roi_height: 225
 
