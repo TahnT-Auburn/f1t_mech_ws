@@ -3,6 +3,7 @@
 #include <chrono>
 
 #include "rclcpp/rclcpp.hpp"
+#include "std_msgs/msg/float64.hpp"
 #include "mech_msg/msg/laterr.hpp"
 #include "mech_msg/msg/yawerr.hpp"
 #include "mech_msg/msg/steer.hpp"
@@ -26,8 +27,11 @@ public: Controller() : Node("controller")
         "yawerr", 10,
         std::bind(&Controller::yawerr_callback, this, std::placeholders::_1));
 
-    steer_pub_ = this->create_publisher<mech_msg::msg::Steer>(
-        "steer", 10);
+    // steer_pub_ = this->create_publisher<mech_msg::msg::Steer>(
+    //     "commands/servo/position", 10);
+
+    steer_pub_ = this->create_publisher<std_msgs::msg::Float64>(
+        "commands/servo/position", 10);
 
     controller_timer_ = this->create_wall_timer(std::chrono::milliseconds(controll_rate_ms_),
         std::bind(&Controller::runController, this));
@@ -47,7 +51,8 @@ private:
 
     rclcpp::Subscription<mech_msg::msg::Laterr>::SharedPtr laterr_sub_;
     rclcpp::Subscription<mech_msg::msg::Yawerr>::SharedPtr yawerr_sub_;
-    rclcpp::Publisher<mech_msg::msg::Steer>::SharedPtr steer_pub_;
+    // rclcpp::Publisher<mech_msg::msg::Steer>::SharedPtr steer_pub_;
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr steer_pub_;
 
     rclcpp::TimerBase::SharedPtr controller_timer_;
 };

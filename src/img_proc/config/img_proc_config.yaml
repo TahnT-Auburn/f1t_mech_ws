@@ -15,7 +15,7 @@
         max_line_gap: 15
 
         # Waypoint Parameters
-        look_dist: 125
+        look_dist: 155
 
         # ROI Parameters
         roi_width: 620

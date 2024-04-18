@@ -8,12 +8,14 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(std_msgs REQUIRED)
 find_package(mech_msg REQUIRED)
 
 add_executable(controller src/controller.cpp)
 ament_target_dependencies(
   controller
   rclcpp
+  std_msgs
   mech_msg
 )
 

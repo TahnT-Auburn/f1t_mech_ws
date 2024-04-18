@@ -124,7 +124,7 @@ void ImageProcessor::pubCallback()
     yaw_err_msg.yawerr = yaw_err_;
 
     //Test
-    RCLCPP_INFO_STREAM(this->get_logger(), "Publishing: " << yaw_err_msg.yawerr);
+    // RCLCPP_INFO_STREAM(this->get_logger(), "Publishing: " << yaw_err_msg.yawerr);
 
     lat_err_pub->publish(lat_err_msg);
     yaw_err_pub->publish(yaw_err_msg);
