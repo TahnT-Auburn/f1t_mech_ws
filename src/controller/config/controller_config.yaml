@@ -1,5 +1,8 @@
 /**:
   ros__parameters:
-    Kp: 2.0
+    Kp: 0.80
     Kd: 0.01
     controll_rate: 10
+    steer_threshold: 0.8727
+    max_steer: 0.85
+    min_steer: 0.15

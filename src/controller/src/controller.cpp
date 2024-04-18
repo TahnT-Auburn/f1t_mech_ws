@@ -9,14 +9,25 @@ void Controller::parseParameters()
     this->declare_parameter<float>("Kd");
     this->get_parameter("Kd", Kd_);
 
+    //Control rate
     this->declare_parameter<int>("controll_rate_ms", 1);
     this->get_parameter("controll_rate_ms", controll_rate_ms_);
+
+    //Servo mappings
+    this->declare_parameter<float>("steer_threshold");
+    this->get_parameter("steer_threshold", steer_threshold_);
+
+    this->declare_parameter<float>("max_steer");
+    this->get_parameter("max_steer", max_steer_);
+
+    this->declare_parameter<float>("min_steer");
+    this->get_parameter("min_steer", min_steer_);
 }
 
 
 void Controller::laterr_callback(const mech_msg::msg::Laterr & msg)
 {
-    // RCLCPP_INFO_STREAM(this->get_logger(), "Lat Err" << msg.laterr);
+    lat_err_ = msg.laterr;
 }
 
 
@@ -31,6 +42,7 @@ void Controller::runController()
     //Run controller
     float dt = controll_rate_ms_*0.001;
     steerController(yaw_err_, dt);
+
     RCLCPP_INFO(this->get_logger(),"Steer Command: %f", steer_cmd_);
 
     //Publish steer command
@@ -47,10 +59,33 @@ void Controller::steerController(const float yaw_err_, const float dt)
     float e_dot = (e - e_old) / dt;
 
     //Control law
-    steer_cmd_ = Kp_*e + Kd_*e_dot;
+    float u = Kp_*e + Kd_*e_dot;
     
-    // RCLCPP_INFO(this->get_logger(),"e: %f", e);
-    // RCLCPP_INFO(this->get_logger(),"e_old: %f", e_old);
+    //Map to servo commands
+    if (u == 0.0)
+    {
+        steer_cmd_ = 0.5;
+    } 
+    if (u > 0.0)
+    {
+        steer_cmd_ = (abs(u)/(steer_threshold_))*max_steer_;
+    }
+    if (u < 0.0)
+    {   
+        float delta = min_steer_ - (abs(u)/(steer_threshold_))*min_steer_;
+
+        steer_cmd_ = min_steer_ + delta;
+    }
+
+    //Saturate
+    if (steer_cmd_ > 0.85)
+    {
+        steer_cmd_ = 0.85;
+    }
+    if (steer_cmd_ < 0.15)
+    {
+        steer_cmd_ = 0.15;
+    }
 
     //Store error
     e_old = e;

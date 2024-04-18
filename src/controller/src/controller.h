@@ -39,11 +39,11 @@ private:
     void runController();
     void steerController(const float yaw_err, float dt);
 
-    float Kp_;
-    float Kd_;
+    float Kp_, Kd_;
     int controll_rate_ms_;
-    float yaw_err_;
+    float lat_err_, yaw_err_;
     float steer_cmd_;
+    float steer_threshold_, max_steer_, min_steer_;
 
     rclcpp::Subscription<mech_msg::msg::Laterr>::SharedPtr laterr_sub_;
     rclcpp::Subscription<mech_msg::msg::Yawerr>::SharedPtr yawerr_sub_;
