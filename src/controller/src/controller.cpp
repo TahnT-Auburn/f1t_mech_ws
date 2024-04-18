@@ -42,17 +42,10 @@ void Controller::runController()
     //Run controller
     float dt = controll_rate_ms_*0.001;
     steerController(yaw_err_, dt);
-
-    // RCLCPP_INFO(this->get_logger(),"Steer Command: %f", steer_cmd_);
-
-    //Publish steer command
-    // auto steer_msg = mech_msg::msg::Steer();
-    // steer_msg.steer = steer_cmd_;
-    // steer_pub_->publish(steer_msg);
-
+    
     auto steer_msg = std_msgs::msg::Float64();
     steer_msg.data = steer_cmd_;
-    // RCLCPP_INFO(this->get_logger(),"Steer Command: %f", steer_msg.data);
+    RCLCPP_INFO(this->get_logger(),"Steer Command: %f", steer_msg.data);
     steer_pub_->publish(steer_msg);
 }
 
@@ -76,23 +69,9 @@ void Controller::steerController(const float yaw_err_, const float dt)
         u = -steer_threshold_;
     }
 
-    RCLCPP_INFO(this->get_logger(),"u: %f", u);
+    float u_perc = u/steer_threshold_;
 
-    //Map to servo commands
-    if (e == 0.0)
-    {
-        steer_cmd_ = 0.5;
-    } 
-    if (e > 0.0)
-    {
-        steer_cmd_ = (abs(u)/(steer_threshold_))*max_steer_;
-    }
-    if (e < 0.0)
-    {   
-        float delta = min_steer_ - (abs(u)/(steer_threshold_))*min_steer_;
-
-        steer_cmd_ = min_steer_ + delta;
-    }
+    steer_cmd_ = 0.5 + (u_perc*0.35);
 
     //Saturate Steering command
     // if (steer_cmd_ > 0.85)
