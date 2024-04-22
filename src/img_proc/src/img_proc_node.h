@@ -1,6 +1,7 @@
 #include <chrono>
 #include <functional>
 #include <memory>
+#include <iostream>
 #include <rclcpp/rclcpp.hpp>
 #include <sensor_msgs/msg/image.hpp>
 #include "mech_msg/msg/laterr.hpp"
@@ -54,6 +55,8 @@ private:
     int min_line_length_;
     int max_line_gap_;
     int look_dist_;
+    cv::Point waypoint_old_;
+    int delta_wp_tolerance_;
     int roi_width_;
     int roi_height_;
     float lat_err_;

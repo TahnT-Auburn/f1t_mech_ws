@@ -28,6 +28,9 @@ public: Controller() : Node("controller")
 
     steer_pub_ = this->create_publisher<std_msgs::msg::Float64>(
         "commands/servo/position", 10);
+    
+    throttle_pub_ = this->create_publisher<std_msgs::msg::Float64>(
+        "commands/motor/speed", 10);
 
     controller_timer_ = this->create_wall_timer(std::chrono::milliseconds(controll_rate_ms_),
         std::bind(&Controller::runController, this));
@@ -38,16 +41,21 @@ private:
     void yawerr_callback(const mech_msg::msg::Yawerr & msg);
     void runController();
     void steerController(const float yaw_err, float dt);
+    void throttleController(const float lat_err_);
 
     float Kp_, Kd_;
     int controll_rate_ms_;
     float lat_err_, yaw_err_;
-    float steer_cmd_;
+    bool steer_controller_, throttle_controller_;
+    float steer_cmd_, throttle_cmd_;
     float steer_threshold_, max_steer_, min_steer_;
-
+    float throttle_speed_;
+    
     rclcpp::Subscription<mech_msg::msg::Laterr>::SharedPtr laterr_sub_;
     rclcpp::Subscription<mech_msg::msg::Yawerr>::SharedPtr yawerr_sub_;
+
     rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr steer_pub_;
+    rclcpp::Publisher<std_msgs::msg::Float64>::SharedPtr throttle_pub_;
 
     rclcpp::TimerBase::SharedPtr controller_timer_;
 };

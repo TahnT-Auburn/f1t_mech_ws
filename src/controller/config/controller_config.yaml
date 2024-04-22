@@ -1,8 +1,11 @@
 /**:
   ros__parameters:
-    Kp: 0.6
+    steer_controller: True
+    throttle_controller: True
+    Kp: 0.85
     Kd: 0.01
     controll_rate_ms: 10
     steer_threshold: 0.5236
     max_steer: 0.85
     min_steer: 0.15
+    throttle_speed: 2000.0

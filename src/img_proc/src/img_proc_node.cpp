@@ -30,6 +30,9 @@ void ImageProcessor::parseParameters()
     this->declare_parameter<int>("look_dist");
     this->get_parameter("look_dist", look_dist_);
 
+    this->declare_parameter<int>("delta_wp_tolerance");
+    this->get_parameter("delta_wp_tolerance", delta_wp_tolerance_);
+
     //Region of interest parameters
     this->declare_parameter<int>("roi_width");
     this->get_parameter("roi_width", roi_width_);
@@ -58,7 +61,11 @@ void ImageProcessor::processImage(const sensor_msgs::msg::Image::SharedPtr msg)
         //Waypoint Gen
         cv::Point waypoint;
         waypoint = waypointGen(raw_copy1);
+        bool check(cv::Point& waypoint);
 
+        // RCLCPP_INFO(this->get_logger(),"waypoints: %d %d", waypoint.x, waypoint.y);
+
+        // std::cout << std::boolalpha << "Receiving waypoints: "<< check << std::endl;
         //Lateral error
         lat_err_ = latErrorGen(raw_img, waypoint);
 
@@ -93,15 +100,23 @@ void ImageProcessor::processImage(const sensor_msgs::msg::Image::SharedPtr msg)
         {
             roi_y = 0;
         }
+        if (roi_x > raw_img.size().width)
+        {
+            roi_x = raw_img.size().width;
+        }
+        if (roi_y > raw_img.size().height)
+        {
+            roi_y = raw_img.size().height;
+        }
         cv::Rect regionRect(roi_x, roi_y, roi_width_, roi_height_);
         cv::rectangle(raw_img, regionRect, cv::Scalar(255,0,0), 2);
 
         //Display
-        cv::imshow("Raw", raw_img);
-        cv::waitKey(1);
+        // cv::imshow("Raw", raw_img);
+        // cv::waitKey(1);
 
-        cv::imshow("Binary Thresholding", raw_copy1);
-        cv::waitKey(1);
+        // cv::imshow("Binary Thresholding", raw_copy1);
+        // cv::waitKey(1);
         // cv::imshow("Mask", mask);
         // cv::waitKey(1);
  
@@ -223,7 +238,8 @@ cv::Point ImageProcessor::waypointGen(cv::Mat& img)
     //Determine contours
     std::vector<std::vector<cv::Point>> contours;
     cv::findContours(img_clone, contours, cv::RETR_LIST, cv::CHAIN_APPROX_NONE);
-    cv::Mat contour_img(img_clone.size(), CV_8UC1, cv::Scalar(0));
+    // cv::Mat contour_img(img_clone.size(), CV_8UC1, cv::Scalar(0));
+    cv::Mat contour_img = img_clone.clone() * 255;
 
     //Find max contour
     double max_area = 0;
@@ -239,9 +255,9 @@ cv::Point ImageProcessor::waypointGen(cv::Mat& img)
                 max_element = i;
             }
         }
+        // cv::drawContours(contour_img, contours, max_element, cv::Scalar(255), CV_FILLED);
     }
-    cv::drawContours(contour_img, contours, max_element, cv::Scalar(255), CV_FILLED);
-    
+
     //Region of interest
     int roi_x, roi_y;
     roi_x = (img_clone.size().width/2) - (roi_width_/2);
@@ -254,6 +270,14 @@ cv::Point ImageProcessor::waypointGen(cv::Mat& img)
     {
         roi_y = 0;
     }
+    if (roi_x > img_clone.size().width)
+    {
+        roi_x = img_clone.size().width;
+    }
+    if (roi_y > img_clone.size().height)
+    {
+        roi_y = img_clone.size().height;
+    }
     //Define ROI in contour image
     cv::Rect regionRect(roi_x, roi_y, roi_width_, roi_height_);
     cv::Mat ROI(contour_img, regionRect);
@@ -262,6 +286,26 @@ cv::Point ImageProcessor::waypointGen(cv::Mat& img)
     cv::Moments m = moments(ROI, true);
     int center_x = m.m10/m.m00;
     cv::Point waypoint = cv::Point(center_x, look_dist_);
+
+    //Disregard invalid waypoints and set to previous valid waypoint
+    if (waypoint.x < 0 || waypoint.y < 0)
+    {
+        waypoint.x = waypoint_old_.x;
+        waypoint.y = waypoint_old_.y;
+    }
+    if (waypoint.x > img_clone.size().width || waypoint.y > img_clone.size().height)
+    {
+        waypoint.x = waypoint_old_.x;
+        waypoint.y = waypoint_old_.y;
+    }
+    // if (abs(waypoint_old_.x - waypoint.x) > delta_wp_tolerance_ || abs(waypoint_old_.y - waypoint.y) > delta_wp_tolerance_)
+    // {
+    //     waypoint.x = waypoint_old_.x;
+    //     waypoint.y = waypoint_old_.y;
+    // }
+
+    //Store old waypoint
+    waypoint_old_ = waypoint;
 
     return waypoint;
 }
